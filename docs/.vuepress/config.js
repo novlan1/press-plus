@@ -49,7 +49,7 @@ module.exports = {
     nav: [
       {
         text: 'Press UI',
-        link: 'https://h5.igame.qq.com/pmd-mobile.support.press-ui.press-ui/',
+        link: 'https://novlan1.github.io/press-ui/',
       },
       {
         text: '源码地址',

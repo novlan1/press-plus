@@ -7,7 +7,7 @@
 
 ### 1 Introduction
 
-Press Plus is the business component part separated from [Press UI](https://h5.igame.qq.com/pmd-mobile.support.press-ui.press-ui/). Why should it be separated? The following are A few points to consider.
+Press Plus is the business component part separated from [Press UI](https://novlan1.github.io/press-ui/). Why should it be separated? The following are A few points to consider.
 
 1. The basic component library is already very stable, but the business component library changes frequently and more and more, and there is a risk of affecting the basic components.
 2. Continuous maintenance of a high-quality component library containing a large number of components is tiring. After separation, `Press UI` will continue to pursue `100` points, and `Press Plus` will pursue `95` points.

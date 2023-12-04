@@ -8,7 +8,7 @@
 
 ### 1. 介绍
 
-Press Plus 是从 [Press UI](https://h5.igame.qq.com/pmd-mobile.support.press-ui.press-ui/) 中剥离的业务组件部分，为什么要分离呢，有下面几点考虑。
+Press Plus 是从 [Press UI](https://novlan1.github.io/press-ui/) 中剥离的业务组件部分，为什么要分离呢，有下面几点考虑。
 
 1. 基础组件库已十分稳定，业务组件库频繁改动，并且越来越多，存在影响基础组件的风险
 2. 持续维护包含大量组件，且高质量的组件库比较累，分离后，`Press UI` 继续追求 `100` 分，`Press Plus` 追求 `95` 分
