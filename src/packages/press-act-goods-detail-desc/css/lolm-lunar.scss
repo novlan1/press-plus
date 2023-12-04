@@ -1,0 +1,22 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__item {
+    color: rgba(255, 239, 239, .5);
+    line-height: .34rem;
+    font-size: .24rem;
+    margin: 0 0 .18rem 0;
+    display: flex;
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+      width: 1.2rem;
+      flex-basis: 1.2rem;
+    }
+
+    .press__text {
+      display: inline-block;
+      flex: 1;
+    }
+  }
+
+}

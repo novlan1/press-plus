@@ -1,0 +1,69 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-gp.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__box {
+    order: -1;
+  }
+
+  .press__title {
+    min-width: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    font-size: .28rem;
+    line-height: .4rem;
+  }
+
+
+  // start条形码二维码兑换
+  .press__exchange-code {
+    padding: 0rem .4rem;
+    margin-bottom: .15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgba(192, 219, 255, .6);
+  }
+
+  .press__exchange-box {
+    padding: .1rem;
+    display: flex;
+  }
+
+  .press__barcode {
+    width: auto;
+    min-width: 4.18rem;
+    height: 1.8rem;
+    padding: .1rem;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    background: $color-white;
+    text-align: center;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .press__qr {
+    border-radius: 2px;
+    margin-left: .16rem;
+
+    @include img-size(1.8rem, 1.8rem, inline-block, .08rem, 0px, $color-white);
+  }
+
+  .press__qr-text {
+    font-size: $font-l;
+    color: #fff;
+    line-height: .4rem;
+    margin: .1rem 0px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  // end条形码二维码兑换
+}

@@ -1,0 +1,36 @@
+.press-act:not(.press-act--hidden-tip) {
+  &.press__list {
+    margin-top: .2rem;
+  }
+
+  .press__item {
+    display: flex;
+    align-items: flex-start;
+    padding: .2rem .2rem .2rem .28rem;
+    font-size: .18rem;
+    background: #4d4536;
+    margin-bottom: .04rem;
+
+    span {
+      min-width: .9rem;
+      font-size: .18rem;
+      color: #fff5d9;
+      font-weight: 700;
+    }
+
+    .press__text {
+      flex: 1;
+      font-size: .18rem;
+      color: #fff5d9;
+      overflow-x: hidden;
+    }
+
+    .press__modify-button {
+      display: inline-block;
+      font-size: .18rem;
+      text-align: right;
+      padding-left: .06rem;
+      font-weight: 400;
+    }
+  }
+}

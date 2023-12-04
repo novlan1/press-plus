@@ -1,0 +1,72 @@
+/* +++++++++++++++组件+++++++++++++额外信息+声明 左侧栏：tip-comp-goods-detail-right、tip-comp-goods-detail-right-new  |start */
+.press-act:not(.press-act--hidden-tip) {
+  .press__extra {
+    padding: 0.15rem 0rem 0rem;
+    color: #303030;
+    overflow: hidden;
+    border-top: 1px solid rgba(48, 48, 48, 0.1);
+  }
+
+  /* hlddz 按钮 majiang 按钮 ---- start */
+  .press__buttons {
+    width: 7rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.56rem;
+  }
+
+  .press__btn--large-secondary {
+    display: block;
+    width: 2.64rem;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    font-size: 0.28rem;
+    font-weight: normal;
+    text-align: center;
+    color: #f4997b;
+    border-radius: 2px;
+    background: #fff1d5;
+  }
+
+  .press__btn--large-primary {
+    display: block;
+    width: 2.64rem;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    font-size: 0.28rem;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    background: linear-gradient(45deg, #f99b73 0%, #9473ff 100%);
+  }
+
+  .press__btn--maxlarge-primary {
+    display: block;
+    width: 3.28rem;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    font-size: 0.28rem;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    background: linear-gradient(45deg, #f99b73 0%, #9473ff 100%);
+  }
+
+  /* 最外层 */
+  &.press__main {
+    height: 100%;
+    width: 100%;
+    padding: 0.15rem 0.2rem 0.6rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  /* +++++++++++++++组件+++++++++++++额外信息+声明 左侧栏：tip-comp-goods-detail-right、tip-comp-goods-detail-right-new  |end */
+
+}

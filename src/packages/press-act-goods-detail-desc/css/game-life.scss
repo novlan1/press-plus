@@ -1,0 +1,30 @@
+/* +++++++++++++++组件+++++++++++++物品介绍:tip-comp-goods-detail-desc |start */
+.press-act:not(.press-act--hidden-tip) {
+  .press__item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.25rem 0rem;
+    font-size: .2rem;
+    border-bottom: 1px solid rgba(48, 48, 48, 0.1);
+  }
+
+  .press__item:last-child {
+    /* border-bottom: 0px */
+  }
+
+  .press__item span {
+    font-weight: bold;
+    font-size: .24rem;
+    color: #303030
+  }
+
+  .press__item .press__text {
+    flex: 1;
+    font-size: .2rem;
+    color: #303030;
+    margin-left: 0.1rem;
+    overflow-x: scroll
+  }
+
+  /* +++++++++++++++组件+++++++++++++物品介绍: tip-comp-goods-detail-desc |end */
+}

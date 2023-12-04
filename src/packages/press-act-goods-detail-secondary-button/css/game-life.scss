@@ -1,0 +1,63 @@
+/* +++++++++++++++组件+++++++++++++取消、去使用等/次按钮：tip-comp-goods-detail-secondary-button  |start */
+.tip-comp-btn-small-secondary {
+  font-family: "GAMEFONT";
+  display: block;
+  width: 1.3rem;
+  height: .5rem;
+  line-height: .5rem;
+  font-size: .28rem;
+  font-weight: normal;
+  text-align: center;
+  color: #F4997B;
+  border-radius: 2px;
+  background: #FFF1D5;
+}
+
+
+
+.tip-comp-btn-medium-secondary {
+  font-family: "GAMEFONT";
+  display: block;
+  width: 1.62rem;
+  height: .5rem;
+  line-height: .5rem;
+  font-size: .28rem;
+  font-weight: normal;
+  text-align: center;
+  color: #F4997B;
+  border-radius: 2px;
+  background: #FFF1D5;
+}
+
+.tip-comp-btn-medium_large-secondary {
+  font-family: "GAMEFONT";
+  display: block;
+  width: 1.92rem;
+  height: .55rem;
+  line-height: .55rem;
+  font-size: .28rem;
+  font-weight: normal;
+  text-align: center;
+  color: #F4997B;
+  border-radius: 2px;
+  background: #FFF1D5;
+}
+
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__btn--large-secondary {
+    font-family: "GAMEFONT";
+    display: block;
+    width: 2.64rem;
+    height: .68rem;
+    line-height: .68rem;
+    font-size: .28rem;
+    font-weight: normal;
+    text-align: center;
+    color: #F4997B;
+    border-radius: 2px;
+    background: #FFF1D5;
+  }
+
+  /* +++++++++++++++组件+++++++++++++取消、去使用等/次按钮：tip-comp-goods-detail-secondary-button  |end*/
+}

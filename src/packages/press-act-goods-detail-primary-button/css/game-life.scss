@@ -1,0 +1,61 @@
+/* +++++++++++++++组件+++++++++++++确认按钮/主按钮：tip-comp-goods-detail-primary-button  |start */
+.tip-comp-btn-small-primary {
+  font-family: "GAMEFONT";
+  display: block;
+  width: 1.3rem;
+  height: .5rem;
+  line-height: .5rem;
+  font-size: .28rem;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  background: linear-gradient(45deg, #F99B73 0%, #9473FF 100%);
+}
+
+.tip-comp-btn-medium-primary {
+  font-family: "GAMEFONT";
+  display: block;
+  width: 1.62rem;
+  height: .5rem;
+  line-height: .5rem;
+  font-size: .28rem;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  background: linear-gradient(45deg, #F99B73 0%, #9473FF 100%);
+}
+
+
+.tip-comp-btn-large-primary {
+  font-family: "GAMEFONT";
+  display: block;
+  width: 2.64rem;
+  height: .68rem;
+  line-height: .68rem;
+  font-size: .28rem;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  background: linear-gradient(45deg, #F99B73 0%, #9473FF 100%);
+}
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__btn--maxlarge-primary {
+    font-family: "GAMEFONT";
+    display: block;
+    width: 3.28rem;
+    height: .68rem;
+    line-height: .68rem;
+    font-size: .28rem;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    background: linear-gradient(45deg, #F99B73 0%, #9473FF 100%);
+  }
+
+  /* +++++++++++++++组件+++++++++++++确认按钮/主按钮：tip-comp-goods-detail-primary-button  |end*/
+}

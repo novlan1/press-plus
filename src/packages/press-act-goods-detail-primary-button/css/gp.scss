@@ -1,0 +1,29 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-gp.scss';
+@import '../../common/style/act/button/_button-gp.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__btn--maxlarge-primary {
+    display: block;
+    width: 1.72rem;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .22rem;
+    color: #5a350a;
+    text-align: center;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/primary-large-btn-bg.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  &.press__btn--long-primary {
+    display: block;
+    font-size: .22rem;
+    color: #5a350a;
+    text-align: center;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/card/privilege-btn-l.png) no-repeat center center;
+    background-size: 100% 100%;
+    width: 4.4rem;
+    height: .6rem;
+    line-height: .6rem;
+  }
+}

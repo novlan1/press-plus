@@ -1,0 +1,61 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__title {
+    width: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &.press__box {
+    padding: .32rem;
+    border-bottom: 1px solid rgba(246, 246, 246, .5);
+    color: #303030;
+    font-size: .28rem;
+    line-height: .4rem;
+    position: relative;
+  }
+
+  .press__copy-code {
+    width: 5.3rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .press__copy-num {
+    width: 5.2rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    background: #f6f6f6;
+    border-radius: 2px;
+    color: #4a4a4a;
+    font-size: .28rem;
+  }
+
+  .press__copy-tip {
+    width: 5.3rem;
+    color: #999;
+    font-size: .24rem;
+    line-height: .34rem;
+  }
+
+  .press__copy-tip span {
+    width: 5.3rem;
+    color: #c4a264;
+    font-size: .28rem;
+    line-height: .4rem;
+    margin-bottom: .08rem;
+  }
+
+  .press__copy-tip span:nth-child(2) {
+    color: #999;
+    font-size: .24rem;
+    line-height: .34rem;
+    display: inline-block;
+  }
+
+  .press__copy-tip a {
+    color: #c4a264;
+    z-index: 2;
+  }
+}

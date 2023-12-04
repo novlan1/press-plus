@@ -1,0 +1,40 @@
+/* +++++++++++++++组件+++++++++++++兑换码/核销码/用户名: tip-comp-goods-detail-code |start */
+.press-act:not(.press-act--hidden-tip) {
+  .press__copy-code {
+    padding: 0.2rem 0rem;
+    border-bottom: 1px solid rgba(48, 48, 48, 0.1);
+  }
+
+  /* 用户微信账号、手机号、兑换码，都用此结构 */
+  .press__copy-num {
+    width: 6rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    background: rgba(234, 232, 194, 0.3987);
+    margin: 0 auto .22rem;
+    font-size: .24rem;
+    color: #303030
+  }
+
+  .press__copy-tip {
+    font-size: .2rem;
+    color: #303030;
+    line-height: 0.5rem
+  }
+
+  /* 提示 */
+  .press__copy-tip span {
+    font-size: .24rem;
+    color: #303030;
+    display: block;
+    line-height: 0.5rem
+  }
+
+  /* 跳转a标签-现金红包 */
+  .press__copy-tip a {
+    color: #303030
+  }
+
+  /* +++++++++++++++组件+++++++++++++兑换码/核销码/用户名: tip-comp-goods-detail-code |end */
+}

@@ -1,0 +1,46 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-gp.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__box {
+    order: -1;
+  }
+
+  .press__title {
+    display: none;
+  }
+
+  // 复制数字兑换码
+  .press__copy-code {
+    padding: .3rem .32rem;
+    margin-bottom: .14rem;
+    background: rgba(46, 52, 56, .8);
+    box-shadow: 0 0 10px 0 #b1bec6, inset 0 0 50px 0 rgba(255, 255, 255, .11), inset 0 0 0 0 #fff;
+  }
+
+  .press__copy-num {
+    height: .7rem;
+    line-height: .7rem;
+    text-align: center;
+    background: rgba(255, 255, 255, .15);
+    margin-bottom: .2rem;
+    border-radius: 2px;
+    font-size: $font-l;
+    color: $color-ccc;
+  }
+
+  .press__copy-tip {
+    font-size: $font-xxs;
+    color: #d2d8dc;
+    margin-bottom: .1rem;
+
+    span {
+      display: block;
+      color: #e4b853;
+    }
+
+    a {
+      color: #e4b853;
+    }
+  }
+}

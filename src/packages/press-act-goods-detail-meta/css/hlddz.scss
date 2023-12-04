@@ -1,0 +1,104 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-hlddz.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__meta {
+    height: auto;
+    padding: 0rem;
+    background: none;
+    flex: 0 0 24.44%;
+    position: unset;
+    display: block;
+  }
+
+  .press__info {
+    text-align: center;
+    padding-top: 1.7rem;
+  }
+
+  .press__img {
+    @include img-size(1.4rem, 1.4rem);
+  }
+
+  .press__name {
+    line-height: .42rem;
+    font-size: .3rem;
+    color: $color-white;
+    letter-spacing: -.45px;
+    font-weight: bold;
+    margin-top: .16rem;
+    width: 80%;
+    margin: .16rem auto 0rem;
+  }
+
+  .tip-comp-goods-detail--limit-time {
+    font-size: $font-m;
+    letter-spacing: 0;
+    line-height: $font-l;
+    color: #525a90;
+    margin-top: .3rem;
+  }
+
+  .press__icon-status {
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include img-size(2.2rem, 1.84rem, block);
+  }
+
+  .press__icon-status--used {
+    background: url(https://image-1251917893.file.myqcloud.com/2020/a20200303dzStandTreat/icon-already.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  .press__icon-status--expired {
+    background: url(https://image-1251917893.file.myqcloud.com/2020/a20200303dzStandTreat/icon-overtime.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  .press__order {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0 .2rem;
+    height: .56rem;
+    border-radius: .56rem;
+    margin: 0 auto;
+    margin-top: .28rem;
+    background: rgba(255, 255, 255, .5);
+
+    a {
+      position: relative;
+      display: block;
+      color: #3b437f;
+      font-size: .24rem;
+      padding-left: .54rem;
+
+      &::after {
+        position: absolute;
+        left: .18rem;
+        top: .04rem;
+        content: '';
+        width: .24rem;
+        height: .24rem;
+        border-radius: .02rem;
+        background: rgba(0, 35, 150, .3);
+      }
+    }
+
+    &.active {
+      &::after {
+        position: absolute;
+        left: .38rem;
+        top: .16rem;
+        content: '';
+        width: .32rem;
+        height: .3rem;
+        background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/hlddz/image/icon/dz-checked.png) no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__list {
+    flex: 1;
+  }
+
+  .press__item {
+    padding: .32rem;
+    border-bottom: .02rem solid rgba(255, 255, 255, .05);
+    color: #fff;
+    font-size: .28rem;
+    line-height: .4rem;
+    position: relative;
+    display: flex;
+
+    span {
+      width: 1.4rem;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .press__text {
+      flex: 1;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .press__modify-buttons {
+      position: relative;
+    }
+
+    //和平竖版暂无跳转，隐藏按钮
+    .press__modify-button {
+      display: none;
+    }
+  }
+}

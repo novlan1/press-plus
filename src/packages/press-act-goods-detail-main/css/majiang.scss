@@ -1,0 +1,59 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-majiang.scss';
+@import '../../common/style/act/button/_button-majiang.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__main {
+    -webkit-box-flex: 1;
+    flex: 1 1 69%;
+    flex: 1 1 69%;
+    height: auto;
+    padding: .24rem .4rem .2rem;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background: url(https://image-1251917893.file.myqcloud.com/2020/a20200423mahjong/page-color.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__info {
+    flex: 1;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__button-wrap {
+    padding: .1rem 0 0;
+    height: .8rem;
+    flex-basis: .8rem;
+  }
+
+  // 额外信息+声明
+  .press__extra {
+    padding: 0rem .4rem 0rem;
+    color: $color-white;
+    overflow: hidden;
+  }
+
+  .press__extra p {
+    margin: .3rem 0rem;
+    color: $cooor-blue-12;
+    text-align: center;
+  }
+
+  .press__buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .press__btn--long-primary {
+    width: 4.24rem;
+    font-family: auto;
+    background: url(https://image-1251917893.file.myqcloud.com/2020/a20200423mahjong/btn/btn-gray-80.png) no-repeat center cener;
+    background-size: auto;
+  }
+}

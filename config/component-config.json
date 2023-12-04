@@ -1,0 +1,293 @@
+{
+  "business": {
+    "name": "Business Components",
+    "title": "业务组件",
+    "list": [
+      {
+        "name": "Area",
+        "title": "省市区选择"
+      },
+      {
+        "name": "AreaIndexBar",
+        "title": "地区索引栏"
+      },
+      {
+        "name": "AwardPopup",
+        "title": "奖励弹出层"
+      },
+      {
+        "name": "LivePlayer",
+        "title": "直播播放器"
+      },
+      {
+        "name": "PopupCell",
+        "title": "弹出层单元格"
+      },
+      {
+        "name": "Protocol",
+        "title": "协议"
+      },
+      {
+        "name": "QRCodePopup",
+        "title": "二维码弹出层"
+      },
+      {
+        "name": "TeamSearch",
+        "title": "队伍搜索"
+      },
+      {
+        "name": "Turntable",
+        "title": "转盘"
+      }
+    ]
+  },
+  "message": {
+    "name": "Message Components",
+    "title": "消息组件",
+    "list": [
+      {
+        "name": "MessageBoard",
+        "title": "留言板"
+      },
+      {
+        "name": "MessageDetail",
+        "title": "消息详情"
+      },
+      {
+        "name": "MessageList",
+        "title": "消息列表"
+      }
+    ]
+  },
+  "schedule": {
+    "name": "Schedule Components",
+    "title": "赛程组件",
+    "list": [
+      {
+        "name": "ScheduleCard",
+        "title": "赛程卡片"
+      },
+      {
+        "name": "ScheduleList",
+        "title": "赛程列表"
+      },
+      {
+        "name": "ScheduleMatchMode",
+        "title": "匹配赛程"
+      },
+      {
+        "name": "ScheduleTab",
+        "title": "赛程标签页"
+      },
+      {
+        "name": "ScheduleTree",
+        "title": "赛程树"
+      }
+    ]
+  },
+  "hor": {
+    "name": "Hor Components",
+    "title": "横版组件",
+    "list": [
+      {
+        "name": "HorAwardExplain",
+        "title": "横版奖励说明"
+      },
+      {
+        "name": "HorDialog",
+        "title": "横版弹窗"
+      },
+      {
+        "name": "HorMatchHeader",
+        "title": "横版赛事头部"
+      },
+      {
+        "name": "HorMatchIndex",
+        "title": "横版赛事首页",
+        "style": {
+          "navigationStyle": "custom"
+        }
+      },
+      {
+        "name": "HorOwnerIndex",
+        "title": "横版赛事首页",
+        "style": {
+          "navigationStyle": "custom"
+        }
+      },
+      {
+        "name": "HorOwnerTheme",
+        "title": "横版赛事列表",
+        "style": {
+          "navigationStyle": "custom"
+        }
+      },
+      {
+        "name": "HorRule",
+        "title": "横版规则弹窗"
+      },
+      {
+        "name": "HorScheduleManage",
+        "title": "横版赛程管理",
+        "style": {
+          "navigationStyle": "custom"
+        }
+      },
+      {
+        "name": "HorSwiperLight",
+        "title": "精彩集锦弹窗"
+      },
+      {
+        "name": "HorTask",
+        "title": "横版任务",
+        "style": {
+          "navigationStyle": "custom"
+        }
+      }
+    ]
+  },
+  "login": {
+    "name": "Login Components",
+    "title": "登录组件",
+    "list": [
+      {
+        "name": "AuthLogin",
+        "title": "授权登录"
+      },
+      {
+        "name": "BindLogin",
+        "title": "绑定登录"
+      },
+      {
+        "name": "MobileLogin",
+        "title": "移动端登录"
+      },
+      {
+        "name": "PCLogin",
+        "title": "PC登录"
+      },
+      {
+        "name": "PCScanLogin",
+        "title": "PC扫码登录"
+      }
+    ]
+  },
+  "act": {
+    "name": "Act Components",
+    "title": "活动组件",
+    "list": [
+      {
+        "name": "ActBenefitItem",
+        "title": "福利列表项"
+      },
+      {
+        "name": "ActExplainDialog",
+        "title": "活动规则弹窗"
+      },
+      {
+        "name": "ActLaunchDialog",
+        "title": "拉起弹窗"
+      },
+      {
+        "name": "ActQRCodeDialog",
+        "title": "二维码弹窗"
+      },
+      {
+        "name": "ActStoreItem",
+        "title": "商户列表项"
+      },
+      {
+        "name": "ActTipDialog",
+        "title": "活动提示弹窗"
+      }
+    ]
+  },
+  "exchange": {
+    "name": "Exchange Components",
+    "title": "物品兑换",
+    "list": [
+      {
+        "name": "ActAwardDialog",
+        "title": "奖励弹窗"
+      },
+      {
+        "name": "ActBarcodeDialog",
+        "title": "核销码弹窗"
+      },
+      {
+        "name": "ActGetAwardDialog",
+        "title": "恭喜获得弹窗"
+      },
+      {
+        "name": "ActInputAddressDialog",
+        "title": "填写地址弹窗"
+      },
+      {
+        "name": "ActInputPhoneDialog",
+        "title": "填写手机弹窗"
+      },
+      {
+        "name": "ActInputQQ",
+        "title": "输入QQ弹窗"
+      },
+      {
+        "name": "ActModifyPhoneDialog",
+        "title": "修改手机弹窗"
+      },
+      {
+        "name": "ActNotAchievedDialog",
+        "title": "领取失败弹窗"
+      },
+      {
+        "name": "ActPromptDialog",
+        "title": "活动提示弹窗"
+      },
+      {
+        "name": "ActSelectAward",
+        "title": "选择奖励弹窗"
+      }
+    ]
+  },
+  "goods": {
+    "name": "Goods Components",
+    "title": "物品详情",
+    "list": [
+      {
+        "name": "ActGoodsDetailBarcode",
+        "title": "物品条形码"
+      },
+      {
+        "name": "ActGoodsDetailCode",
+        "title": "物品兑换码"
+      },
+      {
+        "name": "ActGoodsDetailDesc",
+        "title": "物品介绍"
+      },
+      {
+        "name": "ActGoodsDetailMain",
+        "title": "物品详情"
+      },
+      {
+        "name": "ActGoodsDetailMeta",
+        "title": "物品元信息"
+      },
+      {
+        "name": "ActGoodsDetailPrimaryButton",
+        "title": "主按钮"
+      },
+      {
+        "name": "ActGoodsDetailQRCode",
+        "title": "物品二维码"
+      },
+      {
+        "name": "ActGoodsDetailSecondaryButton",
+        "title": "次按钮"
+      },
+      {
+        "name": "ActGoodsDetailSelect",
+        "title": "物品自选"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../common/style/act/mixin/mixin.scss";
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__btn {
+    position: relative;
+    display: block;
+  }
+
+  &.press__btn--maxlarge-primary {
+    display: inline-block;
+    margin: 0 0.16rem;
+    width: 3.34rem;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    font-size: 0.24rem;
+    text-align: center;
+    clip-path: polygon(5% 0, 100% 0, 100% 85%, 95% 100%, 0 100%, 0 15%);
+    background-color: #1e72ff;
+    color: #ffffff;
+  }
+}

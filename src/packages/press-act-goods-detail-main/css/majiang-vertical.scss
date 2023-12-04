@@ -1,0 +1,70 @@
+@import '../../common/style/act/button/button-majiang-vertical';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__buttons {
+    justify-content: space-around;
+  }
+
+  &.press__main {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__info {
+    background: #fff;
+  }
+
+  .press__info {
+    flex: 1;
+    overflow-y: scroll;
+  }
+
+  .press__button-wrap {
+    padding: .32rem .96rem;
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    border-top: 1px solid rgba(246, 246, 246, .5);
+  }
+
+  .press__buttons {}
+
+  .press__btn {
+    display: block;
+    height: .8rem;
+    line-height: .8rem;
+  }
+
+  .press__btn--large-secondary {
+    width: 1.28rem;
+    height: .8rem;
+    line-height: .8rem;
+    display: inline-block;
+    text-align: center;
+    font-size: .28rem;
+    color: #893a0b;
+    background-image: linear-gradient(135deg, #8ff7b8 0%, #65d8a5 100%);
+    color: #285d6d;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  .press__btn--maxlarge-primary {
+    width: 5.6rem;
+    height: .8rem;
+    line-height: .8rem;
+    margin: 0 .2rem;
+  }
+
+  .press__extra {
+    color: #999;
+    font-size: .24rem;
+    line-height: .34rem;
+    padding: .16rem .32rem;
+  }
+}

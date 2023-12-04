@@ -1,0 +1,82 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-gp.scss';
+@import '../../common/style/act/button/_button-gp.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: .36rem 0 0 .3rem;
+  }
+
+  .press__info {
+    padding-right: .14rem;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__button-wrap {
+    padding: .1rem 0 0;
+    height: .8rem;
+    flex-basis: .8rem;
+  }
+
+  // 额外信息+声明
+  .press__extra {
+    font-size: .16rem;
+    color: #737a80;
+    overflow: hidden;
+  }
+
+  .press__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: .2rem;
+
+    a {
+      &:nth-of-type(2) {
+        margin-left: .4rem;
+      }
+    }
+  }
+
+  .press__btn--maxlarge-primary {
+    display: block;
+    width: 1.72rem;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .22rem;
+    color: #5a350a;
+    text-align: center;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/primary-large-btn-bg.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  .press__btn--large-secondary {
+    display: block;
+    width: 1.72rem;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .22rem;
+    color: #d6d7d8;
+    text-align: center;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/secondary-large-btn-bg.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  .press__btn--long-primary {
+    display: block;
+    font-size: .22rem;
+    color: #5a350a;
+    text-align: center;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/card/privilege-btn-l.png) no-repeat center center;
+    background-size: 100% 100%;
+    width: 4.4rem;
+    height: .6rem;
+    line-height: .6rem;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../common/style/act/button/button-majiang-vertical';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__btn {
+    display: block;
+    height: .8rem;
+    line-height: .8rem;
+  }
+
+  &.press__btn--maxlarge-primary {
+    width: 5.6rem;
+    height: .8rem;
+    line-height: .8rem;
+    margin: 0 .2rem;
+  }
+}

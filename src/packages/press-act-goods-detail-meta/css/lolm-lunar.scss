@@ -1,0 +1,45 @@
+.press-act:not(.press-act--hidden-tip) {
+  &.press__meta {
+    width: 4rem;
+    flex-basis: 4rem;
+    text-align: center;
+    padding: .8rem 0 0;
+  }
+
+  .press__img {
+    width: 2rem;
+    height: 2rem;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &+.press__name {
+      font-size: .24rem;
+      color: #f0e6d2;
+      text-align: center;
+      line-height: .34rem;
+      margin: .24rem 0 0;
+    }
+  }
+
+  .press__icon-status {
+    width: 1.58rem;
+    height: 1.42rem;
+    position: absolute;
+    bottom: .6rem;
+    right: .6rem;
+
+    &.press__icon-status--used {
+      background: url(https://image-1251917893.cos.ap-guangzhou.myqcloud.com/tip-project/lgame/ingame-lolm/icon-used.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.press__icon-status--expired {
+      background: url(https://image-1251917893.cos.ap-guangzhou.myqcloud.com/tip-project/lgame/ingame-lolm/icon-expired.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+}

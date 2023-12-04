@@ -1,0 +1,27 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-nba.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__list {
+    padding: .3rem .4rem;
+    background: $color-black-4;
+    margin-bottom: .15rem;
+  }
+
+  .press__item {
+    display: flex;
+    align-items: flex-start;
+    margin: .3rem 0rem;
+
+    span {
+      min-width: 1.1rem;
+      color: $color-yellow-3;
+    }
+  }
+
+  .press__text {
+    color: $color-white-4;
+    margin-left: .1rem;
+    overflow-x: scroll;
+  }
+}

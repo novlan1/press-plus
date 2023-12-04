@@ -1,0 +1,116 @@
+/* +++++++++++++++组件+++++++++++++宝箱奖品:tip-comp-goods-detail-select |start */
+.press-act:not(.press-act--hidden-tip) {
+  .press__select-wrap {
+    padding: .3rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /* 奖励介绍 */
+  .press__select-wrap span {
+    font-weight: bold;
+    font-size: .24rem;
+    color: #303030;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+
+  /* 列表 */
+  .press__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 6.76rem;
+    min-height: 1.76rem;
+    overflow-x: auto;
+    background: #FCF3DD;
+    margin-left: 0.1rem;
+    flex-wrap: nowrap;
+  }
+
+  .press__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.16rem;
+    flex-shrink: 0;
+  }
+
+  .press__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.76rem;
+    height: 0.76rem;
+    box-sizing: border-box;
+  }
+
+  .press__image {
+    width: 0.76rem;
+    height: 0.76rem;
+  }
+
+  .press__texts {
+    text-align: center;
+    font-size: 0.2rem;
+    /* line-height: 0.32rem; */
+    color: #303030;
+    overflow: hidden;
+  }
+
+  .press__text {
+    display: inline-block;
+    width: 1.4rem;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+  }
+
+  /* 个体详细奖励名小气泡------------- start */
+  .press__float-window {
+    position: absolute;
+    transform: translate(0.2rem, -0.3rem);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    max-width: 3.02rem;
+    max-height: 1.16rem;
+    color: #fff;
+    padding: 0.16rem;
+    border-radius: 4px;
+    background: rgba(26, 27, 48, 0.70);
+    z-index: 10;
+  }
+
+
+  .press__item:hover .press__float-window {
+    display: flex;
+  }
+
+  .press__float-text {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    max-width: 2.88rem;
+    font-size: .2rem;
+    line-height: 1.5;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  /* 个体详细奖励名小气泡------------- end */
+  /* +++++++++++++++组件+++++++++++++宝箱奖品: tip-comp-goods-detail-select |end */
+}

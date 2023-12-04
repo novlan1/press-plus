@@ -1,0 +1,12 @@
+@import '../../common/style/act/button/_button-lolm.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__btn--large-secondary {
+    background: url('https://image-1251917893.file.myqcloud.com/tip-project/lgame/lunar/ingame/btn_subordinate_big.png') center center no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    width: 2.4rem;
+    height: .56rem;
+    color: #f3abab;
+  }
+}

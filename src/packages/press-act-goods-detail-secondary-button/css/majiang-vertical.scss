@@ -1,0 +1,23 @@
+@import '../../common/style/act/button/button-majiang-vertical';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__btn {
+    display: block;
+    height: .8rem;
+    line-height: .8rem;
+  }
+
+  .press__btn--large-secondary {
+    width: 1.28rem;
+    height: .8rem;
+    line-height: .8rem;
+    display: inline-block;
+    text-align: center;
+    font-size: .28rem;
+    color: #893a0b;
+    background-image: linear-gradient(135deg, #8ff7b8 0%, #65d8a5 100%);
+    color: #285d6d;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+}

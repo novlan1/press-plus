@@ -1,0 +1,57 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__meta {
+    height: 3.38rem;
+    background: rgba(234, 224, 177, .4);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .press__info {
+    width: 100%;
+  }
+
+  .press__img {
+    border: 1px solid #fff;
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    margin: .48rem auto .08rem;
+  }
+
+  .press__name {
+    color: #7B69F6;
+    font-size: .32rem;
+    line-height: .4rem;
+    margin-bottom: .169rem;
+    display: block;
+    text-align: center;
+  }
+
+  .tip-comp-goods-detail--limit-time {
+    color: #999;
+    font-size: .24rem;
+    line-height: .34rem;
+    display: block;
+    text-align: center;
+  }
+
+  .press__icon-status {
+    width: 1.68rem;
+    height: 1.68rem;
+    position: absolute;
+    bottom: .3rem;
+    right: .3rem;
+
+    &.press__icon-status--used {
+      background: url(https://game.gtimg.cn/images/user/m/webigame2019/label-ysy.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.press__icon-status--expired {
+      background: url(https://game.gtimg.cn/images/user/m/webigame2019/label-ygq.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+}

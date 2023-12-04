@@ -1,0 +1,77 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-gp.scss';
+
+$leftslide-bg-url: 'https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/card-bag-bg.png';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__meta {
+    position: relative;
+    display: block;
+    width: 2.88rem;
+    height: 5.9rem;
+    padding: 0;
+
+    @include bg-img($leftslide-bg-url, center top, 100% auto);
+  }
+
+  .press__info {
+    text-align: center;
+    padding-top: .16rem;
+  }
+
+  .press__img {
+    @include img-size(1.28rem, 1.28rem);
+  }
+
+  .press__name {
+    width: 100%;
+    font-size: $font-xxs;
+    color: #212124;
+    text-align: left;
+    margin-top: .64rem;
+    padding-left: .36rem;
+    padding-right: .24rem;
+    text-align: left;
+  }
+
+  .press__tag {
+    display: block;
+    width: 100%;
+    font-size: $font-m;
+    font-weight: 600;
+    color: #d2792a;
+    text-align: left;
+    margin-top: .1rem;
+    text-align: left;
+  }
+
+  .tip-comp-goods-detail--limit-time {
+    width: 100%;
+    font-size: $font-xxxs;
+    color: #737a80;
+    text-align: left;
+    margin-top: .1rem;
+    padding-left: .36rem;
+    padding-right: .24rem;
+  }
+
+  .press__icon-status {
+    position: absolute;
+    right: 0;
+    bottom: .28rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include img-size(1.91rem, 1.84rem, block);
+  }
+
+  .press__icon-status--used {
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/used.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  .press__icon-status--expired {
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/expired.png) no-repeat center center;
+    background-size: contain;
+  }
+}

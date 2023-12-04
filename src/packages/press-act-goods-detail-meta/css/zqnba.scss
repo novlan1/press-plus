@@ -1,0 +1,61 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-nba.scss';
+
+$leftslide-bg-url: 'https://image-1251917893.file.myqcloud.com/2020/a20200707NBA/detail-left.png';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__meta {
+    // width: 3.2rem;
+    height: auto;
+    padding: 0rem;
+    flex: 0 0 24.44%;
+    position: unset;
+    display: block;
+
+    @include bg-img($leftslide-bg-url, top center, 100% auto);
+  }
+
+  .press__info {
+    text-align: center;
+    padding-top: .7rem;
+  }
+
+  .press__img {
+    @include img-size(1.5rem, 1.5rem);
+  }
+
+  .press__name {
+    line-height: .42rem;
+    font-size: .3rem;
+    color: $color-white;
+    letter-spacing: -.45px;
+    font-weight: bold;
+    margin-top: .16rem;
+    width: 80%;
+    margin: .16rem auto 0rem;
+  }
+
+  .tip-comp-goods-detail--limit-time {
+    font-size: .22rem;
+    letter-spacing: 0;
+    line-height: $font-l;
+    color: #ccc;
+  }
+
+  .press__icon-status {
+    margin: 25% auto;
+    background-image: url(https://image-1251917893.file.myqcloud.com/2020/a20200707NBA/alreadyUsed.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include img-size(2.2rem, 1.84rem, block);
+  }
+
+  .press__icon-status--used {
+    background-image: url(https://image-1251917893.file.myqcloud.com/2020/a20200707NBA/alreadyUsed.png);
+  }
+
+  .press__icon-status--expired {
+    background-image: url(https://image-1251917893.file.myqcloud.com/2020/a20200707NBA/expired.png);
+  }
+}

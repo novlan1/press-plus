@@ -1,0 +1,14 @@
+@import '../../common/style/act/button/button-lolm-vertical';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__btn {
+    display: block;
+    height: .8rem;
+    line-height: .8rem;
+  }
+
+  .press__btn--large-secondary {
+    width: 1.28rem;
+    height: .8rem;
+  }
+}

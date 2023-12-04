@@ -1,0 +1,54 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+@import '../../common/style/act/layout/_layout-smoba.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__list {
+    flex: 1;
+    background: #fff;
+  }
+
+  .press__item {
+    padding: .32rem;
+    border-bottom: 1px solid rgba(223, 226, 234, .5);
+    color: $color-black;
+    font-size: .28rem;
+    line-height: .4rem;
+    position: relative;
+    display: flex;
+
+    span {
+      display: block;
+      width: 1.4rem;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .press__text {
+      flex: 1;
+      color: $color-gray;
+      line-height: .44rem;
+      word-break: break-all;
+      overflow: hidden;
+
+      p {
+        line-height: .44rem;
+      }
+    }
+
+    .press__modify-buttons {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .press__modify-button {
+      width: auto;
+      font-size: .24rem;
+      color: $color-primary;
+      margin-left: .1rem;
+      display: inline-block;
+      padding: 0rem .1rem;
+      line-height: .44rem;
+    }
+  }
+}

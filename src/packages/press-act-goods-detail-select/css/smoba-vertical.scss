@@ -1,0 +1,119 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-smoba.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__box {
+    padding: .3rem .2rem .3rem .4rem;
+    border-bottom: 1px solid rgba(223, 226, 234, .5);
+    color: $color-black;
+    background-color: #fff;
+    font-size: .28rem;
+    line-height: .4rem;
+    position: relative;
+  }
+
+  .press__select-wrap span {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+  }
+
+  .press__float-window {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 3.08rem;
+    max-height: 1.16rem;
+    font-size: .24rem;
+    color: #fff;
+    border-radius: .08rem;
+    background-color: rgba(26, 27, 48, .75);
+    transform: translateY(calc(-100% - 1.90rem));
+  }
+
+  .press__item:nth-child(4n) .press__float-window {
+    transform: translate(calc(-100% + 1.60rem), calc(-100% - 1.90rem));
+  }
+
+  .press__item:hover .press__float-window {
+    display: flex;
+  }
+
+  .press__float-text {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: .08rem;
+    max-width: 2.88rem;
+    font-size: .20rem;
+    line-height: 1.5;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  /* 物品自选功能 start */
+  .press__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: .20rem;
+    width: 100%;
+  }
+
+  .press__item {
+    display: inline-block;
+    overflow: hidden;
+    height: 2.10rem;
+    margin-right: .08rem;
+    margin-bottom: .08rem;
+    background-color: $color-gray-7;
+  }
+
+  .press__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.60rem;
+    height: 1.60rem;
+    border: .02rem solid $color-gray-7;
+    background-color: $color-gray-7;
+    box-sizing: border-box;
+  }
+
+  .press__image {
+    max-height: 1.20rem;
+    max-width: 1.20rem;
+  }
+
+  .press__texts {
+    width: 1.60rem;
+    height: .32rem;
+    text-align: center;
+    font-size: .20rem;
+    line-height: .32rem;
+    color: $color-black;
+    background-color: $color-gray-7;
+    overflow: hidden;
+  }
+
+  .press__text {
+    display: inline-block;
+    width: 1.40rem;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+  }
+
+  /* 物品自选功能 end */
+}

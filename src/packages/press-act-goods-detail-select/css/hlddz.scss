@@ -1,0 +1,113 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-gp.scss';
+
+/* 物品自选功能 start */
+.press-act:not(.press-act--hidden-tip) {
+  .press__select-wrap {
+    position: relative;
+    padding: 0.3rem 0.32rem;
+    margin-bottom: 0.14rem;
+  }
+
+  .press__select-wrap span {
+    min-width: 1.1rem;
+    color: #ecf4ff;
+    font-weight: bold;
+  }
+
+  .press__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: .20rem;
+    width: 100%;
+  }
+
+  .press__item {
+    display: inline-block;
+    overflow: hidden;
+    height: 2.18rem;
+    margin-right: .12rem;
+    margin-bottom: .08rem;
+  }
+
+  .press__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.60rem;
+    height: 1.60rem;
+    border-radius: .04rem;
+    border: .02rem solid #E9EEF5;
+    background-color: #E9EEF5;
+    box-sizing: border-box;
+  }
+
+  .press__image {
+    max-height: 1.6rem;
+    max-width: 1.6rem;
+  }
+
+  .press__texts {
+    width: 1.60rem;
+    height: .52rem;
+    text-align: center;
+    font-size: .24rem;
+    line-height: .52rem;
+    color: #455278;
+    overflow: hidden;
+  }
+
+  .press__text {
+    display: inline-block;
+    width: 1.52rem;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+  }
+
+  .press__float-window {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 3.08rem;
+    max-height: 1.16rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+    transform: translateY(calc(-100% - 2.12rem));
+    z-index: 10;
+  }
+
+  // .press__item:nth-child(4n) .press__float-window {
+  //   transform: translate(calc(-100% + 1.6rem), calc(-100% - 2.12rem));
+  // }
+
+  .press__item:hover .press__float-window {
+    display: flex;
+  }
+
+  .press__float-text {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: .08rem;
+    max-width: 2.88rem;
+    font-size: .2rem;
+    line-height: 1.5;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  /* 物品自选功能 end */
+}

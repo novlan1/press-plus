@@ -1,0 +1,17 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-hlddz.scss';
+@import '../../common/style/act/button/_button-hlddz.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__btn--large-secondary {
+    width: 2.14rem;
+    height: .74rem;
+    line-height: .64rem;
+    color: #3e53bb;
+    font-size: .28rem;
+    font-weight: 600;
+    text-align: center;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/hlddz/version3D/img/btn-b-214.png) no-repeat center center;
+    background-size: contain;
+  }
+}

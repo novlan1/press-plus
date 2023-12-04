@@ -1,0 +1,30 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+@import '../../common/style/act/layout/_layout-smoba.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__btn {
+    position: relative;
+  }
+
+  .press__btn--large-secondary {
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: .88rem;
+    font-size: $font-l;
+    color: $color-primary;
+    padding: 0 .32rem;
+    border-width: .02rem;
+    border-style: solid;
+    border-color: $color-primary;
+    border-radius: .08rem;
+
+    &:active {
+      background: $color-bg;
+      border-color: $color-blue;
+      color: $color-blue;
+    }
+  }
+}

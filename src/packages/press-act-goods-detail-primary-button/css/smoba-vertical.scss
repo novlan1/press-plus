@@ -1,0 +1,52 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+@import '../../common/style/act/layout/_layout-smoba.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__btn {
+    position: relative;
+  }
+
+  &.press__btn--long-primary,
+  &.press__btn--maxlarge-primary {
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: .88rem;
+    font-size: $font-l;
+    color: $color-white;
+    margin: 0 .2rem;
+    border-radius: .08rem;
+    background-image: $color-primary-btn;
+
+    &::after {
+      position: absolute;
+      top: .08rem;
+      right: 0;
+      content: '';
+      width: 1.86rem;
+      height: .3rem;
+      background: url(https://image-1251917893.file.myqcloud.com/Esports/new/user/large-btn-bg-r.png) no-repeat center;
+      background-size: contain;
+      pointer-events: none;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      width: 1.86rem;
+      height: .3rem;
+      background: url(https://image-1251917893.file.myqcloud.com/Esports/new/user/large-btn-bg-l.png) no-repeat center;
+      background-size: contain;
+      pointer-events: none;
+    }
+
+    &:active {
+      background: $color-blue;
+    }
+  }
+}

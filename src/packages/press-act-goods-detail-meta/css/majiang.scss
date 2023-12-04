@@ -1,0 +1,99 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-majiang.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__meta {
+    height: auto;
+    padding: 0rem;
+    background: none;
+    flex: 0 0 30%;
+    position: unset;
+    display: block;
+  }
+
+  .press__info {
+    text-align: center;
+    padding-top: .7rem;
+  }
+
+  .press__img {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: .08rem;
+    margin: 0 auto;
+  }
+
+  .press__name {
+    line-height: .42rem;
+    font-size: .3rem;
+    color: #5668a1;
+    letter-spacing: -.45px;
+    font-weight: bold;
+    margin-top: .16rem;
+    width: 80%;
+    margin: .16rem auto 0rem;
+  }
+
+  .tip-comp-goods-detail--limit-time {
+    font-size: .22rem;
+    letter-spacing: 0;
+    line-height: $font-l;
+    color: #525a90;
+  }
+
+  .press__icon-status {
+    margin: 25% auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include img-size(2.2rem, 1.84rem, block);
+  }
+
+  .press__icon-status--used {
+    background: url(https://image-1251917893.file.myqcloud.com/2020/a20200303dzStandTreat/icon-already.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  .press__icon-status--expired {
+    background: url(https://image-1251917893.file.myqcloud.com/2020/a20200303dzStandTreat/icon-overtime.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  .press__order {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0 .2rem;
+    height: .56rem;
+    border-radius: .56rem;
+    margin: 0 auto;
+    margin-top: .3rem;
+    background: rgba(255, 255, 255, .65);
+
+    a {
+      position: relative;
+      display: block;
+      color: #435466;
+      font-size: .24rem;
+      padding-left: .5rem;
+
+      &::after {
+        position: absolute;
+        left: .18rem;
+        top: .04rem;
+        content: '';
+        width: .24rem;
+        height: .24rem;
+        border-radius: .02rem;
+        background: rgba(125, 165, 181, .6);
+      }
+    }
+
+    &.active a {
+      &::after {
+        background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/majiang/image/icon/mj-gou.png) no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+}

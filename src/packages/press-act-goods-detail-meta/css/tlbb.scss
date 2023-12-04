@@ -1,0 +1,81 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__meta {
+    padding-right: .28rem;
+    padding-top: .6rem;
+  }
+
+  .press__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1.84rem;
+    text-align: center;
+    margin: auto;
+    background: url(https://image-1251917893.file.myqcloud.com/2021/act/tlbb/img/good-icon-bg.png) no-repeat top;
+    background-size: contain;
+  }
+
+  .press__img {
+    margin-top: .24rem;
+    background: #ccb17a;
+
+    @include img-size(1.2rem, 1.2rem);
+  }
+
+  .press__name {
+    font-size: .18rem;
+    color: #3d90a3;
+    letter-spacing: 0;
+    line-height: .28rem;
+    width: 100%;
+    margin: .36rem auto .2rem;
+  }
+
+  .tip-comp-goods-detail--limit-time {
+    font-size: .2rem;
+    color: #7aa1d0;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .press__icon-status {
+    position: absolute;
+    top: 0;
+    right: -.16rem;
+
+    @include img-size(1.08rem, .94rem, block);
+
+    &.press__icon-status--used {
+      background: url(https://image-1251917893.file.myqcloud.com/2021/act/tlbb/img/used-tag.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.press__icon-status--expired {
+      background: url(https://image-1251917893.file.myqcloud.com/2021/act/tlbb/img/expired-tag.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+  .press__order {
+    display: block;
+    height: .65rem;
+    line-height: .65rem;
+    margin-top: .24rem;
+
+    a {
+      display: block;
+      width: auto;
+      margin: auto;
+      color: #82a0cc;
+      font-size: .22rem;
+      padding-left: .46rem;
+      background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/pvp3.0/image/icon/icon-uncheck.png) no-repeat left center/.4rem .4rem;
+    }
+
+    &.active a {
+      background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/pvp3.0/image/icon/icon-check.png) no-repeat left center/.4rem .4rem;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__box {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: .32rem;
+    border-bottom: 1px solid rgba(246, 246, 246, .5);
+  }
+
+  .press__title {
+    min-width: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    color: #303030;
+    font-size: .28rem;
+    line-height: .4rem;
+  }
+
+  // start条形码二维码兑换
+  .press__exchange-code {
+    display: flex;
+    flex-direction: column;
+    width: 5.3rem;
+    color: #303030;
+    font-size: .28rem;
+    line-height: .4rem;
+    position: relative;
+  }
+
+  .press__exchange-box {
+    order: 1;
+    padding: .1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/pvp3.0/image/bg-barcode.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  .press__barcode {
+    min-width: 3.9rem;
+    position: relative;
+    text-align: center;
+    border-radius: 2px 0px 0px 2px;
+    overflow: hidden;
+
+    @include img-size(auto, 1.8rem, block, 0, 0, none);
+  }
+
+  .press__qr {
+    @include img-size(3.1rem, 3.1rem, block, 0, 0, none);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .press__exchange-tips {
+    order: 0;
+    color: #999;
+    font-size: .24rem;
+    line-height: .34rem;
+    display: block;
+
+    .press__qr-text {
+      color: #d49b38;
+      font-size: .28rem;
+      line-height: .4rem;
+      margin-bottom: .08rem;
+      display: block;
+    }
+  }
+
+  // end条形码二维码兑换
+}

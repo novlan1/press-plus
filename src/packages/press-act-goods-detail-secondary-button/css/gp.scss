@@ -1,0 +1,17 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-gp.scss';
+@import '../../common/style/act/button/_button-gp.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__btn--large-secondary {
+    display: block;
+    width: 1.72rem;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .22rem;
+    color: #d6d7d8;
+    text-align: center;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/secondary-large-btn-bg.png) no-repeat center center;
+    background-size: contain;
+  }
+}

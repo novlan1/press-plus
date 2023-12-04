@@ -1,0 +1,74 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-hlddz.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__title {
+    display: none;
+  }
+
+  &.press__box {
+    order: -1;
+  }
+
+  //  start二维码
+  .press__qr-exchange {
+    display: flex;
+    padding: .3rem .4rem;
+    border-bottom: 1px solid rgba(192, 219, 255, .6);
+  }
+
+  .ewm {
+    width: 1.72rem;
+    height: 1.72rem;
+    padding: .05rem;
+    background: $color-white;
+    border-radius: 0px 2px 2px 0px;
+  }
+
+  .press__qr-img {
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: .05rem;
+    background: $color-white;
+    border-radius: 0px 2px 2px 0px;
+    margin-right: .3rem;
+  }
+
+  .press__qr-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .press__qr-text {
+    font-size: $font-l;
+    color: $color-yellow;
+    line-height: .4rem;
+    margin: .1rem 0px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .press__tips,
+  .tip-comp-goods-detail--exchangecode-tips {
+    color: $color-white-1;
+
+    span {
+      color: $color-yellow;
+    }
+  }
+
+  .press__copy-num {
+    height: .7rem;
+    line-height: .7rem;
+    text-align: center;
+    color: $color-origin-2;
+    font-weight: bold;
+    background: $color-white-1;
+    margin-bottom: $font-xs;
+    border-radius: 2px;
+    font-size: $font-l;
+  }
+
+  //  end二维码
+}

@@ -1,0 +1,12 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-majiang.scss';
+@import '../../common/style/act/button/_button-majiang.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__btn--long-primary {
+    width: 4.24rem;
+    font-family: auto;
+    background: url(https://image-1251917893.file.myqcloud.com/2020/a20200423mahjong/btn/btn-gray-80.png) no-repeat center cener;
+    background-size: auto;
+  }
+}

@@ -1,0 +1,101 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__meta {
+    flex-basis: 3.38rem;
+    height: 3.38rem;
+    background: linear-gradient(315deg, #f7fdff 0%, #ffefd0 100%);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .press__info {
+    width: 100%;
+  }
+
+  .press__img {
+    border: 1px solid #fff;
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    margin: .48rem auto .08rem;
+  }
+
+  .press__name {
+    color: #ff9e74;
+    font-size: .32rem;
+    line-height: .4rem;
+    margin-bottom: .169rem;
+    display: block;
+    text-align: center;
+  }
+
+  .tip-comp-goods-detail--limit-time {
+    color: #999;
+    font-size: .24rem;
+    line-height: .34rem;
+    display: block;
+    text-align: center;
+  }
+
+  .press__icon-status {
+    width: 1.68rem;
+    height: 1.68rem;
+    position: absolute;
+    bottom: .3rem;
+    right: .3rem;
+
+    &.press__icon-status--used {
+      background: url(https://image-1251917893.cos.ap-guangzhou.myqcloud.com/TIP_XCX/user/mine/used.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.press__icon-status--expired {
+      background: url(https://image-1251917893.cos.ap-guangzhou.myqcloud.com/TIP_XCX/user/mine/overtime.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+  .press__order {
+    position: relative;
+    width: 2.6rem;
+    height: .48rem;
+    background: rgba(131, 140, 143, .2);
+    border-radius: .34rem;
+    margin: auto;
+
+    a {
+      position: relative;
+      display: block;
+      padding-left: .54rem;
+      line-height: .48rem;
+      font-size: .24rem;
+      color: #fff;
+      text-align: left;
+
+      &::after {
+        position: absolute;
+        left: .18rem;
+        top: .08rem;
+        content: '';
+        width: .32rem;
+        height: .32rem;
+        background: url(https://image-1251917893.file.myqcloud.com/2019/tip_storeActive/Icons-16-checkbox.png) no-repeat center center;
+        background-size: contain;
+      }
+    }
+
+    &.active a {
+      &::after {
+        position: absolute;
+        left: .18rem;
+        top: .12rem;
+        content: '';
+        width: .24rem;
+        height: .24rem;
+        background: url(https://image-1251917893.file.myqcloud.com/2019/tip_storeActive/icon-12-tick.png) no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+}

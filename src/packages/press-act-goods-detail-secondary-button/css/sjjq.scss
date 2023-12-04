@@ -1,0 +1,14 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__btn--large-secondary {
+    width: 1.8rem;
+    height: .5rem;
+    display: block;
+    line-height: .5rem;
+    text-align: center;
+    font-family: auto;
+    color: rgb(128, 64, 0);
+    font-size: .24rem;
+    background: url(https://image-1251917893.file.myqcloud.com/2021/act/tlbb/img/primary_long_btn_bg.png) no-repeat 100% 100%;
+    background-size: 100% 100%;
+  }
+}

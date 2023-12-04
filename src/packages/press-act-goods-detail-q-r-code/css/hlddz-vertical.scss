@@ -1,0 +1,74 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__box {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: .32rem;
+    border-bottom: 1px solid rgba(246, 246, 246, .5);
+  }
+
+  .press__title {
+    min-width: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    color: #303030;
+    font-size: .28rem;
+    line-height: .4rem;
+  }
+
+  .press__content {
+    flex: 1;
+  }
+
+  //  start二维码
+  .press__qr-exchange {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ewm {
+    border-radius: 0px 2px 2px 0px;
+  }
+
+  .press__qr-img {
+    border-radius: 0px 2px 2px 0px;
+    order: 1;
+  }
+
+  .press__qr-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 0;
+  }
+
+  .press__qr-text {
+    color: #ff7800;
+    font-size: .28rem;
+    line-height: .4rem;
+    margin-bottom: .08rem;
+
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      color: #26262a;
+      margin-right: .15rem;
+    }
+  }
+
+  .press__tips {}
+
+  .press__copy-num {
+    height: .7rem;
+    line-height: .7rem;
+    text-align: center;
+    border-radius: 2px;
+    color: #000;
+  }
+
+  //  end二维码
+}

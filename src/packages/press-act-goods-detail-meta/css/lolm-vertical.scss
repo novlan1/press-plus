@@ -1,0 +1,58 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__img {
+    border: 1px solid #fff;
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    margin: .48rem auto .08rem;
+    max-width: 100%;
+  }
+
+  .press__name {
+    color: #fff;
+    font-size: .32rem;
+    line-height: .4rem;
+    margin-bottom: .169rem;
+    display: block;
+    text-align: center;
+  }
+
+  .press__icon-status--used {
+    position: absolute;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-project/lgame/igame-lolm/tag-used.png) center center no-repeat;
+    background-size: 100% auto;
+    width: 1.4rem;
+    height: 1.4rem;
+    top: 1.16rem;
+    right: .3rem;
+  }
+
+  &.press__meta {
+    width: 100%;
+    height: 3.8rem;
+    background: #292a3c;
+    overflow: hidden;
+    top: 0;
+    z-index: 0;
+    position: relative;
+  }
+
+  .press__info {
+    height: 3.8rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+
+  .press__icon-status--expired {
+    width: 1.72rem;
+    height: 1.7rem;
+    position: absolute;
+    bottom: .3rem;
+    right: .3rem;
+    background: url('https://image-1251917893.file.myqcloud.com/tip-project/lgame/igame-lolm/tag-expired.png') center center no-repeat;
+    background-size: 100% auto;
+    opacity: .4;
+  }
+
+}

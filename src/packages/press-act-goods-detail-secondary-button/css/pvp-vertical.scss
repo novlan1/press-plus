@@ -1,0 +1,27 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__btn {
+    position: relative;
+    display: block;
+  }
+
+  .press__btn--large-secondary {
+    flex: 1 1 0%;
+    color: #fff;
+    width: 1.92rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    font-size: .28rem;
+    border-radius: 4px;
+    margin-left: .32rem;
+    background: linear-gradient(90deg, #DAA23A 1.16%, #AE6E2F 100%);
+  }
+
+  &.press__buttons {
+    .press__btn--large-secondary {
+      margin: 0 auto;
+    }
+  }
+}

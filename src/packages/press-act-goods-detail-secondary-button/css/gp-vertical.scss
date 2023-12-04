@@ -1,0 +1,22 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__btn {
+    position: relative;
+    display: block;
+  }
+
+  .press__btn--large-secondary {
+    display: block;
+    margin: 0 .16rem;
+    width: 2.2rem;
+    height: .64rem;
+    line-height: .6rem;
+    font-size: .24rem;
+    color: #d6d7d8;
+    text-align: center;
+    background: url(https://image-1251917893.file.myqcloud.com/2022/TIP-igame-H5/igame-gp/btn_secondary_dark.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}

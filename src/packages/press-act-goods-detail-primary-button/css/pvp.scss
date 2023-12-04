@@ -1,0 +1,14 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-pvp.scss';
+@import '../../common/style/act/button/_button-pvp.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__btn--long-primary {
+    flex: 1;
+    width: auto;
+    font-family: auto;
+    background: url(https://image-1251917893.file.myqcloud.com/2020/Tip-wsq/V3.0/img/btn/primary_long_btn_bg.png) no-repeat 100% 100%;
+    background-size: 100% 100%;
+    margin-right: .32rem;
+  }
+}

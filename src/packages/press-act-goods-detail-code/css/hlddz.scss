@@ -1,0 +1,50 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-hlddz.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__title {
+    display: none;
+  }
+
+  &.press__box {
+    order: -1;
+  }
+
+  // 复制数字兑换码
+  .press__copy-code {
+    padding: .3rem 0rem;
+    margin-bottom: .15rem;
+    border-bottom: 1px solid rgba(192, 219, 255, .6);
+  }
+
+  .press__copy-num {
+    height: .7rem;
+    line-height: .7rem;
+    text-align: center;
+    color: #f55e2f;
+    font-weight: bold;
+    background: #fff;
+    margin-bottom: $font-xs;
+    border-radius: .08rem;
+    font-size: $font-l;
+  }
+
+  .press__copy-tip {
+    font-size: $font-s;
+    color: $color-white-1;
+    line-height: .5rem;
+
+    span {
+      font-size: $font-m;
+      font-weight: bold;
+      color: $color-yellow;
+      display: block;
+      line-height: .5rem;
+    }
+
+    a {
+      font-weight: bold;
+      color: $color-yellow;
+    }
+  }
+}

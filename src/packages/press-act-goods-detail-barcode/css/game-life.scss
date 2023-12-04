@@ -1,0 +1,67 @@
+/* +++++++++++++++组件+++++++++++++ 条形+二维 兑换码:tip-comp-goods-detail-barcode |start */
+.press-act:not(.press-act--hidden-tip) {
+  .press__title {
+    display: none;
+  }
+
+  .press__exchange-code {
+    margin-bottom: 0.15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center
+  }
+
+  /* 条形码背景 */
+  .press__exchange-box {
+    height: 1.92rem;
+    padding: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/pvp3.0/image/bg-barcode.png) no-repeat center center;
+    background-size: contain
+  }
+
+  /* 条形码--外层 */
+  .press__barcode {
+    width: 3.8rem;
+    height: 1.2rem;
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    background: none;
+    position: relative;
+    text-align: center;
+    border-radius: 2px 0px 0px 2px;
+    overflow: hidden;
+    margin-right: 0.5rem
+  }
+
+  /* 二维码--外层 */
+  .press__qr {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    background: none
+  }
+
+  .press__qr-text {
+    font-size: .24rem;
+    color: #303030;
+    line-height: 0.4rem;
+    margin: 0.1rem 0px;
+    font-weight: bold
+  }
+
+  /* 兑换码出示与过期提醒 */
+  .press__exchange-tips {
+    color: #303030;
+    font-size: 0.2rem;
+    text-align: left;
+  }
+
+  /* +++++++++++++++组件+++++++++++++条形+二维 兑换码  tip-comp-goods-detail-barcode: |end */
+}

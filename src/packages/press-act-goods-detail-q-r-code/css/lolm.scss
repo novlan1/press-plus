@@ -1,0 +1,46 @@
+@import "../../common/style/act/mixin/mixin.scss";
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__title {
+    display: none;
+  }
+
+  &.press__box {
+    order: -1;
+  }
+
+  //  start二维码
+  .press__qr-exchange {
+    display: flex;
+    padding: 0.3rem 0.32rem;
+    margin-bottom: 0.14rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ewm {
+    border-radius: 0px 2px 2px 0px;
+    @include img-size(1.72rem, 1.72rem, inline-block, 0.05rem, 0px, #fff);
+  }
+
+  .press__qr-img {
+    border-radius: 0px 2px 2px 0px;
+    margin: 0 auto 0.1rem;
+    @include img-size(2.4rem, 2.4rem, inline-block, 0.05rem, 0px, #fff);
+  }
+
+  .press__qr-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .press__qr-text {
+    color: #f0e6d2;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    margin: 0 0 0.4rem 0;
+  }
+
+  //  end二维码
+}

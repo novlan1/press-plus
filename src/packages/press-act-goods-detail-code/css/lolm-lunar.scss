@@ -1,0 +1,72 @@
+.press-act:not(.press-act--hidden-tip) {
+  &.press__box {
+    color: #85817c;
+    line-height: .34rem;
+    font-size: .24rem;
+    margin: 0 0 .18rem 0;
+    display: flexbox;
+    display: flex;
+  }
+
+  .press__copy-tip {
+    color: #f0e6d2;
+    font-size: .28rem;
+    line-height: .4rem;
+    margin: 0 0 .4rem 0;
+  }
+
+  .press__copy-tip--num {
+    color: #85817c;
+    line-height: .34rem;
+    font-size: .24rem;
+
+    a {
+      color: #4d616c;
+    }
+  }
+
+  .press__title {
+    display: inline-block;
+    vertical-align: top;
+    width: 1.2rem;
+    -ms-flex-preferred-size: 1.2rem;
+    flex-basis: 1.2rem;
+  }
+
+  .press__copy-code {
+    display: flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    border-width: 0 0 1px 0;
+    margin: 0 auto 16px;
+  }
+
+  .press__copy-num {
+    margin: .1rem auto;
+    background-color: transparent;
+    background-image: url(https://image-1251917893.file.myqcloud.com/tip-project/lgame/lunar/ingame/top-tips-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #570c17;
+    vertical-align: middle;
+    font-size: .24rem;
+    width: 6.36rem;
+    height: 1rem;
+    line-height: 1rem;
+  }
+
+  .press__title {
+    display: none;
+  }
+
+}

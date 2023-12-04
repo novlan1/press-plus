@@ -1,0 +1,42 @@
+/* +++++++++++++++组件+++++++++++++ 二维码兑换使用步骤: tip-comp-goods-detail-qrcode  |start   */
+.press-act:not(.press-act--hidden-tip) {
+  .press__qr-exchange {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 0rem
+  }
+
+  /* 二维码 */
+  .press__qr-img {
+    width: 1.9rem;
+    height: 1.9rem;
+    display: block;
+    padding: .1rem;
+    border: 0px;
+    background: #fff;
+    margin: auto
+  }
+
+
+  /* 二维码提示 -- 保存与扫码 */
+  .press__qr-text {
+    font-size: .24rem;
+    color: #303030;
+    line-height: 0.4rem;
+    margin: 0.1rem 0px;
+    font-weight: bold
+  }
+
+  /* 文字 -- 使用步骤 */
+  .press__qr-right .press__step {
+    display: none;
+  }
+
+  /* 文字 -- 先到先得 */
+  .press__tips {
+    font-size: .2rem;
+    color: #303030
+  }
+
+  /* +++++++++++++++组件+++++++++++++二维码兑换使用步骤:tip-comp-goods-detail-qrcode |end  */
+}

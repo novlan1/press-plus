@@ -1,0 +1,118 @@
+.press-act:not(.press-act--hidden-tip) {
+  &.press__box {
+    padding: 0.3rem 0.32rem;
+    border-bottom: 0.02rem solid #ececec;
+    // 标题色
+    color: #9b9b9b;
+    background-color: #fff;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    position: relative;
+  }
+
+  .press__select-wrap span {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 0;
+  }
+
+  .press__float-window {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 3.08rem;
+    max-height: 1.16rem;
+    font-size: 0.24rem;
+    color: #fff;
+    border-radius: 0.08rem;
+    background-color: rgba(26, 27, 48, 0.75);
+    transform: translateY(calc(-100% - 1.9rem));
+  }
+
+  .press__item:nth-child(4n) .press__float-window {
+    transform: translate(calc(-100% + 1.6rem), calc(-100% - 1.9rem));
+  }
+
+  .press__item:hover .press__float-window {
+    display: flex;
+  }
+
+  .press__float-text {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin: 0.08rem;
+    max-width: 2.88rem;
+    font-size: 0.2rem;
+    line-height: 1.5;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  /* 物品自选功能 start */
+  .press__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0.2rem;
+    width: 100%;
+  }
+
+  .press__item {
+    display: inline-block;
+    overflow: hidden;
+    height: 2.1rem;
+    margin-right: 0.08rem;
+    margin-bottom: 0.08rem;
+    background-color: #f6f6f6;
+  }
+
+  .press__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 0.02rem solid #f6f6f6;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+  }
+
+  .press__image {
+    max-height: 1.2rem;
+    max-width: 1.2rem;
+  }
+
+  .press__texts {
+    width: 1.6rem;
+    height: 0.32rem;
+    text-align: center;
+    font-size: 0.2rem;
+    line-height: 0.32rem;
+    color: #303030;
+    background-color: #f6f6f6;
+    overflow: hidden;
+  }
+
+  .press__text {
+    display: inline-block;
+    width: 1.4rem;
+    margin: 0 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+  }
+
+  /* 物品自选功能 end */
+
+}

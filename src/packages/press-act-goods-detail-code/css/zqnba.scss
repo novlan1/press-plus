@@ -1,0 +1,43 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-nba.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__title {
+    display: none;
+  }
+
+  // 复制数字兑换码
+  .press__copy-code {
+    padding: .3rem .4rem;
+    background: $color-black-4;
+    margin-bottom: .15rem;
+  }
+
+  .press__copy-num {
+    height: .7rem;
+    line-height: .7rem;
+    text-align: center;
+    background: $color-brown-3;
+    margin-bottom: $font-xs;
+    border-radius: 2px;
+    font-size: $font-xl;
+    color: $color-ccc;
+  }
+
+  .press__copy-tip {
+    font-size: $font-s;
+    color: $color-bbb;
+    line-height: .5rem;
+
+    span {
+      font-size: $font-l;
+      color: $color-yellow-3;
+      display: block;
+      line-height: .5rem;
+    }
+
+    a {
+      color: $color-yellow-3;
+    }
+  }
+}

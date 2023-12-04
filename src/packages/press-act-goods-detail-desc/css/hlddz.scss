@@ -1,0 +1,38 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-hlddz.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__list {
+    margin-bottom: .15rem;
+  }
+
+  .press__item {
+    display: flex;
+    align-items: flex-start;
+    padding: .3rem 0rem;
+    border-bottom: 1px solid rgba(192, 219, 255, .6);
+
+    span {
+      min-width: 1.1rem;
+      color: #ecf4ff;
+      font-weight: bold;
+    }
+
+    // &:last-child {
+    //   border-bottom: 1px solid rgba(192, 219, 255, 0.6);
+    // }
+
+    .press__modify-button {
+      font-size: .24rem;
+      margin-left: .1rem;
+      display: inline-block;
+      padding: 0rem .1rem;
+    }
+  }
+
+  .press__text {
+    color: $color-white-4;
+    margin-left: .1rem;
+    overflow-x: scroll;
+  }
+}

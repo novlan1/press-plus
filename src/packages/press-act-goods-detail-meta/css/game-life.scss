@@ -1,0 +1,203 @@
+/* +++++++++++++++组件+++++++++++++右侧栏:tip-comp-goods-detail-left.vue组件 |start */
+.tip-act-current-display {
+  font-size: 0.2rem;
+  color: #303030;
+  letter-spacing: 0;
+  text-align: center;
+  width: 29%;
+  position: relative;
+}
+
+/* 1)核销状态 ----- start */
+.press-act:not(.press-act--hidden-tip) {
+  &.press__meta {
+    height: auto;
+    padding-top: 0.56rem;
+    background: none;
+    flex: 0 0 24.44%;
+    position: unset;
+    display: block;
+  }
+
+  .press__info {
+    height: 100%;
+    text-align: center;
+  }
+
+  /* 订阅 */
+  &.press__meta .press__order {
+    margin: 0.64rem auto 0;
+    text-align: left;
+  }
+
+  /* 券图片 */
+  .press__img {
+    width: 1.92rem;
+    height: 1.92rem;
+    display: inline-block;
+    padding: 0;
+    border: 0px;
+    background: none;
+    background: #35669e;
+    border: 1px solid #35669e;
+  }
+
+  /* 券名字 */
+  .press__name {
+    line-height: 0.3rem;
+    font-size: 0.24rem;
+    color: #303030;
+    letter-spacing: -0.45px;
+    font-weight: bold;
+    margin-top: 0.16rem;
+    width: 80%;
+    margin: 0.32rem auto 0rem;
+  }
+
+  /* 有效期 */
+  .tip-comp-goods-detail--limit-time {
+    font-size: 0.2rem;
+    letter-spacing: 0;
+    color: #303030;
+    margin-top: 0.1rem;
+  }
+
+  /* ？右上角盖章图片--定位 s */
+  .press__icon-status {
+    width: 1.68rem;
+    height: 1.68rem;
+    display: block;
+    padding: 0;
+    border: 0px;
+    background: none;
+    position: fixed;
+    bottom: 0.48rem;
+    right: 0;
+  }
+
+  /* 已使用 */
+  .press__icon-status.press__icon-status--used {
+    background: url(https://image-1251917893.file.myqcloud.com/tip-project/liebian-tlbb/goods-page/used-detail-icon.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  /* 已过期 */
+  .press__icon-status.press__icon-status--expired {
+    background: url(https://image-1251917893.file.myqcloud.com/tip-project/liebian-tlbb/goods-page/overtime-detail-icon.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  /* ？右上角盖章图片--定位 ed */
+  /* 1)核销状态 ----- end */
+
+  /* 2)二维码待解锁状态 ----- start */
+  /* 核销码最外层 */
+  .tip-comp-goods-detail-verification-box {
+    width: 3.2rem;
+    height: 4.26rem;
+    margin: auto;
+    padding: 0.15rem 0.3rem 0.25rem;
+    /* background-image: linear-gradient(0deg, #2370A6 0%, rgba(35, 112, 166, 0) 100%);
+  border: 0 solid rgba(88, 246, 255, 0.1); */
+    /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12); */
+    background: url(https://image-1251917893.file.myqcloud.com/tip-project/liebian-tlbb/goods-page/hxm-code-bg.png) no-repeat center top;
+    background-size: 100% auto;
+  }
+
+  /* 券名字 */
+  .tip-comp-goods-detail-verification-box .tip-comp-verification-name {
+    font-size: 0.24rem;
+    color: #303030;
+    letter-spacing: 0;
+    line-height: 0.24rem;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .tip-comp-verification-info p {
+    text-align: left;
+    margin-top: 0.08rem;
+  }
+
+  /* 二维码遮罩层 */
+  .tip-comp-goods-detail-verification-box .tip-comp-verification-code.tip-comp-verification-code-cover::before {
+    content: "";
+    background: rgba(206, 206, 206, 0.8503);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 8;
+  }
+
+  /* 二维码外层 */
+  .tip-comp-goods-detail-verification-box .tip-comp-verification-code {
+    padding: 0.16rem;
+    background: #fff;
+    border-radius: 2px;
+    margin-top: 0.4rem;
+    position: relative;
+  }
+
+  /* 二维码图片 */
+  .tip-comp-goods-detail-verification-box .tip-comp-verification-code .ewm {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-top: 0.16rem;
+    display: inline-block;
+    padding: 0.05rem;
+    border: 0px;
+    background: #fff;
+    border-radius: 0px 2px 2px 0px;
+  }
+
+  /* 待解锁文字区域 */
+  .tip-comp-goods-detail-verification-box .tip-comp-verification-code.tip-comp-verification-code-cover a {
+    font-family: FZLTHK--GBK1-0;
+    width: 1.1rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.2rem;
+    color: #fff;
+    background: #000;
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9;
+  }
+
+  /* 2)二维码待解锁状态 ----- end */
+  /* 3)领取提醒 ----------- s */
+  .press__order {
+    display: block;
+    margin-left: 0.3rem;
+    height: 0.65rem;
+    line-height: 0.65rem;
+  }
+
+  /* checkbox bg */
+  .press__order a {
+    width: 2.2rem;
+    display: block;
+    margin: auto;
+    color: #303030;
+    font-size: 0.22rem;
+    padding-left: 0.5rem;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-project/liebian-tlbb/goods-page/icon-uncheck.png) no-repeat left center/0.4rem 0.4rem;
+  }
+
+  /* checkbox active-bg */
+  .press__order.active a {
+    background: url(https://image-1251917893.file.myqcloud.com/tip-project/liebian-tlbb/goods-page/icon-check.png) no-repeat left center/0.4rem 0.4rem;
+  }
+
+  /* 3)领取提醒 ----------- ed */
+  /* +++++++++++++++组件+++++++++++++ 右侧栏:tip-comp-goods-detail-left.vue组件  |end */
+
+}

@@ -1,0 +1,27 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-hlddz.scss';
+@import '../../common/style/act/button/_button-hlddz.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__btn--maxlarge-primary {
+    width: 2.14rem;
+    height: .74rem;
+    line-height: .64rem;
+    font-size: .28rem;
+    color: #8c5337;
+    font-weight: 600;
+    text-align: center;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/hlddz/version3D/img/btn-m-214.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  &.press__btn--long-primary {
+    padding: 0 .4rem;
+    width: 4.14rem;
+    height: .74rem;
+    line-height: .64rem;
+    white-space: nowrap;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/hlddz/version3D/img/btn-xlarge-primary.png) no-repeat center center;
+    background-size: contain;
+  }
+}

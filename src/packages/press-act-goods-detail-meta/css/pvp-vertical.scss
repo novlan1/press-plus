@@ -1,0 +1,111 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__meta {
+    position: relative;
+    width: 100%;
+    height: 4.8rem;
+    background: #fff url(https://image-1251917893.file.myqcloud.com/Tip-wss/goods/bg.png) no-repeat center;
+    background-size: 100% 100%;
+  }
+
+  .press__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 1.2rem;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 1.2rem;
+      content: '';
+      margin: auto;
+      width: 1.8rem;
+      height: 1.8rem;
+      background: url(https://image-1251917893.file.myqcloud.com/Tip-wss/goods/img-bg.png) no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .press__img {
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 auto;
+  }
+
+  .press__name {
+    color: #ffd363;
+    font-size: .36rem;
+    font-weight: bold;
+    margin-top: .24rem;
+    margin-bottom: .16rem;
+    text-align: center;
+  }
+
+  .press__icon-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.31rem;
+    height: 2.28rem;
+
+    &.press__icon-status--used {
+      background: url(https://image-1251917893.file.myqcloud.com/Tip-wss/goods/used.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.press__icon-status--expired {
+      background: url(https://image-1251917893.file.myqcloud.com/Tip-wss/goods/out.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+  .press__order {
+    position: relative;
+    min-width: 2.56rem;
+    height: .48rem;
+    padding: 0 .24rem;
+    background: #22456b;
+    border-radius: .48rem;
+    margin: 0 auto;
+
+    a {
+      position: relative;
+      display: block;
+      font-size: .24rem;
+      color: #fff;
+      line-height: .48rem;
+      padding-left: .34rem;
+      white-space: nowrap;
+
+      &::after {
+        position: absolute;
+        left: 0;
+        top: .08rem;
+        content: '';
+        width: .32rem;
+        height: .32rem;
+        background: url(https://image-1251917893.file.myqcloud.com/Tip-wss/goods/check.png) no-repeat center center;
+        background-size: contain;
+      }
+    }
+
+    &.active a {
+      &::after {
+        position: absolute;
+        left: 0;
+        top: .08rem;
+        content: '';
+        width: .32rem;
+        height: .32rem;
+        background: url(https://image-1251917893.file.myqcloud.com/Tip-wss/goods/checked.png) no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+}

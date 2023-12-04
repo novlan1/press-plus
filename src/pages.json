@@ -1,0 +1,497 @@
+{
+  "leftWindow": {
+    "path": "windows/left-window.vue",
+    "style": {
+      "width": "350px"
+    },
+    "matchMedia": {
+      "minWidth": 1000
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "%index.title%"
+      }
+    },
+    {
+      "path": "pages/index/help",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/index/introduce",
+      "style": {
+        "navigationBarTitleText": "Press Plus"
+      }
+    },
+    {
+      "path": "pages/count-down/count-down",
+      "style": {
+        "navigationBarTitleText": "纪念日"
+      }
+    },
+    {
+      "path": "pages/count-down/new",
+      "style": {
+        "navigationBarTitleText": "纪念日"
+      }
+    },
+    {
+      "path": "pages/launch-app/launch-app",
+      "style": {
+        "navigationBarTitleText": "Launch App"
+      }
+    },
+    {
+      "path": "pages/launch-game/launch-game",
+      "style": {
+        "navigationBarTitleText": "Launch Game"
+      }
+    },
+    {
+      "path": "pages/share/share",
+      "style": {
+        "navigationBarTitleText": "分享"
+      }
+    },
+    {
+      "path": "pages/webview/webview",
+      "style": {
+        "navigationBarTitleText": "Press Plus"
+      }
+    }
+  ],
+  "subPackages": [
+  {
+    "root": "pages/press",
+    "pages": [
+      {
+        "path": "area/area",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "area-index-bar/area-index-bar",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "award-popup/award-popup",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "live-player/live-player",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "popup-cell/popup-cell",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "protocol/protocol",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "q-r-code-popup/q-r-code-popup",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "team-search/team-search",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "turntable/turntable",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "message-board/message-board",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "message-detail/message-detail",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "message-list/message-list",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "schedule-card/schedule-card",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "schedule-list/schedule-list",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "schedule-match-mode/schedule-match-mode",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "schedule-tab/schedule-tab",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "schedule-tree/schedule-tree",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "hor-award-explain/hor-award-explain",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "hor-dialog/hor-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "hor-match-header/hor-match-header",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "hor-match-index/hor-match-index",
+        "style": {
+          "navigationStyle": "custom",
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "hor-owner-index/hor-owner-index",
+        "style": {
+          "navigationStyle": "custom",
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "hor-owner-theme/hor-owner-theme",
+        "style": {
+          "navigationStyle": "custom",
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "hor-rule/hor-rule",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "hor-schedule-manage/hor-schedule-manage",
+        "style": {
+          "navigationStyle": "custom",
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "hor-swiper-light/hor-swiper-light",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "hor-task/hor-task",
+        "style": {
+          "navigationStyle": "custom",
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "auth-login/auth-login",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "bind-login/bind-login",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "mobile-login/mobile-login",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "p-c-login/p-c-login",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "p-c-scan-login/p-c-scan-login",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      }
+    ]
+  },
+  {
+    "root": "pages/act",
+    "pages": [
+      {
+        "path": "act-explain-dialog/act-explain-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-launch-dialog/act-launch-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-q-r-code-dialog/act-q-r-code-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-tip-dialog/act-tip-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-award-dialog/act-award-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-barcode-dialog/act-barcode-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-get-award-dialog/act-get-award-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-input-address-dialog/act-input-address-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-input-phone-dialog/act-input-phone-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-modify-phone-dialog/act-modify-phone-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-not-achieved-dialog/act-not-achieved-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-prompt-dialog/act-prompt-dialog",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      }
+    ]
+  },
+  {
+    "root": "pages/act-detail",
+    "pages": [
+      {
+        "path": "act-benefit-item/act-benefit-item",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-store-item/act-store-item",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-input-q-q/act-input-q-q",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-select-award/act-select-award",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-detail-barcode/act-goods-detail-barcode",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-detail-code/act-goods-detail-code",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-detail-desc/act-goods-detail-desc",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-detail-main/act-goods-detail-main",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-detail-meta/act-goods-detail-meta",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-detail-primary-button/act-goods-detail-primary-button",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-detail-q-r-code/act-goods-detail-q-r-code",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-detail-secondary-button/act-goods-detail-secondary-button",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-detail-select/act-goods-detail-select",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      }
+    ]
+  }
+],
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": [
+        "pages/press"
+      ]
+    }
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#465CFF",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/count-down/count-down",
+        "text": "纪念日",
+        // #ifdef H5
+        "iconPath": "https://mike-1255355338.cos.ap-guangzhou.myqcloud.com/article/2023/11/own_mike_8d658c18f01b32a2a1.png",
+        "selectedIconPath": "https://mike-1255355338.cos.ap-guangzhou.myqcloud.com/article/2023/11/own_mike_0b39f35c695c272a1f.png"
+        // #endif
+        // #ifndef H5
+        "iconPath": "static/tabbar/mod_default_3x.png",
+        "selectedIconPath": "static/tabbar/mod_selected_3x.png"
+        // #endif
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "组件",
+        // #ifdef H5
+        "iconPath": "https://mike-1255355338.cos.ap-guangzhou.myqcloud.com/article/2023/10/own_mike_778695a56389b1bcb5.png",
+        "selectedIconPath": "https://mike-1255355338.cos.ap-guangzhou.myqcloud.com/article/2023/10/own_mike_aede73416a7ac7c219.png"
+        // #endif
+        // #ifndef H5
+        "iconPath": "static/tabbar/assembly_default_3x.png",
+        "selectedIconPath": "static/tabbar/assembly_selected_3x.png"
+        // #endif
+      },
+      {
+        "pagePath": "pages/index/help",
+        "text": "帮助",
+        // #ifdef H5
+        "iconPath": "https://mike-1255355338.cos.ap-guangzhou.myqcloud.com/article/2023/10/own_mike_36d43d17e7ff46ae00.png",
+        "selectedIconPath": "https://mike-1255355338.cos.ap-guangzhou.myqcloud.com/article/2023/10/own_mike_0bcab918b51e5d4005.png"
+        // #endif
+        // #ifndef H5
+        "iconPath": "static/tabbar/my_default_3x.png",
+        "selectedIconPath": "static/tabbar/my_selected_3x.png"
+        // #endif
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Press Plus",
+    "navigationBarBackgroundColor": "#f7f8fa",
+    "backgroundColor": "#f5f5f5",
+    "h5": {
+      "maxWidth": 1190
+    },
+    "mp-weixin": {
+      "usingComponents": {}
+    },
+    "mp-qq": {
+      "usingComponents": {}
+    }
+  }
+}

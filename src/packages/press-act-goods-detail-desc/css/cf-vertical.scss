@@ -1,0 +1,44 @@
+@import "../../common/style/act/mixin/mixin.scss";
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__list {
+    flex: 1;
+  }
+
+  .press__item {
+    padding: 0.32rem;
+    border-bottom: 0.02rem solid #eae7e2;
+    color: #0e1722;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    position: relative;
+    display: flex;
+
+    span {
+      width: 1.4rem;
+      display: inline-block;
+      vertical-align: top;
+      color: #9b9b9b;
+      text-align: right;
+      letter-spacing: 0;
+    }
+
+    .press__text {
+      flex: 1;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .press__modify-buttons {
+      position: relative;
+    }
+
+    .press__modify-button {
+      font-size: .24rem;
+      color: #1e72ff;
+      margin-left: .1rem;
+      display: inline-block;
+      padding: 0rem .1rem;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import '../../common/style/act/mixin/mixin.scss';
+
+@import '../../common/style/act/layout/_layout-smoba.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__meta {
+    position: relative;
+    padding-bottom: .44rem;
+    padding-top: .44rem;
+    background-image: linear-gradient(to bottom, #336BCF, #339CE5);
+    overflow: hidden;
+  }
+
+  .press__info {
+    width: 100%;
+  }
+
+  .press__img {
+    display: block;
+    width: 1.12rem;
+    height: 1.12rem;
+    border-radius: .08rem;
+    margin: 0 auto .28rem;
+  }
+
+  .press__name {
+    color: $color-white;
+    font-size: .32rem;
+    line-height: .48rem;
+    text-align: center;
+  }
+
+  .press__icon-status {
+    width: 1.92rem;
+    height: 1.6rem;
+    position: absolute;
+    bottom: -.2rem;
+    right: -.34rem;
+
+    &.press__icon-status--used {
+      background: url(https://image-1251917893.file.myqcloud.com/Esports/new/user/used.png) no-repeat center center;
+      background-size: contain;
+    }
+
+    &.press__icon-status--expired {
+      background: url(https://image-1251917893.file.myqcloud.com/Esports/new/user/outed.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+  .press__order {
+    display: none;
+
+    a {
+      position: relative;
+      display: block;
+      padding-left: .54rem;
+      line-height: .48rem;
+      font-size: .24rem;
+      color: #fff;
+      text-align: left;
+
+      &::after {
+        position: absolute;
+        left: .18rem;
+        top: .08rem;
+        content: '';
+        width: .32rem;
+        height: .32rem;
+        background: url(https://image-1251917893.file.myqcloud.com/2019/tip_storeActive/Icons-16-checkbox.png) no-repeat center center;
+        background-size: contain;
+      }
+    }
+
+    &.active a {
+      &::after {
+        position: absolute;
+        left: .18rem;
+        top: .12rem;
+        content: '';
+        width: .24rem;
+        height: .24rem;
+        background: url(https://image-1251917893.file.myqcloud.com/2019/tip_storeActive/icon-12-tick.png) no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+}

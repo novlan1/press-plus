@@ -1,0 +1,41 @@
+@import '../../common/style/act/button/_button-lolm.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__main {
+    -webkit-box-flex: 1;
+    flex: 1;
+    flex: 1;
+    padding: 0 0 0 .74rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__info {
+    background: rgba(9, 23, 33, .5);
+    width: 100%;
+    height: 100%;
+    padding: .4rem .64rem .4rem;
+    overflow-y: auto;
+  }
+
+  .press__extra {
+    color: #4d616c;
+    line-height: .28rem;
+    font-size: .2rem;
+    margin: .33rem 0 0;
+  }
+
+  .press__button-wrap {
+    padding: .1rem 0 0;
+    height: .8rem;
+    -ms-flex-preferred-size: .8rem;
+    flex-basis: .8rem;
+    padding: .1rem;
+  }
+
+  .press__buttons {
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+  }
+}

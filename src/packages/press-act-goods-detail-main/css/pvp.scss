@@ -1,0 +1,65 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-pvp.scss';
+@import '../../common/style/act/button/_button-pvp.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__main {
+    position: relative;
+    width: 100%;
+    padding: .15rem .2rem .2rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: auto;
+    margin-bottom: 0.6rem;
+    z-index: 6;
+  }
+
+  .press__info {
+    color: #647a97;
+    font-size: .24rem;
+    line-height: .34rem;
+    letter-spacing: 0;
+    flex: 1;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // 额外信息+声明
+  .press__extra {
+    padding: .15rem .4rem 0rem;
+    color: $color-white;
+    overflow: hidden;
+    border-top: 1px solid #233756;
+  }
+
+  .press__extra p {
+    margin: .2rem 0rem;
+    text-align: center;
+  }
+
+  .press__button-wrap {
+    padding: .1rem 0 0;
+    border-top: unset;
+    height: .8rem;
+    flex-basis: .8rem;
+  }
+
+  .press__buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+
+    .press__btn--long-primary {
+      &:last-child {
+        flex: none;
+        width: 4.24rem;
+        margin-right: 0;
+      }
+    }
+  }
+}

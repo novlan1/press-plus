@@ -1,0 +1,91 @@
+@import '../../common/style/act/mixin/mixin.scss';
+@import '../../common/style/act/layout/_layout-gp.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  .press__title {
+    display: none;
+  }
+
+  &.press__box {
+    order: -1;
+  }
+
+  // start条形码二维码兑换
+  .press__exchange-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: .3rem .32rem;
+    margin-bottom: .14rem;
+    background: rgba(46, 52, 56, .8);
+    box-shadow: 0 0 10px 0 #b1bec6, inset 0 0 50px 0 rgba(255, 255, 255, .11), inset 0 0 0 0 #fff;
+  }
+
+  .press__exchange-box {
+    padding: .1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .press__barcode {
+    min-width: 3.6rem;
+    position: relative;
+    text-align: center;
+    border-radius: 2px 0px 0px 2px;
+    overflow: hidden;
+
+    @include img-size(auto, 1.72rem, inline-block, .16rem, 0px, $color-white);
+  }
+
+  .press__qr {
+    @include img-size(1.72rem, 1.72rem, inline-block, .05rem, 0px, $color-white);
+  }
+
+  .press__exchange-tips {
+    color: #d2d8dc;
+  }
+
+  .press__qr-text {
+    font-size: $font-xs;
+    color: #e4b853;
+    line-height: .4rem;
+    margin: .1rem 0px;
+    font-weight: bold;
+
+    span {
+      display: block;
+      margin: .1rem auto;
+      padding-left: .4rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: .02rem;
+        width: .32rem;
+        height: .32rem;
+        line-height: .32rem;
+        text-align: center;
+        font-size: $font-xs;
+        color: #e4b853;
+        background: #e4b853;
+      }
+
+      &.tip-comp-goods-detail-step-first::before {
+        content: '1';
+      }
+
+      &.tip-comp-goods-detail-step-second::before {
+        content: '2';
+      }
+    }
+
+    em {
+      display: none;
+    }
+  }
+
+  // end条形码二维码兑换
+}
