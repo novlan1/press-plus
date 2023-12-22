@@ -17,7 +17,7 @@ module.exports = {
     lineNumbers: false,
     extractHeaders: ['h2', 'h3', 'h4'],
   },
-  base: process.env.PUBLISH_PATH || '/press-ui/',
+  base: process.env.PUBLISH_PATH || '/press-plus/',
   head: [
     [
       'link', { rel: 'icon', href: '/images/favicon.ico' },
