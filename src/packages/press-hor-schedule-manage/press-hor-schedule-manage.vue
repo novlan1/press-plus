@@ -88,6 +88,7 @@
         :search-team-map-in-group="searchTeamMapInGroup"
         :button-text="publishScoreButtonText"
         :show-publish-score-o-b="showPublishScoreOB"
+        :history-score-map="historyScoreMap"
         @selectGroupInScore="selectGroupInScore"
         @publishScore="publishScore"
         @changeScoreRoundId="changeScoreRoundId"
@@ -228,6 +229,10 @@ export default {
     showPublishScoreOB: {
       type: Boolean,
       default: false,
+    },
+    historyScoreMap: {
+      type: Object,
+      default: () => ({}),
     },
   },
   emits: [

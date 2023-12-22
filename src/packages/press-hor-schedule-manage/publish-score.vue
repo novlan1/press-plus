@@ -113,7 +113,7 @@
                   </div>
                 </div>
                 <div
-                  v-for="(score, scoreIndex) in item.historyScoreList"
+                  v-for="(score, scoreIndex) in (historyScoreMap[index] || [])"
                   :key="scoreIndex"
                   :class="[getActClass('history-detail-list')]"
                 >
@@ -214,6 +214,10 @@ export default {
     buttonText: {
       type: String,
       default: '公布成绩',
+    },
+    historyScoreMap: {
+      type: Object,
+      default: () => ({}),
     },
     // groupListInScore: {
     //   type: Array,

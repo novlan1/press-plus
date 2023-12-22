@@ -376,6 +376,7 @@ export default {
 | clickSearchTeamCard    | 点击搜索队伍分组卡片     | `teamItem`, `teamIndex`                |
 | clickConfirmStartOB    | 点击确认开赛中的观战按钮 | -                                      |
 | clickPublishScoreOB    | 点击公布成绩中的观战按钮 | `tableItem`, `tableIndex`              |
+| clickScoreDetail       | 点击成绩详情             | `tableItem`, `tableIndex`              |
 
 
 ### teamMap

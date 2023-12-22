@@ -21,6 +21,7 @@
       :published-score="publishedScore"
       :show-confirm-start-o-b="showConfirmStartOB"
       :show-publish-score-o-b="showPublishScoreOB"
+      :history-score-map="historyScoreMap"
       @update:loading="updateLoading"
       @close="close"
       @changeTab="changeTab"
@@ -43,6 +44,7 @@
       @cancelSearch="cancelSearch"
       @clickConfirmStartOB="clickConfirmStartOB"
       @clickPublishScoreOB="clickPublishScoreOB"
+      @clickScoreDetail="clickScoreDetail"
     />
   </div>
 </template>
@@ -125,6 +127,7 @@ export default {
       publishedScore: false,
       showConfirmStartOB: true,
       showPublishScoreOB: true,
+      historyScoreMap: {},
     };
   },
   mounted() {
@@ -291,6 +294,20 @@ export default {
     clickPublishScoreOB(item, index) {
       this.onGTip('[clickPublishScoreOB]');
       console.log('[clickPublishScoreOB]', item, index);
+    },
+    clickScoreDetail(item, index) {
+      console.log('[clickScoreDetail]', item, index);
+
+      this.$set(this.historyScoreMap, index, [{
+        roundStr: '第一场',
+        rank: 1,
+        score: 2,
+      },
+      {
+        roundStr: '第二场',
+        rank: 1,
+        score: 2,
+      }]);
     },
   },
 };
