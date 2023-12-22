@@ -278,10 +278,24 @@
               }
 
               .press__goods-time {
-                height: 0.32rem;
-                font-size: 0.22rem;
-                line-height: 0.32rem;
-                color: #757e7f;
+                display: none;
+              }
+
+              .press__act-title {
+                height: .32rem;
+                color: #7a7a7a;
+                font-size: .22rem;
+                line-height: .32rem;
+
+                .press__arrow-icon {
+                  display: inline-block;
+                  width: .12rem;
+                  height: .12rem;
+                  margin-left: .08rem;
+                  border-top: .02rem solid #7a7a7a;
+                  border-right: .02rem solid #7a7a7a;
+                  transform: rotate(45deg);
+                }
               }
 
               .press__goods-tag {
@@ -454,4 +468,10 @@
     margin: 0 auto;
   }
 
+  .press__expire-time {
+    margin-top: .16rem;
+    color: #A0ACB5;
+    font-size: .2rem;
+    text-align: center;
+  }
 }

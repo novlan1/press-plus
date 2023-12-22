@@ -335,6 +335,10 @@
     margin-top: .2rem;
   }
 
+  .press__act-title {
+    display: none;
+  }
+
   .press__goods-box .press__goods-task {
     font-size: 0.18rem;
     color: #898989;
@@ -585,5 +589,8 @@
   .press__btn--normal-top {
     display: none !important;
   }
-
+  
+  .press__expire-time {
+    display: none;
+  }
 }

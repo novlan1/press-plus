@@ -27,7 +27,7 @@
       </div>
       <div
         :class="[getActClass('btn-cancel')]"
-        @click.stop="onCancelSearch"
+        @click.stop="cancelSearch"
       >
         取消
       </div>
@@ -138,22 +138,23 @@
 
       <div :class="[getActClass('btn-group')]">
         <div
+          v-if="cancelButtonText"
           :class="[getActClass('secondary-btn', {
             'disabled-btn': innerDisabledButton
           })]"
           @click.stop="toggleAllQualification"
         >
-          {{ isAllConfirmed ? '全部取消' : '全部确认' }}
+          {{ cancelButtonText }}
         </div>
 
-        <!-- disabled-btn -->
         <div
+          v-if="buttonText"
           :class="[getActClass('primary-btn', {
             'disabled-btn': innerDisabledButton
           })]"
           @click.stop="doneConfirmSignUp"
         >
-          确认资格
+          {{ buttonText }}
           <!-- {{ checkedTeamTotal }}/{{ teamTotal }} -->
         </div>
       </div>
@@ -205,12 +206,20 @@ export default {
       type: Boolean,
       default: false,
     },
+    buttonText: {
+      type: String,
+      default: '确认资格',
+    },
+    cancelButtonText: {
+      type: String,
+      default: '',
+    },
   },
   emits: [
     'checkTeam',
     'doneConfirmSignUp',
     'loadMore',
-    'onCancelSearch',
+    'cancelSearch',
     'onClickSearch',
     'search',
     'toggleAllQualification',
@@ -261,8 +270,8 @@ export default {
     onClickSearch() {
       this.$emit('onClickSearch', this.searchInput);
     },
-    onCancelSearch() {
-      this.$emit('onCancelSearch');
+    cancelSearch() {
+      this.$emit('cancelSearch');
     },
     toggleAllQualification() {
       if (this.innerDisabledButton) return;

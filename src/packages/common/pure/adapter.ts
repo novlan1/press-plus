@@ -1,6 +1,6 @@
 // 普通Vue2项目适配器
 
-import { initGlobalComponent, setCustomElements } from '../vue3/adapter';
+import { initGlobalComponent, setCustomElements } from 'press-ui/common/vue3/adapter';
 import ScrollView from 'press-ui/scroll-view/scroll-view.vue';
 import Swiper from 'press-ui/swiper/swiper.vue';
 import SwiperItem from 'press-ui/swiper-item/swiper-item.vue';

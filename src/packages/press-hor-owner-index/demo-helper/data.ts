@@ -4,13 +4,13 @@ export const MOCK_OWNER_INFO = {
   lv: '45',
 };
 
-export const getRankList = mineIndex => Array.from({ length: 10 }).map((item, index) => {
+export const getRankList = (mineIndex: number) => Array.from({ length: 10 }).map((item, index) => {
   const isMine = mineIndex === index;
   return {
     isMine,
     isFocused: index % 5 === 0,
     name: '奈雪新茶饮总决赛',
-    pic: 'https://dummyimage.com/64x64',
+    pic: 'https://thirdqq.qlogo.cn/g?b=oidb\u0026k=8EheojKVOwQ2nyu7zgXyUw\u0026kti=Y5gzRQAAAAA\u0026s=640\u0026t=1556998035',
     fan: '4556',
     lv: '5',
     num: '2131',

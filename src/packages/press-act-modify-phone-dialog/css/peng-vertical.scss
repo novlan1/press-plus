@@ -1,0 +1,142 @@
+.press-act:not(.press-act--hidden-tip) {
+  &.press__cover {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .75);
+
+    ::v-deep .uni-textarea-textarea,
+    ::v-deep .uni-input-placeholder {
+      padding-right: .08rem;
+      padding-left: .08rem;
+      color: #afb0b1;
+      text-align: left;
+    }
+
+    ::v-deep .uni-input-input {
+      padding-right: .08rem;
+      padding-left: .08rem;
+      color: #000;
+      font-size: .28rem;
+      text-align: left;
+    }
+  }
+
+  .press__dialog-update {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    width: 5.68rem;
+    background: #fff;
+    border-radius: .24rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .press__close {
+    display: none;
+  }
+
+  .press__title {
+    margin-top: .64rem;
+    color: #000;
+    font-size: .36rem;
+    font-weight: bold;
+    line-height: .44rem;
+    text-align: center;
+  }
+
+  .press__content {
+    margin: auto;
+    text-align: center;
+
+    input {
+      display: block;
+      width: 4.64rem;
+      height: .72rem;
+      padding: 0 .2rem;
+      margin: .32rem auto .2rem;
+      color: #afb0b1;
+      font-size: .28rem;
+      line-height: .72rem;
+      border: .02rem solid #afb0b1;
+      border-radius: .72rem;
+
+      &::placeholder {
+        padding-right: .08rem;
+        padding-left: .08rem;
+        color: #afb0b1;
+        text-align: left;
+      }
+    }
+
+    .press__code-wrap {
+      position: relative;
+
+      input {
+        padding-right: 1.8rem;
+      }
+    }
+
+    .press__code-btn {
+      position: absolute;
+      top: 0;
+      right: .84rem;
+      display: inline-block;
+      width: 1.8rem;
+      color: #73bfff;
+      font-size: .28rem;
+      line-height: .72rem;
+      text-align: center;
+    }
+
+    .press__code-btn--disabled {
+      color: gray;
+    }
+  }
+
+  .press__button-wrap {
+    display: flex;
+    border-top: none;
+
+    .press__btn--sure {
+      display: inline-block;
+      width: 2.8rem;
+      height: .76rem;
+      margin: .32rem auto .64rem;
+      color: #fff;
+      font-size: .36rem;
+      line-height: .76rem;
+      text-align: center;
+      background: linear-gradient(180deg, #88cefc, #6ea5f9);
+      background-size: 100% auto;
+      border-radius: .76rem;
+    }
+
+    .press__btn--cancel {
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      width: 1.7rem;
+      height: 1.7rem;
+      color: rgba(255, 255, 255, .75);
+      text-indent: -1000rem;
+      background: url(https://image-1251917893.file.myqcloud.com/igame/merchant/igame-peng/icon-close.png) no-repeat;
+      background-size: 100% 100%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .tip-comp-dialog--input-info-tips {
+    margin-bottom: .2rem;
+    color: #333;
+    font-size: .24rem;
+    text-align: left;
+  }
+}

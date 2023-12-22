@@ -1,0 +1,81 @@
+/* 7.列表内容 -------------ingame-page--------------- tip-comp-goods-list start */
+
+.press-act:not(.press-act--hidden-tip) {
+
+  .press-list li,
+  .press-list ul::after {
+    margin: 0 0.1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  /* // ul */
+  .press__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+
+  /* 8.列表数据个体 */
+  .press-list ul::after {
+    content: "";
+    width: 5.56rem;
+    height: 0;
+    flex: auto;
+  }
+
+  /* 0 0.07rem */
+  /* .wrap_list .press-list li:nth-child(2n+1){
+  margin-right:0.16rem;
+} */
+  .wrap_list .press-list li {
+    width: 5.56rem;
+    height: 1.62rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    padding: 0.24rem 0.16rem;
+    box-sizing: border-box;
+    color: #acacac;
+    line-height: 1;
+  }
+
+  .tip-comp-goods-status--content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  /* 列表外层 */
+  &.press__goods-list {
+    margin-top: 0.15rem;
+    padding: 0 0.12rem;
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: auto;
+    height: calc(100vh - 1.04rem - 0.85rem);
+  }
+
+  /* 空页面 --- start */
+  .press__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
+    font-size: 0.24rem;
+    margin-top: 1.42rem;
+  }
+
+  .press__empty .press__image {
+    width: 2.4rem;
+    height: 1.6rem;
+    background: url("https://image-1251917893.file.myqcloud.com/tip-project/liebian-tlbb/goods-page/list-empty-icon.png") no-repeat center left;
+    background-size: 100% auto;
+  }
+
+  /* 空页面 --- end */
+  /* 7.列表内容 ----------------ingame-page------------ tip-comp-goods-list end */
+}

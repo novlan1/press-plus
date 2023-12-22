@@ -59,7 +59,7 @@
       <!-- 赛事时间 -->
       <div class="press-match__meta">
         <div class="press-match__time">
-          <p>报名截止时间</p>
+          <p>{{ recommendInfo.joinEndTitle || '报名截止时间' }}</p>
           <p>{{ recommendInfo.joinEnd }}</p>
         </div>
         <div

@@ -1,4 +1,4 @@
-import { getActClass as commonGetActClass } from '../common/utils/act-bem';
+import { getActClass as commonGetActClass } from 'press-ui/common/utils/act-bem';
 
 export const TIP_CLASS_MAP = {
   bar: 'gp-match-bar',
@@ -103,6 +103,6 @@ export const TIP_CLASS_MAP = {
   'personal-rank-name': 'personal-rank-name',
 };
 
-export function getActClass(...args) {
+export function getActClass(...args: Array<any>) {
   return commonGetActClass(false, TIP_CLASS_MAP, args);
 }

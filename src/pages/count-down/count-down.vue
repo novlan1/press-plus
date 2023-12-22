@@ -82,12 +82,14 @@ export default {
 
 <style lang="scss" scoped>
 ::v-deep {
-  .uni-fab__plus {
+  .uni-fab__plus,
+  .press-fab__plus {
     width: 38px;
     height: 38px;
     transform: rotate(45deg);
   }
-  .fab-circle-icon {
+  .fab-circle-icon,
+  .press-fab-circle-icon {
     font-size: 20px;
   }
 }

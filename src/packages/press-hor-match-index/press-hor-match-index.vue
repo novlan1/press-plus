@@ -47,6 +47,7 @@
         <Report
           v-if="reportList && reportList.length"
           :report-list="reportList"
+          :report-interval="reportInterval"
           @clickReport="clickReport"
         />
         <PressList
@@ -74,6 +75,7 @@
               v-if="brandList && brandList.length"
               :brand-list="brandList"
               :is-brand-swiper="isBrandSwiper"
+              :brand-interval="brandInterval"
               @clickBrand="clickBrand"
             />
 
@@ -303,6 +305,14 @@ export default {
     isBrandSwiper: {
       type: Boolean,
       default: false,
+    },
+    brandInterval: {
+      type: Number,
+      default: 1000,
+    },
+    reportInterval: {
+      type: Number,
+      default: 1000,
     },
   },
   options: {

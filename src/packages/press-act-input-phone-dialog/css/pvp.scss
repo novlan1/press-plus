@@ -65,8 +65,10 @@
   // 2填写手机号[
 
   .press__content {
+    max-height: 2.52rem;
     margin: auto;
     text-align: center;
+    overflow-y: scroll;
   }
 
   .press__box input {
@@ -180,21 +182,10 @@
     background-size: contain;
     cursor: pointer;
     visibility: visible;
-
-    .van-checkbox__icon--checked {
-      width: .4rem !important;
-      height: .4rem !important;
-      border: 0 none;
-
-      .van-icon {
-        background: url(https://image-1251917893.file.myqcloud.com/2020/Tip-wsq/V3.0/img/dialog/checked.png) no-repeat 50% !important;
-        background-size: contain !important;
-      }
-    }
   }
 
   ::v-deep .press__treaty-check:checked,
-  ::v-deep .press__act-checkbox--checked {
+  ::v-deep .press__treaty-check.press__act-checkbox--checked {
     background: url(https://image-1251917893.file.myqcloud.com/2020/Tip-wsq/V3.0/img/dialog/checked.png) no-repeat center center;
     background-size: contain;
   }
@@ -203,7 +194,7 @@
     text-align: left;
     font-size: .2rem;
     color: #82A0CC;
-    line-height: 1.4;
+    line-height: 2;
   }
 
   .press__treaty-desc {

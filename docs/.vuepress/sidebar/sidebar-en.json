@@ -137,24 +137,24 @@
       "collapsable": false,
       "children": [
         {
-          "title": "AuthLogin",
-          "path": "/en/components/press/press-auth-login.md"
+          "title": "LoginAuth",
+          "path": "/en/components/press/press-login-auth.md"
         },
         {
-          "title": "BindLogin",
-          "path": "/en/components/press/press-bind-login.md"
+          "title": "LoginBind",
+          "path": "/en/components/press/press-login-bind.md"
         },
         {
-          "title": "MobileLogin",
-          "path": "/en/components/press/press-mobile-login.md"
+          "title": "LoginMobile",
+          "path": "/en/components/press/press-login-mobile.md"
         },
         {
-          "title": "PCLogin",
-          "path": "/en/components/press/press-p-c-login.md"
+          "title": "LoginPC",
+          "path": "/en/components/press/press-login-p-c.md"
         },
         {
-          "title": "PCScanLogin",
-          "path": "/en/components/press/press-p-c-scan-login.md"
+          "title": "LoginPCScan",
+          "path": "/en/components/press/press-login-p-c-scan.md"
         }
       ]
     },
@@ -162,10 +162,6 @@
       "title": "Act Components",
       "collapsable": false,
       "children": [
-        {
-          "title": "ActBenefitItem",
-          "path": "/en/components/press/press-act-benefit-item.md"
-        },
         {
           "title": "ActExplainDialog",
           "path": "/en/components/press/press-act-explain-dialog.md"
@@ -177,10 +173,6 @@
         {
           "title": "ActQRCodeDialog",
           "path": "/en/components/press/press-act-q-r-code-dialog.md"
-        },
-        {
-          "title": "ActStoreItem",
-          "path": "/en/components/press/press-act-store-item.md"
         },
         {
           "title": "ActTipDialog",
@@ -273,6 +265,32 @@
         {
           "title": "ActGoodsDetailSelect",
           "path": "/en/components/press/press-act-goods-detail-select.md"
+        }
+      ]
+    },
+    {
+      "title": "Goods List Components",
+      "collapsable": false,
+      "children": [
+        {
+          "title": "ActBenefitItem",
+          "path": "/en/components/press/press-act-benefit-item.md"
+        },
+        {
+          "title": "ActGoodsItem",
+          "path": "/en/components/press/press-act-goods-item.md"
+        },
+        {
+          "title": "ActGoodsList",
+          "path": "/en/components/press/press-act-goods-list.md"
+        },
+        {
+          "title": "ActGoodsTab",
+          "path": "/en/components/press/press-act-goods-tab.md"
+        },
+        {
+          "title": "ActStoreItem",
+          "path": "/en/components/press/press-act-store-item.md"
         }
       ]
     }

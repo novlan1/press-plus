@@ -1,0 +1,86 @@
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-item {
+    padding: .32rem;
+    background: #fff;
+    position: relative;
+
+    .press__goods-button {
+      width: 1.28rem;
+      height: .56rem;
+      font-size: .24rem;
+      display: block;
+      border-radius: .04rem;
+      line-height: .56rem;
+      text-align: center;
+
+      &.press__btn--small-primary {
+        background-image: linear-gradient(135deg, #f78e1b 0%, #ed751c 100%);
+        border-radius: .04rem;
+        color: #fff;
+      }
+
+      &.press__goods-button--delivered {
+        background-image: #757e7f;
+        border-radius: .04rem;
+        color: #fff;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 6.86rem;
+      height: 0;
+      border-bottom: .02rem solid #f0f3f7;
+    }
+
+    .press__content {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .press__meta {
+      flex: 1;
+    }
+
+    .press__name {
+      line-height: .4rem;
+      font-size: .28rem;
+    }
+
+    .press__meta {
+      padding: 0 0 0 .2rem;
+    }
+
+    .press__provider {
+      color: #333;
+      font-size: .24rem;
+      line-height: .36rem;
+      margin: .1rem 0;
+    }
+
+    .press__description {
+      font-size: .24rem;
+      color: #a0acb5;
+      line-height: .36rem;
+    }
+
+    .press__image {
+      width: 1.32rem;
+      height: 1.32rem;
+
+      &>img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .press__tip {
+    font-size: .24rem;
+    color: #a0acb5;
+    line-height: .36rem;
+  }
+
+}

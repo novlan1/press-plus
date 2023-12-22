@@ -1,6 +1,6 @@
 <template>
   <PressHorDialog
-    title="比赛规则"
+    :title="title"
     popup-with="9.6"
     @close="close"
   >
@@ -19,9 +19,12 @@ export default {
     PressHorDialog,
   },
   props: {
+    title: {
+      type: String,
+      default: '比赛规则',
+    },
     rule: {
       type: String,
-      desc: '比赛规则',
       default: '比赛规则',
     },
   },

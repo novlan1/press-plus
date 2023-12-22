@@ -1,0 +1,40 @@
+@import "../../common/style/act/layout/_layout-majiang.scss";
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-list {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.14rem;
+    border-radius: 0.08rem;
+    height: 100%;
+    background: transparent;
+  }
+
+  .press__box {
+    width: 100%;
+    // min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 5.6rem);
+    justify-content: center;
+    background: transparent;
+  }
+
+  .press__empty {
+    display: flex;
+    background-color: transparent;
+    color: #525a90;
+    font-size: 0.24rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: unset;
+    box-shadow: unset;
+  }
+
+  .press__empty .press__image {
+    width: 2.42rem;
+    content: url(https://image-1251917893.file.myqcloud.com/2020/a20200423mahjong/icon-empty-2.png);
+  }
+}

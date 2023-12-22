@@ -19,86 +19,22 @@
       </div>
     </div>
 
-    <PressList
-      v-model="searchLoading"
-      :finished="searchTeamMapInGroup.finished"
-      :immediate-check="false"
-      :vertical="false"
-      finished-text=""
-      @load="loadMoreInSearch"
-    >
-      <div
-        :class="[getActClass('team-group')]"
-      >
-        <div
-          v-for="(team, index) in searchTeamMapInGroup.list"
-          :key="index"
-          :class="[getActClass('team-item')]"
-        >
-          <div
-            :class="[getActClass('item-top', {
-              'item-top--gray': team.finished,
-            })]"
-          >
-            <div
-              v-if="team.finished"
-              :class="[getActClass('label-gray')]"
-            >
-              已结束
-            </div>
-            <div :class="[getActClass('team-name')]">
-              {{ team.teamname }}
-            </div>
-            <div :class="[getActClass('team-desc')]">
-              <!-- {{ team.teamLen }}支队伍 -->
-            </div>
-          </div>
-          <div :class="[getActClass('item-bottom')]">
-            <div :class="[getActClass('item-logos')]">
-              <div
-                v-for="(member, memberIndex) in team.members"
-                :key="getTeamKey(memberIndex, 'member')"
-                :class="[getActClass('item-logo')]"
-              >
-                <img v-lazy="member.head">
-              </div>
-            </div>
-          </div>
-
-          <!-- <div
-            v-if="item.finished"
-            :class="[getActClass('item-check')]"
-          >
-            查看成绩
-            <div :class="[getActClass('icon-guide'), 'icon-guide', 'iconfont']" />
-          </div>
-
-          <div
-            v-else-if="item.started"
-            :class="[getActClass('item-status'), 'gray']"
-          >
-            第{{ item.groupSeq }}组已开赛
-          </div>
-          <div
-            v-else
-            :class="[getActClass('item-status')]"
-            @click.stop="startGame(item)"
-          >
-            第{{ item.groupId }}组开赛
-          </div> -->
-        </div>
-      </div>
-    </PressList>
+    <InnerTeamList
+      :search-team-map-in-group="searchTeamMapInGroup"
+      @update:loading="updateLoading"
+      @loadMoreInSearch="loadMoreInSearch"
+      @clickTeam="clickSearchTeamCard"
+    />
   </div>
 </template>
 <script>
-import PressList from 'press-ui/press-list/press-list';
+import InnerTeamList from './inner-team-list.vue';
 import { getActClass } from './utils';
 
 
 export default {
   components: {
-    PressList,
+    InnerTeamList,
   },
   props: {
     searchTeamMapInGroup: {
@@ -112,14 +48,6 @@ export default {
     };
   },
   computed: {
-    searchLoading: {
-      get() {
-        return this.searchTeamMapInGroup.loading;
-      },
-      set(val) {
-        this.$emit('update:loading', 'searchTeamMapInGroup', val);
-      },
-    },
   },
   methods: {
     getActClass,
@@ -129,11 +57,14 @@ export default {
     cancelSearch() {
       this.$emit('cancelSearch');
     },
+    updateLoading(key, value) {
+      this.$emit('update:loading', key, value);
+    },
     loadMoreInSearch() {
       this.$emit('loadMoreInSearch');
     },
-    getTeamKey(a, b) {
-      return `${a}-${b}`;
+    clickSearchTeamCard(team, index) {
+      this.$emit('clickSearchTeamCard', team, index);
     },
   },
 };

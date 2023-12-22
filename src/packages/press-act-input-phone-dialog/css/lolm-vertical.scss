@@ -77,10 +77,9 @@
   .press__box input {
     display: block;
     height: .98rem;
-    width: 5.6rem;
+    width: auto;
     border-width: 0;
     font-weight: normal;
-    margin: .24rem auto .24rem;
     color: #303030;
     font-size: .32rem;
     line-height: .44rem;
@@ -100,7 +99,7 @@
   .press__treaty-wrap {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: .4rem auto .24rem;
     color: #999;
     font-size: .24rem;
@@ -122,7 +121,8 @@
     display: flex;
     justify-content: space-between;
     width: 5.6rem;
-    margin: 0 auto;
+    margin: .24rem auto .24rem;
+    background-color: #eff8ff;
 
     .press__code-number {
       width: 3.4rem;
@@ -162,7 +162,6 @@
 
   .press__treaty-check {
     border: 1px solid #ececec;
-    height: .4rem;
     margin: 0 .2rem 0 0;
 
     .van-checkbox {}

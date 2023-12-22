@@ -1,0 +1,30 @@
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-list {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .press__box {
+    width: 100%;
+  }
+
+  .press__empty {
+    display: flex;
+    background-color: #fff;
+    color: #525a90;
+    font-size: .24rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .press__empty .press__image {
+    width: 2.42rem;
+    content: url(https://image-1251917893.file.myqcloud.com/2020/a20200423mahjong/icon-empty-2.png);
+  }
+
+}

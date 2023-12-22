@@ -5,9 +5,13 @@
       <div :class="[getActClass('head-title')]">
         和平大众赛
       </div>
-      <!-- <div :class="[getActClass('head-ob')]">
+      <div
+        v-if="showConfirmStartOB"
+        :class="[getActClass('head-ob')]"
+        @click.stop="clickConfirmStartOB"
+      >
         裁判观战
-      </div> -->
+      </div>
     </div>
     <div :class="[getActClass('main')]">
       <InnerSearchTeam
@@ -17,6 +21,7 @@
         @cancelSearch="cancelSearch"
         @update:loading="updateLoading"
         @loadMoreInSearch="loadMoreInSearch"
+        @clickSearchTeamCard="clickSearchTeamCard"
       />
 
       <template v-else>
@@ -49,6 +54,7 @@
               v-for="(item, index) in curGroupList"
               :key="index"
               :class="[getActClass('team-item')]"
+              @click.stop="clickTeamGroupCard(item, index)"
             >
               <div
                 :class="[getActClass('item-top', {
@@ -89,13 +95,13 @@
               </div>
 
               <div
-                v-else-if="item.started"
+                v-else-if="item.started || isCurRoundAllStarted"
                 :class="[getActClass('item-status'), 'gray']"
               >
                 第{{ item.groupSeq }}组已开赛
               </div>
               <div
-                v-else-if="!disabledButton"
+                v-else-if="!disabledButton && !onlyShowDisabledButton"
                 :class="[getActClass('item-status')]"
                 @click.stop="startGame(item)"
               >
@@ -124,13 +130,13 @@
       </div> -->
       <div :class="[getActClass('btn-group')]">
         <div
+          v-if="buttonText"
           :class="[getActClass('primary-btn', {
             'disabled-btn': disabledButton || isCurRoundAllStarted
           })]"
           @click.stop="startAllGame"
         >
-          <!-- 添加disabled-btn置灰按钮 -->
-          第{{ NUMBER_CHI_MAP[curStartRoundId] }}局全部开赛
+          {{ buttonText }}
         </div>
       </div>
     </div>
@@ -179,6 +185,22 @@ export default {
       type: Array,
       default: () => ([]),
     },
+    buttonText: {
+      type: String,
+      default: '',
+    },
+    isCurRoundAllStarted: {
+      type: Boolean,
+      default: false,
+    },
+    onlyShowDisabledButton: {
+      type: Boolean,
+      default: false,
+    },
+    showConfirmStartOB: {
+      type: Boolean,
+      default: false,
+    },
   },
   emits: [
     'changeStartRoundId',
@@ -202,21 +224,11 @@ export default {
         value: index + 1,
       }));
     },
-    roundMap() {
-      return this.roundList.reduce((acc, item) => {
-        acc[item.roundId] = item;
-        return acc;
-      }, {});
-    },
     curGroupInfo() {
       return this.groupMap[this.curStartRoundId];
     },
     curGroupList() {
       return this.curGroupInfo?.list || [];
-    },
-    isCurRoundAllStarted() {
-      const { roundMap, curStartRoundId } = this;
-      return roundMap[curStartRoundId]?.started;
     },
     curGroupLoading: {
       get() {
@@ -265,6 +277,7 @@ export default {
     },
     cancelSearch() {
       this.isSearch = false;
+      this.$emit('cancelSearch');
     },
     search(value) {
       this.$emit('search', value);
@@ -277,6 +290,15 @@ export default {
     },
     updateLoading(key, value) {
       this.$emit('update:loading', key, value);
+    },
+    clickTeamGroupCard(groupItem, groupIndex) {
+      this.$emit('clickTeamGroupCard', groupItem, groupIndex, this.curGroupList);
+    },
+    clickSearchTeamCard(team, index) {
+      this.$emit('clickSearchTeamCard', team, index);
+    },
+    clickConfirmStartOB() {
+      this.$emit('clickConfirmStartOB');
     },
   },
 };

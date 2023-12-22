@@ -252,6 +252,10 @@
                 padding: 0 0 0 0.24rem;
               }
 
+              .press__act-title {
+                display: none;
+              }
+
               .press__goods-tag {
                 color: #cdbe91;
                 line-height: 0.4rem;
@@ -384,7 +388,11 @@
   .press__btn--normal-top {
     display: none !important;
   }
-
+  
+  .press__expire-time {
+    display: none;
+  }
+  
   .press__exchange-code {
     color: #F9BE0A;
     font-size: .24rem;

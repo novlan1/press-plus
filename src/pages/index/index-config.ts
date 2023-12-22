@@ -15,7 +15,7 @@ export const NOT_SHOW_IN_MP_COMPONENTS = [
   'hor-owner-theme',
   'hor-rule',
   'hor-schedule-manage',
-  'p-c-scan-login',
+  'login-p-c-scan',
   'hor-task',
 ];
 

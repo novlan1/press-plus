@@ -1,5 +1,5 @@
 <template>
-  <div class="demo-wrap">
+  <div class="demo-wrap demo-wrap--gp-iconfont">
     <PressHorScheduleManage
       :tab-index="curTab"
       :team-map="teamMap"
@@ -15,6 +15,12 @@
       :cur-start-round-id="curStartRoundId"
       :cur-score-round-id="curScoreRoundId"
       :search-team-map-in-group="searchTeamMapInGroup"
+      :team-map-in-one-group="teamMapInOneGroup"
+      :only-show-disabled-button="onlyShowDisabledButton"
+      :cur-going-tab="curGoingTab"
+      :published-score="publishedScore"
+      :show-confirm-start-o-b="showConfirmStartOB"
+      :show-publish-score-o-b="showPublishScoreOB"
       @update:loading="updateLoading"
       @close="close"
       @changeTab="changeTab"
@@ -32,13 +38,20 @@
       @selectGroupInScore="selectGroupInScore"
       @checkTeam="checkTeam"
       @loadMore="loadMore"
+      @clickTeamGroupCard="clickTeamGroupCard"
+      @clickSearchTeamCard="clickSearchTeamCard"
+      @cancelSearch="cancelSearch"
+      @clickConfirmStartOB="clickConfirmStartOB"
+      @clickPublishScoreOB="clickPublishScoreOB"
     />
   </div>
 </template>
 <script>
 import PressHorScheduleManage from 'src/packages/press-hor-schedule-manage/press-hor-schedule-manage.vue';
+
 import { routerBack } from 'src/utils/index';
 import { getDemoData, getTeamList, getGroupList, getTeamScoreList } from 'src/packages/press-hor-schedule-manage/demo-helper/data';
+
 
 function resumeViewPort() {
   // #ifdef H5
@@ -94,7 +107,24 @@ export default {
       curStartRoundId: 1,
       curScoreRoundId: 1,
       roundList: [],
-      teamScoreMap: { ['1-1']: { list: getTeamScoreList() } },
+      teamScoreMap: {
+        ['1-1']: {
+          list: getTeamScoreList(),
+          loading: false,
+          finished: false,
+        },
+      },
+      teamMapInOneGroup: {
+        title: '第1组-5支队伍',
+        list: getTeamList(10),
+        finished: true,
+      },
+      onlyShowDisabledButton: [],
+      // onlyShowDisabledButton: [0, 1, 2, 3],
+      curGoingTab: 0,
+      publishedScore: false,
+      showConfirmStartOB: true,
+      showPublishScoreOB: true,
     };
   },
   mounted() {
@@ -177,6 +207,7 @@ export default {
         groupListMap: this.loadMoreGroupListMap,
         groupMap: this.loadMoreGroupMap,
         searchTeamMapInGroup: this.loadMoreSearchTeamMapInGroup,
+        teamScoreMap: this.loadMoreTeamScoreMap,
       };
       if (typeof loadMoreMap[key] === 'function') {
         loadMoreMap[key]();
@@ -198,6 +229,13 @@ export default {
       this.loadMoreCommon(
         'searchTeamMapInGroup',
         getTeamList(10, this.searchTeamMapInGroup.list.length),
+      );
+    },
+    loadMoreTeamScoreMap() {
+      this.loadMoreCommon(
+        'teamScoreMap',
+        getTeamScoreList(),
+        '1-1',
       );
     },
     loadMoreCommon(key, moreList, key2) {
@@ -225,16 +263,39 @@ export default {
       );
     },
     updateLoading(key, value) {
+      console.log('[updateLoading]', key, value);
       if (key === 'groupMap') {
         this.groupMap[this.curStartRoundId].loading = value;
         return;
       }
+      if (key === 'teamScoreMap') {
+        this.teamScoreMap['1-1'].loading = value;
+        return;
+      }
+
       this[key].loading = value;
+    },
+    clickSearchTeamCard(team, index) {
+      console.log('[clickSearchTeamCard]', team, index);
+    },
+    clickTeamGroupCard(groupItem, groupIndex, groupList) {
+      console.log('[clickTeamGroupCard]', groupItem, groupIndex, groupList);
+    },
+    cancelSearch() {
+      console.log('[cancelSearch]');
+    },
+    clickConfirmStartOB() {
+      console.log('[clickConfirmStartOB]');
+      this.onGTip('[clickConfirmStartOB]');
+    },
+    clickPublishScoreOB(item, index) {
+      this.onGTip('[clickPublishScoreOB]');
+      console.log('[clickPublishScoreOB]', item, index);
     },
   },
 };
 </script>
-<style scoped lang="scss">
+<style lang="scss" scoped>
 ::v-deep .gp-commonbg {
   height: 100%;
   width: 100%;
@@ -242,6 +303,8 @@ export default {
     no-repeat;
   background-size: cover;
 }
+
+@import "src/utils/style/iconfont-gp-font-face.scss";
 
 @font-face {
   font-family: "PEACE";

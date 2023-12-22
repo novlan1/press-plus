@@ -136,26 +136,27 @@ export default {
 
 ### Props
 
+| 参数               | 说明                                 | 类型      | 默认值       |
+| ------------------ | ------------------------------------ | --------- | ------------ |
+| title              | 页面标题                             | _string_  | `商户赛`     |
+| show-message-dot   | 是否显示消息红点                     | _boolean_ | `false`      |
+| show-feedback      | 是否显示反馈                         | _boolean_ | `false`      |
+| show-person-dot    | 是否显示个人中心红点                 | _boolean_ | `false`      |
+| banner-list        | `banner` 列表, 尺寸为`584 * 146`     | _array_   | -            |
+| brand-list         | 品牌列表，尺寸为`80 * 80`            | _array_   | -            |
+| sidebar-list       | 侧边栏数据列表                       | _array_   | -            |
+| immediate-check    | 是否在初始化时立即执行滚动位置检查   | _boolean_ | `false`      |
+| finished-text      | 加载完成后的提示文案                 | _string_  | `没有更多了` |
+| finished-style     | 已完成自定义样式                     | _string_  | -            |
+| loading-style      | 加载中自定义样式                     | _string_  | -            |
+| loading-size       | 加载中图标尺寸                       | _string_  | `20px`       |
+| banner-report-data | `banner` 上报数据                    | _object_  | -            |
+| report-list        | 播报列表                             | _array_   | -            |
+| is-brand-swiper    | 品牌列表是否为 `swiper` 模式         | _boolean_ | `false`      |
+| report-interval    | 奖励列表小喇叭 `swiper` 播放间隔时间 | _number_  | `1000`       |
+| brand-interval     | 品牌列表 `swiper` 播放间隔时间       | _number_  | `1000`       |
 
-| 参数               | 说明                               | 类型      | 默认值       |
-| ------------------ | ---------------------------------- | --------- | ------------ |
-| title              | 页面标题                           | _string_  | `商户赛`     |
-| show-message-dot   | 是否显示消息红点                   | _boolean_ | `false`      |
-| show-feedback      | 是否显示反馈                       | _boolean_ | `false`      |
-| show-person-dot    | 是否显示个人中心红点               | _boolean_ | `false`      |
-| banner-list        | `banner` 列表, 尺寸为`584 * 146`   | _array_   | -            |
-| brand-list         | 品牌列表，尺寸为`80 * 80`          | _array_   | -            |
-| sidebar-list       | 侧边栏数据列表                     | _array_   | -            |
-| immediate-check    | 是否在初始化时立即执行滚动位置检查 | _boolean_ | `false`      |
-| finished-text      | 加载完成后的提示文案               | _string_  | `没有更多了` |
-| finished-style     | 已完成自定义样式                   | _string_  | -            |
-| loading-style      | 加载中自定义样式                   | _string_  | -            |
-| loading-size       | 加载中图标尺寸                     | _string_  | `20px`       |
-| banner-report-data | `banner` 上报数据                  | _object_  | -            |
-| report-list        | 播报列表                           | _array_   | -            |
-| is-brand-swiper    | 品牌列表是否为 `swiper` 模式       | _boolean_ | `false`      |
-
-###  Events
+### Events
 
 | 事件名           | 说明                       | 回调参数                                     |
 | ---------------- | -------------------------- | -------------------------------------------- |

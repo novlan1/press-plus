@@ -1,0 +1,19 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__empty {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto .74rem;
+    line-height: .44rem;
+    font-size: .24rem;
+    color: #757e7f;
+  }
+
+  .press__empty .press__image {
+    width: 3rem;
+    height: 3rem;
+    background: url('https://image-1251917893.file.myqcloud.com/tip-project/lgame/1.4/robot-404.png') center center no-repeat;
+    background-size: 3rem 3rem;
+    margin: 0 auto .24rem;
+  }
+}

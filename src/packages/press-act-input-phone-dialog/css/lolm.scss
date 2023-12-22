@@ -180,9 +180,21 @@
     flex-shrink: 0;
     background: url(https://image-1251917893.cos.ap-guangzhou.myqcloud.com/tip-project/lgame/ingame-lolm/checkbox-icon.png) no-repeat center center;
     background-size: 100% auto;
+
   }
 
   .press__act-checkbox--checked {
-    background: url(https://image-1251917893.file.myqcloud.com/UI/page/college/checked-blue.png) 50%/100% 100% no-repeat;
+    position: relative;
+  }
+  .press__act-checkbox--checked::before {
+    display: block;
+    content: "";
+    background: url(https://image-1251917893.file.myqcloud.com/tip-project/lgame/ingame-lolm/icon-correct.png) 50%/100% 100% no-repeat;
+    position: absolute;
+    width: .24rem;
+    height: .2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

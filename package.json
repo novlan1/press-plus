@@ -1,6 +1,6 @@
 {
   "name": "press-plus",
-  "version": "1.3.9",
+  "version": "1.3.52",
   "private": true,
   "repository": {
     "type": "git",
@@ -107,7 +107,8 @@
     "add:name": "node script/utils/add-name-for-component",
     "add:emits": "node script/utils/add-emits-for-component",
     "act:replace:class": "node script/utils/act-replace-class",
-    "act:hide:tip": "node script/utils/act-add-hide-style"
+    "act:hide:tip": "node script/utils/act-add-hide-style",
+    "docs:sync": "node script/utils/docs-sync"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.1-alpha-36420220922001",
@@ -129,8 +130,9 @@
     "@dcloudio/uni-quickapp-webview": "^2.0.1-alpha-36420220922001",
     "@dcloudio/uni-stacktracey": "^2.0.1-alpha-36420220922001",
     "@dcloudio/uni-stat": "^2.0.1-alpha-36420220922001",
-    "press-ui": "^1.2.53",
-    "t-comm": "^1.3.38",
+    "plugin-light": "^1.1.36",
+    "press-ui": "^1.3.1",
+    "t-comm": "^1.3.39",
     "@vue/shared": "^3.0.0",
     "@zebra-ui/swiper": "^2.2.7",
     "aegis-mp-sdk": "^1.37.1",
@@ -166,7 +168,7 @@
     "@dcloudio/webpack-uni-mp-loader": "^2.0.1-alpha-36420220922001",
     "@dcloudio/webpack-uni-pages-loader": "^2.0.1-alpha-36420220922001",
     "stylelint-config-common": "^0.0.3",
-    "uni-plugin-light": "1.1.22-alpha.1",
+    "uni-plugin-light": "^1.1.31",
     "@types/jest": "^29.2.3",
     "@types/webpack-env": "^1.18.1",
     "@vue/babel-preset-app": "^5.0.8",
@@ -193,6 +195,7 @@
     "jest": "^25.5.4",
     "jest-environment-jsdom": "^25.5.0",
     "jimp": "0.10.1",
+    "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^0.4.5",
     "mini-types": "*",
     "miniprogram-api-typings": "*",

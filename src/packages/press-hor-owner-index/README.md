@@ -123,7 +123,7 @@ export default {
 
 | 参数            | 说明                               | 类型      | 默认值           |
 | --------------- | ---------------------------------- | --------- | ---------------- |
-| title           | 页面标题                           | _string_  | ``               |
+| title           | 页面标题                           | _string_  | -                |
 | is-owner        | 是否为主理人                       | _boolean_ | `false`          |
 | owner-info      | 我的主理人信息                     | _object_  | -                |
 | recommend-map   | 推荐赛事信息                       | _object_  | -                |
@@ -143,6 +143,7 @@ export default {
 | my-follow       | 我关注的主理人，结构同 `rankMap`   | _object_  | -                |
 | friends-follow  | 好友关注的主理人，结构同 `rankMap` | _object_  | -                |
 | cur-rank-tab    | 当前排行榜`Tab`                    | _number_  | `0`              |
+| rank-tab-list   | 排行榜标签页列表                   | _array_   | 参考下方         |
 
 
 ###  Events
@@ -170,6 +171,13 @@ export default {
 | ----- | ------ |
 | empty | 空状态 |
 
+### rankTabList
+
+默认值如下：
+
+```ts
+['主理人榜', '我关注的', '好友关注的']
+```
 
 ### 类型说明
 
@@ -259,6 +267,8 @@ type IRankItem = {
   num: string | number; // 本月参赛人数
   diffNumStr?: string; // 距上榜还差xx人；距前1名还差xx人
   myRankStr?: string; // 我的排名描述，1/2/3/未上榜等
+
+  canJoinGameNum?: number; // 几场比赛可参加
 }
 ```
 

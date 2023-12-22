@@ -9,4 +9,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   mask-image: linear-gradient(to bottom, #000 85%, transparent 92%);
+  >div{
+    line-height: .36rem;
+  }
 }

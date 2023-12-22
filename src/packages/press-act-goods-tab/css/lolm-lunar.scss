@@ -1,0 +1,53 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__content {
+    margin-top: 0.1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__inner {
+    height: 100%;
+    width: 100%;
+    // padding: 0 0.5rem;
+  }
+
+  .press__tabs {
+    width: 50%;
+    padding: 0.48rem 0.44rem 0.28rem;
+    display: inline-block;
+
+    p {
+      display: inline-block;
+      vertical-align: top;
+      width: auto;
+      line-height: 0.28rem;
+      font-size: 0.2rem;
+      color: rgba(255, 245, 245, 0.3);
+      padding: 0 0.2rem;
+    }
+
+    .current {
+      color: #ffeaea;
+    }
+  }
+
+  .press__invalid-link {
+    display: none;
+  }
+
+  .press__invalid-link-top {
+    display: inline-block;
+    vertical-align: top;
+    color: rgba(255, 245, 245, 0.5);
+    font-size: 0.2rem;
+    line-height: 0.28rem;
+    width: 48%;
+    text-align: right;
+    padding: 0.48rem 0.44rem 0.28rem;
+  }
+
+  .press__empty-tip {
+    display: none;
+  }
+
+}

@@ -199,18 +199,7 @@ export default {
     handerPlayerError(e) {
       // 视频播放出现错误时触发。
       console.warn('handerPlayerError', e);
-      // const code = e.data?.code || -1000;
       this.onHandleError();
-      // common.reportEvent({
-      //   eventKey: `AI_PLAYER_EVENT_${code}`,
-      //   ...(this.reportInfo || {}),
-      // });
-      // common.reportInfoAll({
-      //   infoKey: `nestim_ai_player_${this.liveInfo.ai_live_broadcast_udp}`,
-      //   code,
-      //   msg: store.state.livePlayerErrorMap[code] || '未获取到异常描述',
-      //   ext: JSON.stringify(e.detail),
-      // });
     },
     handerPlayerPlaying(e) {
       console.warn('handerPlayerPlaying', e);
@@ -220,10 +209,6 @@ export default {
       this.isError = false;
       this.playErrorMessage = '';
       this.$emit('playStatusChange', 'playing');
-      // common.reportEvent({
-      //   eventKey: `AI_PLAYER_EVENT_${0}`,
-      //   ...(this.reportInfo || {}),
-      // });
     },
     handerPlayerCanplay(e) {
       console.warn('handerPlayerCanplay', e);
@@ -246,17 +231,6 @@ export default {
       console.warn('handerPlayerWaiting', e);
       this.isLoading = true;
       this.$emit('playStatusChange', 'waiting');
-      // const code = 300001;
-      // common.reportEvent({
-      //   eventKey: `AI_PLAYER_EVENT_${code}`,
-      //   ...(this.reportInfo || {}),
-      // });
-      // common.reportInfoAll({
-      //   infoKey: `nestim_ai_player_${this.liveInfo.ai_live_broadcast_udp}`,
-      //   code,
-      //   msg: store.state.livePlayerErrorMap[code] || '未获取到异常描述',
-      //   ext: JSON.stringify(e.detail),
-      // });
     },
     handerPlayerFullscreenchange(e) {
       // 视频播放已结束时触发。此时 currentTime 值等于媒体资源最大值。

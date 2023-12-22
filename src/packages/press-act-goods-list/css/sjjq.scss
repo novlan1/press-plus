@@ -1,0 +1,76 @@
+@import '../../common/style/act/layout/_layout-sjjq.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-list {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 90%;
+  }
+
+  ::v-deep .press-list__error-text,
+  ::v-deep .press-list__finished-text,
+  ::v-deep .press-list__loading,
+  ::v-deep .press-pull-refresh__head,
+  ::v-deep .press-loading__text {
+    color: #fff;
+    font-size: .2rem;
+  }
+
+  .press__box {
+    display: grid;
+  }
+
+  .press__empty {
+    height: 85%;
+    width: 100%;
+    flex: 1;
+    color: #fff;
+    font-size: .24rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .press__empty .press__image {
+    position: absolute;
+    width: 1.64rem;
+    margin-bottom: .15rem;
+    content: url(https://image-1251917893.cos.ap-guangzhou.myqcloud.com/TIP_XCX/igame_plugins/sjjq/nothing.png);
+  }
+
+  .press__empty p {
+    font-size: .2rem;
+    position: absolute;
+    transform: translateY(250%);
+  }
+
+  .detail-tabs {
+    width: auto;
+    background: #fff;
+    display: flex;
+    border-bottom: 1px solid rgba(246, 246, 246, .5);
+    bottom: 0;
+  }
+
+  .detail-tabs-box {
+    width: 1.4rem;
+    height: .5rem;
+    margin-right: .12rem;
+    margin-bottom: .14rem;
+    position: relative;
+    line-height: .5rem;
+    text-align: center;
+    color: #778795;
+    font-size: .22rem;
+    background-color: rgba(51, 68, 84, 1);
+    border: .02rem solid #778795;
+  }
+
+  .detail-tabs-highlight {
+    line-height: .5rem;
+    color: #4d6974;
+    font-weight: 700;
+    background-color: #e2e9e9;
+  }
+}

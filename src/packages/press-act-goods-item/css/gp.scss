@@ -1,0 +1,195 @@
+@import '../../common/style/act/button/_button-gp.scss';
+
+.tip-comp-goods-status--box {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 5.12rem;
+    height: 1.3rem;
+    padding: 0 0 0 .16rem;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/card/bond-bg/fuli-bond.png) no-repeat left top;
+    background-size: 100% 100%;
+    margin-right: .16rem;
+    margin-bottom: .08rem;
+
+    &:nth-last-of-type(1) {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .press__content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .press__image {
+    width: 1.04rem;
+    height: 1.04rem;
+    margin-right: .12rem;
+    background: #a9b1ba;
+  }
+
+  .press__meta {
+    flex: 1;
+    line-height: 1;
+  }
+
+  .press__name {
+    width: 2.2rem;
+    font-size: .24rem;
+    color: #D2792A;
+    line-height: .24rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .press__provider {
+    width: 2.2rem;
+    font-size: .2rem;
+    color: #212124;
+    padding: .12rem 0;
+    line-height: .28rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .press__description {
+    font-size: .18rem;
+    color: #5c7ed2;
+  }
+
+  .press__tip {
+    font-size: $font-xxxs;
+    color: white;
+    display: inline-block;
+    line-height: $font-xs;
+    opacity: .9;
+    background: #f75b4d;
+    border-radius: 1px;
+    padding: 0 .05rem;
+  }
+
+  .press__goods-button {
+    width: 1.4rem;
+    height: 1.3rem;
+    margin: 0;
+
+    /*领取*/
+    &.press__btn--small-primary {
+      position: relative;
+
+      span {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        width: 1.08rem;
+        height: .4rem;
+        margin-top: .48rem;
+        line-height: .4rem;
+        font-size: .22rem;
+        color: #000;
+        letter-spacing: 0;
+        text-align: center;
+        text-shadow: .5px .5px 0 rgba(79, 70, 62, .3);
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 1.4rem;
+        height: 1.3rem;
+        background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/card/bond-bg/fuli-bond-1.png) no-repeat;
+        background-size: 1.4rem 1.3rem;
+        z-index: 1;
+      }
+    }
+
+    /*去使用*/
+    &.press__goods-button--delivered {
+      position: relative;
+
+      span {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        width: 1.4rem;
+        text-align: center;
+        color: #7a91cc;
+        line-height: 1.3rem;
+        font-size: .22rem;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 1.4rem;
+        height: 1.3rem;
+        background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/card/bond-bg/fuli-bond-3.png) no-repeat;
+        background-size: 1.4rem 1.3rem;
+        z-index: 1;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+        display: block;
+        width: .96rem;
+        height: .56rem;
+        background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/card/before_use.png) no-repeat;
+        background-size: 100% 100%;
+        z-index: 3;
+      }
+    }
+
+    /*未达成*/
+    &.press__btn--small-disabled {
+      position: relative;
+
+      span {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        width: 1.4rem;
+        text-align: center;
+        color: #a0b2bf;
+        line-height: 1.3rem;
+        font-size: .22rem;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 1.4rem;
+        height: 1.3rem;
+        background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/gp2.0/img/card/bond-bg/fuli-bond-2.png) no-repeat;
+        background-size: 1.4rem 1.3rem;
+        z-index: 1;
+      }
+    }
+  }
+}

@@ -6,13 +6,15 @@
 
 ---
 
+
 ### 1. 介绍
 
-Press Plus 是从 [Press UI](https://novlan1.github.io/press-ui/) 中剥离的业务组件部分，为什么要分离呢，有下面几点考虑。
+`Press Plus` 是从 [Press UI](https://novlan1.github.io/press-ui/) 中剥离的业务组件部分，为什么要分离呢，有下面几点考虑。
 
-1. 基础组件库已十分稳定，业务组件库频繁改动，并且越来越多，存在影响基础组件的风险
-2. 持续维护包含大量组件，且高质量的组件库比较累，分离后，`Press UI` 继续追求 `100` 分，`Press Plus` 追求 `95` 分
-3. 从用户角度看，使用者如果只用基础组件，完全没必要下载业务组件，而且后续业务组件越来越多，包体积也会越来越大
+1. 基础组件是有限的，业务组件是无限的
+2. 基础组件已十分稳定，业务组件频繁改动，并且越来越多，存在影响基础组件的风险
+3. 持续维护包含大量组件，且高质量的组件库比较累，分离后，`Press UI` 继续追求 `100` 分，`Press Plus` 追求 `95` 分
+4. 从用户角度看，使用者如果只用基础组件，完全没必要下载业务组件，而且后续业务组件越来越多，包体积也会越来越大
 
 <img src="https://mike-1255355338.cos.ap-guangzhou.myqcloud.com/article/2023/10/own_mike_13f3281f0a188e0fbd.png" width="600">
 
@@ -109,6 +111,7 @@ export default {
 }
 </script>
 ```
+
 3. 配置
 
 需要在`vue.config.js`中配置下 `transpileDependencies`：

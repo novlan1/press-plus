@@ -6,9 +6,20 @@
   width: 100%;
   height: 100%;
   padding: 0 .4rem;
-  background: url(https://image-1251917893.file.myqcloud.com/Esports/hor/home/task-award-bg.jpg) no-repeat;
-  background-size: 100%;
-  background-position: center center;
+  &::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(https://image-1251917893.file.myqcloud.com/Esports/hor/home/task-award-bg.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.press-hor-match-header{
+  position: relative;
 }
 
 .press__header-right {
@@ -37,6 +48,7 @@
 }
 
 .press__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,20 +59,21 @@
 }
 
 .press__award-list {
+  width: 7.18rem;
   flex: 1;
   margin-top: .14rem;
   overflow-y: auto;
-
+  overflow-x: hidden;
   .press__task-list {
-    width: 7.18rem;
+    width: 100%;
   }
 
   .press__match-list {
     margin-top: .12rem;
-    width: 7.18rem;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: .2rem;
+    padding-bottom: .52rem;
 
     .press__match-item {
       width: 3.48rem;

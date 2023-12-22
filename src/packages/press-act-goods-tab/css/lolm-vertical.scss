@@ -1,0 +1,75 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__tabs {
+    padding: .2rem .32rem;
+    width: 100%;
+    height: auto;
+    display: flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+
+    p {
+      min-width: 1.24rem;
+      width: auto;
+      height: .48rem;
+      line-height: .48rem;
+      font-size: .24rem;
+      border-radius: .04rem;
+      border: .02rem solid #e8ebec;
+      box-sizing: border-box;
+      background: #fff;
+      text-align: center;
+      color: #1c1c1c;
+      padding: 0 .08rem;
+      margin: 0 .16rem .2rem 0;
+
+      &.current {
+        border: .02rem solid #1c1c1c;
+        background: #1c1c1c;
+        color: #fff;
+      }
+    }
+  }
+
+  &.press__goods-tab {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__invalid-link-top {
+    display: none;
+  }
+
+  .press__content {
+    flex: 1;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__inner {
+    flex: 1;
+    overflow-y: scroll;
+  }
+
+  .press__invalid-link {
+    color: #10aee8;
+    font-size: .28rem;
+    line-height: .8rem;
+    height: .8rem;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    bottom: 0;
+  }
+
+  .press__empty-tip {
+    text-align: center;
+    line-height: 44rpx;
+    font-size: 24rpx;
+    color: #757e7f;
+  }
+}

@@ -9,6 +9,7 @@
       @clickTaskButton="clickTaskButton"
       @clickMatchAward="clickMatchAward"
       @clickMatch="clickMatch"
+      @clickMatchButton="clickMatchButton"
     />
   </div>
 </template>
@@ -50,21 +51,29 @@ const MOCK_MATCH_LIST = [
     image: 'https://dummyimage.com/80x80',
     name: ' 赛事名称赛事名称',
     awards: MOCK_AWARDS.slice(0, 4),
+    buttonPrimary: true,
+    buttonText: '去比赛',
   },
   {
     image: 'https://dummyimage.com/80x80',
     name: ' 赛事名称赛事名称',
     awards: MOCK_AWARDS.slice(0, 4),
+    buttonSecondary: true,
+    buttonText: '去比赛',
+  },
+  {
+    image: 'https://dummyimage.com/80x80',
+    name: ' 赛事名称赛事名称',
+    awards: [],
+    buttonPrimary: true,
+    buttonText: '去比赛',
   },
   {
     image: 'https://dummyimage.com/80x80',
     name: ' 赛事名称赛事名称',
     awards: MOCK_AWARDS.slice(0, 4),
-  },
-  {
-    image: 'https://dummyimage.com/80x80',
-    name: ' 赛事名称赛事名称',
-    awards: MOCK_AWARDS.slice(0, 4),
+    buttonSecondary: true,
+    buttonText: '去比赛',
   },
 ];
 
@@ -98,6 +107,10 @@ export default {
     clickMatch(matchItem) {
       console.log('[clickMatch]', matchItem);
       this.onGTip('[clickMatch]');
+    },
+    clickMatchButton(matchItem) {
+      console.log('[clickMatchButton]', matchItem);
+      this.onGTip('[clickMatchButton]');
     },
     clickMatchAward(awardItem, awardIndex, matchItem) {
       console.log('[clickMatchAward]', awardItem, awardIndex, matchItem);

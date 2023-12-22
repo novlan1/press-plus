@@ -21,6 +21,15 @@
     background-repeat: no-repeat;
     background-size: 100%;
 
+    &--with-avatar {
+      height: 2.26rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0.3rem;
+      background-size: 100% 100%;
+    }
+
     &.press__item-top--gray {
       background-image: url(https://image-1251917893.file.myqcloud.com/tip-project/pubg/pubg-match/horizon/team-item-top-gray.png);
     }

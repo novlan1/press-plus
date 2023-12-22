@@ -1,5 +1,5 @@
 ---
-url : pages/act-detail/act-select-award/act-select-award
+url : pages/act-list/act-select-award/act-select-award
 ---
 
 ## ActSelectAward 选择奖励弹窗

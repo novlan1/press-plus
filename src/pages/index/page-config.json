@@ -132,23 +132,23 @@
       "name": "Login Components",
       "list": [
         {
-          "url": "/press/auth-login/auth-login",
+          "url": "/press/login-auth/login-auth",
           "navigationStyle": ""
         },
         {
-          "url": "/press/bind-login/bind-login",
+          "url": "/press/login-bind/login-bind",
           "navigationStyle": ""
         },
         {
-          "url": "/press/mobile-login/mobile-login",
+          "url": "/press/login-mobile/login-mobile",
           "navigationStyle": ""
         },
         {
-          "url": "/press/p-c-login/p-c-login",
+          "url": "/press/login-p-c/login-p-c",
           "navigationStyle": ""
         },
         {
-          "url": "/press/p-c-scan-login/p-c-scan-login",
+          "url": "/press/login-p-c-scan/login-p-c-scan",
           "navigationStyle": ""
         }
       ]
@@ -156,10 +156,6 @@
     {
       "name": "Act Components",
       "list": [
-        {
-          "url": "/act-detail/act-benefit-item/act-benefit-item",
-          "navigationStyle": ""
-        },
         {
           "url": "/act/act-explain-dialog/act-explain-dialog",
           "navigationStyle": ""
@@ -170,10 +166,6 @@
         },
         {
           "url": "/act/act-q-r-code-dialog/act-q-r-code-dialog",
-          "navigationStyle": ""
-        },
-        {
-          "url": "/act-detail/act-store-item/act-store-item",
           "navigationStyle": ""
         },
         {
@@ -206,7 +198,7 @@
           "navigationStyle": ""
         },
         {
-          "url": "/act-detail/act-input-q-q/act-input-q-q",
+          "url": "/act-list/act-input-q-q/act-input-q-q",
           "navigationStyle": ""
         },
         {
@@ -222,7 +214,7 @@
           "navigationStyle": ""
         },
         {
-          "url": "/act-detail/act-select-award/act-select-award",
+          "url": "/act-list/act-select-award/act-select-award",
           "navigationStyle": ""
         }
       ]
@@ -264,6 +256,31 @@
         },
         {
           "url": "/act-detail/act-goods-detail-select/act-goods-detail-select",
+          "navigationStyle": ""
+        }
+      ]
+    },
+    {
+      "name": "Goods List Components",
+      "list": [
+        {
+          "url": "/act-list/act-benefit-item/act-benefit-item",
+          "navigationStyle": ""
+        },
+        {
+          "url": "/act-list/act-goods-item/act-goods-item",
+          "navigationStyle": ""
+        },
+        {
+          "url": "/act-list/act-goods-list/act-goods-list",
+          "navigationStyle": ""
+        },
+        {
+          "url": "/act-list/act-goods-tab/act-goods-tab",
+          "navigationStyle": ""
+        },
+        {
+          "url": "/act-list/act-store-item/act-store-item",
           "navigationStyle": ""
         }
       ]

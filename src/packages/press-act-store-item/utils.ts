@@ -1,4 +1,4 @@
-import { getActClass as commonGetActClass } from '../common/utils/act-bem';
+import { getActClass as commonGetActClass } from 'press-ui/common/utils/act-bem';
 
 export const TIP_CLASS_MAP = {
   store: 'tip-comp-storelist-item',
@@ -25,6 +25,6 @@ export const TIP_CLASS_MAP = {
   'icon--yp': 'tip-comp-storelist-item-icon-yp',
 };
 
-export function getActClass(useTipClass, args) {
+export function getActClass(useTipClass: boolean, args: any) {
   return commonGetActClass(useTipClass, TIP_CLASS_MAP, args);
 }

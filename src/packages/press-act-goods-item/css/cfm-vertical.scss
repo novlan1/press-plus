@@ -1,0 +1,102 @@
+.tip-comp-goods-status--slidecont {
+  background: #fff;
+  padding: 0 0.32rem;
+}
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-item {
+    padding: 0.32rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  .press__content,
+  &.press__goods-item {
+    width: 100%;
+    display: flex;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    align-items: center;
+  }
+
+  .press__image {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.3rem;
+  }
+
+  .press__meta {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .press__name {
+    color: #fff;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    display: block;
+    margin: 0.08rem 0;
+  }
+
+  .press__provider,
+  .press__description {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.24rem;
+    line-height: 0.34rem;
+    display: block;
+    margin-bottom: 0.16rem;
+  }
+
+  .press__btn--small-primary {
+    width: 1.28rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    display: inline-block;
+    padding-bottom: 0.62rem;
+    text-align: center;
+    font-size: 0.22rem;
+    vertical-align: top;
+    color: #5a350a;
+    background-image: url(https://image-1251917893.file.myqcloud.com/2022/TIP-igame-H5/igame-gp/gp-btn-1.png);
+    background-size: 100% 100%;
+  }
+
+  .tip-comp-goods-status-btn-waiting {
+    text-align: right;
+    width: 1.28rem;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    display: inline-block;
+    color: #999;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+  }
+
+  .press__goods-button--delivered {
+    text-align: right;
+    width: 1.28rem;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    display: inline-block;
+    color: #d49b38;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+  }
+
+  .press__content .press__btn--small-disabled {
+    width: 1.28rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    display: inline-block;
+    padding-bottom: 0.62rem;
+    text-align: center;
+    font-size: 0.22rem;
+    vertical-align: top;
+    color: #cdd1d6;
+    background-image: url(https://image-1251917893.file.myqcloud.com/2022/TIP-igame-H5/igame-gp/btn_secondary_dark.png);
+    background-size: 100% 100%;
+  }
+
+}

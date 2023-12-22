@@ -1,0 +1,82 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__tabs {
+    position: relative;
+    display: flex;
+    margin-bottom: .22rem;
+    text-align: center;
+    border-bottom: 1px solid #395d7e;
+  }
+
+  &.press__goods-tab {
+    position: relative;
+    flex: 1;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__tabs p {
+    font-family: 'GAMEFONT';
+    width: 1.6rem;
+    height: .54rem;
+    font-size: .22rem;
+    color: #84b0eb;
+    letter-spacing: 0;
+    line-height: .54rem;
+    position: relative;
+  }
+
+  .press__tabs p.current {
+    color: #fff;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1.52rem;
+      height: .56rem;
+      top: .05rem;
+      right: 0rem;
+      background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/pvp3.0/image/icon/icon-tabs_select.png) no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+  .press__content {
+    flex: 1;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__inner {
+    flex: 1;
+    overflow-y: scroll;
+  }
+
+  .press__invalid-link {
+    display: none;
+  }
+
+  .press__content--empty {}
+
+  .press__invalid-link-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: .18rem;
+    color: #82a0cc;
+    padding-right: .22rem;
+    line-height: .54rem;
+  }
+
+  .press__empty-tip {
+    width: 100%;
+    height: .5rem;
+    font-size: .2rem;
+    color: #ffb52b;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+}

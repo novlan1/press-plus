@@ -1,5 +1,6 @@
 <template>
   <div
+    v-treport="matchItem.reportData"
     :class="[getActClass('match-item')]"
     @click.stop="clickMatch"
   >
@@ -19,13 +20,32 @@
         {{ matchItem.name }}
       </div>
     </div>
-    <div :class="[getActClass('match-awards')]">
+    <div
+      v-if="matchItem.awards && matchItem.awards.length"
+      :class="[getActClass('match-awards')]"
+    >
       <img
         v-for="(item,index) in matchItem.awards"
         :key="index"
         v-lazy="item.image"
         @click.stop="clickMatchAward(item, index)"
       >
+    </div>
+    <img
+      v-else
+      :class="[getActClass('default-award')]"
+      src="https://image-1251917893.file.myqcloud.com/Esports/hor/home/task-award.png"
+    >
+    <div
+      v-if="matchItem.buttonText"
+      class="press__btn"
+      :class="{
+        'press__btn--primary': matchItem.buttonPrimary,
+        'press__btn--secondary': matchItem.buttonSecondary,
+      }"
+      @click.stop="clickMatchButton"
+    >
+      {{ matchItem.buttonText }}
     </div>
   </div>
 </template>
@@ -63,6 +83,9 @@ export default {
   methods: {
     clickMatch() {
       this.$emit('clickMatch', this.matchItem);
+    },
+    clickMatchButton() {
+      this.$emit('clickMatchButton', this.matchItem);
     },
     clickMatchAward(awardItem, awardIndex) {
       this.$emit('clickMatchAward', awardItem, awardIndex, this.matchItem);

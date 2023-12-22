@@ -236,31 +236,31 @@
         }
       },
       {
-        "path": "auth-login/auth-login",
+        "path": "login-auth/login-auth",
         "style": {
           "navigationBarTitleText": ""
         }
       },
       {
-        "path": "bind-login/bind-login",
+        "path": "login-bind/login-bind",
         "style": {
           "navigationBarTitleText": ""
         }
       },
       {
-        "path": "mobile-login/mobile-login",
+        "path": "login-mobile/login-mobile",
         "style": {
           "navigationBarTitleText": ""
         }
       },
       {
-        "path": "p-c-login/p-c-login",
+        "path": "login-p-c/login-p-c",
         "style": {
           "navigationBarTitleText": ""
         }
       },
       {
-        "path": "p-c-scan-login/p-c-scan-login",
+        "path": "login-p-c-scan/login-p-c-scan",
         "style": {
           "navigationBarTitleText": ""
         }
@@ -348,30 +348,6 @@
     "root": "pages/act-detail",
     "pages": [
       {
-        "path": "act-benefit-item/act-benefit-item",
-        "style": {
-          "navigationBarTitleText": ""
-        }
-      },
-      {
-        "path": "act-store-item/act-store-item",
-        "style": {
-          "navigationBarTitleText": ""
-        }
-      },
-      {
-        "path": "act-input-q-q/act-input-q-q",
-        "style": {
-          "navigationBarTitleText": ""
-        }
-      },
-      {
-        "path": "act-select-award/act-select-award",
-        "style": {
-          "navigationBarTitleText": ""
-        }
-      },
-      {
         "path": "act-goods-detail-barcode/act-goods-detail-barcode",
         "style": {
           "navigationBarTitleText": ""
@@ -421,6 +397,53 @@
       },
       {
         "path": "act-goods-detail-select/act-goods-detail-select",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      }
+    ]
+  },
+  {
+    "root": "pages/act-list",
+    "pages": [
+      {
+        "path": "act-input-q-q/act-input-q-q",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-select-award/act-select-award",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-benefit-item/act-benefit-item",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-item/act-goods-item",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-list/act-goods-list",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-goods-tab/act-goods-tab",
+        "style": {
+          "navigationBarTitleText": ""
+        }
+      },
+      {
+        "path": "act-store-item/act-store-item",
         "style": {
           "navigationBarTitleText": ""
         }

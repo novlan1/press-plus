@@ -1,11 +1,11 @@
 // #ifndef VUE3
-import { Vue } from '../common/vue3/vue';
+import { Vue } from 'press-ui/common/vue3/vue';
 // #endif
 
 import defaultLang from './lang/zh-CN';
 import { deepAssign } from '../common/utils/object';
 
-let lang = defaultLang;
+let lang: Record<string, any> = defaultLang;
 let merged = false;
 
 
@@ -27,7 +27,7 @@ let i18nHandler = function (this: Object) {
   return;
 };
 
-export const t = function (this: any, path = '', ...options): any {
+export const t = function (this: any, path = '', ...options: Array<any>): any {
   let value = i18nHandler.apply(this);
   if (value !== null && value !== undefined) return value;
 
@@ -57,11 +57,11 @@ export const t = function (this: any, path = '', ...options): any {
   return '';
 };
 
-export const use = function (l) {
+export const use = function (l?: Record<string, any>) {
   lang = l || lang;
 };
 
-export const i18n = function (fn) {
+export const i18n = function (fn?: any) {
   i18nHandler = fn || i18nHandler;
 };
 

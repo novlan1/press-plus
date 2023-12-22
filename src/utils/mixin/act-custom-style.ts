@@ -13,7 +13,7 @@ import PressPopupCell from 'src/packages/press-popup-cell/press-popup-cell.vue';
 const CUSTOM_STYLE_DEFAULT = 'default';
 
 
-function getAllStyleList(styleList) {
+function getAllStyleList(styleList: Array<any>) {
   const allStyleList = [{
     label: '默认',
     value: CUSTOM_STYLE_DEFAULT,
@@ -27,7 +27,7 @@ function getAllStyleList(styleList) {
 }
 
 
-export function getActCustomStyleMixin(componentName, styleList, defaultCustomStyle = 'pvp') {
+export function getActCustomStyleMixin(componentName: string, styleList: Array<any>, defaultCustomStyle = 'pvp') {
   return {
     components: {
       PressCell,
@@ -48,24 +48,24 @@ export function getActCustomStyleMixin(componentName, styleList, defaultCustomSt
     computed: {
       styleMap(this: any) {
         const { styleList } = this;
-        return styleList.reduce((acc, item) => {
+        return styleList.reduce((acc: Record<string, any>, item: any) => {
           acc[item.value] = item;
           return acc;
         }, {});
       },
       curGameClass(this: any) {
         const { customStyle } = this;
-        let list = componentName;
+        let list: any = componentName;
         if (!Array.isArray(list)) {
           list = [list];
         }
-        const res = list.map(item => `${hyphenate(item)}--type-${customStyle}`).join(' ');
+        const res = list.map((item: string) => `${hyphenate(item)}--type-${customStyle}`).join(' ');
         return res;
       },
     },
     watch: {
       customStyle: {
-        handler(this: any, value) {
+        handler(this: any, value: string) {
           if (!value.endsWith('vertical')) {
             if (this.showHeader) {
               this.onToggleShowHeader();

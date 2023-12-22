@@ -12,6 +12,7 @@ export const STYLE_LIST = [
   'lolm',
   'majiang-vertical',
   'majiang',
+  'peng-vertical',
   'pvp-vertical',
   'pvp',
   'smoba-vertical',

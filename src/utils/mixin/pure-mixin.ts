@@ -6,7 +6,7 @@ import PressCell from 'press-ui/press-cell/press-cell.vue';
 import DemoBlock from '../../pages/demo-block/demo-block.vue';
 import ToggleHeader from '../../pages/components/toggle-header/toggle-header.vue';
 
-import { initGlobalComponent, initGlobalMixin } from '../../packages/common/vue3/adapter';
+import { initGlobalComponent, initGlobalMixin } from 'press-ui/common/vue3/adapter';
 
 
 /**

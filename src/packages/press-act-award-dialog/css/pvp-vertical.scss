@@ -72,17 +72,30 @@
     }
 
     .press__btn--normal-top {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
       display: block;
       text-align: center;
       color: #fff;
       font-size: .28rem;
       line-height: .8rem;
-      margin: .24rem auto;
+      margin: .24rem auto .32rem;
       width: 5.6rem;
       height: .8rem;
       flex-shrink: 0;
       border-radius: .08rem;
       background: linear-gradient(90deg, #50ABFF 0%, #6663FE 50%, #925FFF 100%);
+    }
+
+    .press__expire-time {
+      display: inline-block;
+      width: 6.54rem;
+      margin: .16rem .48rem 0;
+      color: #4A4A4A;
+      font-size: .2rem;
+      text-align: right;
     }
 
     .press__icon--close {
@@ -175,14 +188,31 @@
         }
 
         .press__goods-time {
+          display: none;
+        }
+
+        .press__act-title {
+          position: relative;
           color: #5D5BE5;
-          font-size: 20.00rpx;
-          padding: 6.00rpx 18.00rpx;
+          font-size: .2rem;
+          padding: .06rem .18rem;
           background: rgba(93, 91, 229, 0.1);
-          width: 382.00rpx;
-          height: 40.00rpx;
-          border-radius: 20.00rpx;
+          width: 3.82rem;
+          height: .4rem;
+          border-radius: .2rem;
           box-sizing: border-box;
+
+          .press__arrow-icon {
+            position: absolute;
+            display: inline-block;
+            top: .14rem;
+            right: .2rem;
+            width: .12rem;
+            height: .12rem;
+            border-top: .02rem solid #5D5BE5;
+            border-right: .02rem solid #5D5BE5;
+            transform: rotate(45deg);
+          }
         }
       }
     }

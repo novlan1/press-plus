@@ -1,0 +1,60 @@
+/* 4.主tab ------------------ 列表tab:tip-comp-goods-tab |start*/
+.press-act:not(.press-act--hidden-tip) {
+  .press__tabs {
+    background: #fff;
+    display: flex;
+    position: relative;
+    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.05) inset;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .wrap_list .press__tabs p {
+    color: #303030;
+    text-align: center;
+    font-size: 0.22rem;
+    font-weight: 400;
+    padding: 0.2rem 0.32rem;
+    white-space: nowrap;
+  }
+
+  .press__content--empty {}
+
+  .wrap_list .press__tabs p.current {
+    color: #efa37b;
+  }
+
+  &.press__goods-tab {
+    position: relative;
+  }
+
+  /* 按钮点击后-查看已失效的物品 */
+  .press__invalid-link {
+    display: none;
+  }
+
+  /* 查看已失效的物品 */
+  &.press__goods-tab .press__invalid-link-top {
+    font-size: 0.2rem;
+    color: #acacac;
+    position: absolute;
+    right: 0.1rem;
+    top: -0.4rem;
+    /* top: 0.24rem; */
+  }
+
+  /* // myGoodsTabTip:'优惠券将在三天内到期哦～快去使用吧！' */
+  .press__empty-tip {
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.2rem;
+    color: #efa37b;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  /* 4.主tab ------------------ tip-comp-goods-tab end*/
+
+}

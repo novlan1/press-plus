@@ -1,0 +1,110 @@
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-item {
+    display: inline-block;
+    margin: 0 .12rem .24rem;
+  }
+
+  .press__content {
+    display: flex;
+    justify-content: flex-start;
+    background: rgba(9, 23, 33, .5);
+    width: 100%;
+    height: 1.8rem;
+    padding: .24rem;
+
+    .press__meta {
+      overflow-x: hidden;
+    }
+
+    .press__name {
+      color: #cdbe91;
+      font-size: .28rem;
+      line-height: .4rem;
+      margin: 0 0 .16rem 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .press__description {
+      color: #4d616c;
+      font-size: .2rem;
+      line-height: .28rem;
+    }
+
+    .press__provider {
+      font-size: .22rem;
+      color: #c2bbaf;
+      line-height: .32rem;
+      margin: 0 0 .12rem 0;
+    }
+
+    .press__goods-button {
+      display: block;
+      width: 1.44rem;
+      margin: .04rem 0 0 0;
+      line-height: .5rem;
+      text-align: center;
+      height: .5rem;
+      background: url(https://image-1251917893.file.myqcloud.com/tip-project/lgame/ingame-lolm/ingame-btn--disable.png) center center no-repeat;
+      background-size: 100% auto;
+      font-size: .24rem;
+      color: #d1c194;
+    }
+
+    .press__image {
+      width: 1.32rem;
+      height: 1.32rem;
+
+      &>img {
+        width: 1.32rem;
+        height: 1.32rem;
+      }
+    }
+  }
+
+  .press__tip {
+    color: #4d616c;
+    font-size: .2rem;
+    line-height: .28rem;
+  }
+
+  .ingame-container {
+    &.ingame-container--lunar {
+      .press__content {
+        background: url('https://image-1251917893.file.myqcloud.com/tip-project/lgame/lunar/ingame/list-card--lunar.png') center center no-repeat;
+        background-size: 100% 100%;
+
+        .press__name {
+          color: #ffefef;
+        }
+
+        .press__provider {
+          color: #c2bbaf;
+        }
+
+        .press__tip {
+          color: hsla(0, 100%, 97%, .5);
+        }
+      }
+
+      .press__goods-button {
+        width: 1.72rem;
+        height: .56rem;
+        text-align: center;
+        line-height: normal;
+        padding: .11rem 0;
+
+        span {
+          display: inline-block;
+        }
+
+        &.press__btn--small-primary {
+          background: url('https://image-1251917893.file.myqcloud.com/tip-project/lgame/lunar/ingame/btn_primary_big.png') center center no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+
+}

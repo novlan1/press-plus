@@ -19,6 +19,7 @@
 
 .press__table-rank {
   width: .9rem;
+  font-family: "AgencyFB-Bold";
 }
 
 .press__table-name {
@@ -52,6 +53,13 @@
   .press__table-rank {
     font-size: .2rem;
     color: #fff;
+    font-family: "AgencyFB-Bold";
+
+    .rank {
+      display: block;
+      text-align: center;
+      width: .44rem;
+    }
   }
 
   .press__table-name {
@@ -124,8 +132,16 @@
   box-shadow: 0 -.02rem 0 0 #DDDFE1 inset;
 
   .press__table-rank {
-    font-size: .2rem;
+    font-size: .28rem;
     color: #212124;
+    font-family: "AgencyFB-Bold";
+
+    .rank {
+      display: block;
+      text-align: center;
+      width: .44rem;
+      font-size: .28rem;
+    }
   }
 
   .rank1 {
@@ -176,7 +192,7 @@
 
   .press__table-history {
     font-family: "AgencyFB-Bold";
-    font-size: .24rem;
+    font-size: .28rem;
     color: #212124;
     overflow-x: auto;
     white-space: nowrap;
@@ -184,7 +200,7 @@
 
   .press__table-score {
     font-family: "AgencyFB-Bold";
-    font-size: .24rem;
+    font-size: .28rem;
     color: #212124;
   }
 

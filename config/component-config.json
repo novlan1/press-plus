@@ -151,23 +151,23 @@
     "title": "登录组件",
     "list": [
       {
-        "name": "AuthLogin",
+        "name": "LoginAuth",
         "title": "授权登录"
       },
       {
-        "name": "BindLogin",
+        "name": "LoginBind",
         "title": "绑定登录"
       },
       {
-        "name": "MobileLogin",
+        "name": "LoginMobile",
         "title": "移动端登录"
       },
       {
-        "name": "PCLogin",
+        "name": "LoginPC",
         "title": "PC登录"
       },
       {
-        "name": "PCScanLogin",
+        "name": "LoginPCScan",
         "title": "PC扫码登录"
       }
     ]
@@ -176,10 +176,6 @@
     "name": "Act Components",
     "title": "活动组件",
     "list": [
-      {
-        "name": "ActBenefitItem",
-        "title": "福利列表项"
-      },
       {
         "name": "ActExplainDialog",
         "title": "活动规则弹窗"
@@ -191,10 +187,6 @@
       {
         "name": "ActQRCodeDialog",
         "title": "二维码弹窗"
-      },
-      {
-        "name": "ActStoreItem",
-        "title": "商户列表项"
       },
       {
         "name": "ActTipDialog",
@@ -287,6 +279,32 @@
       {
         "name": "ActGoodsDetailSelect",
         "title": "物品自选"
+      }
+    ]
+  },
+  "goods-list": {
+    "name": "Goods List Components",
+    "title": "物品列表",
+    "list": [
+      {
+        "name": "ActBenefitItem",
+        "title": "福利列表项"
+      },
+      {
+        "name": "ActGoodsItem",
+        "title": "物品列表项"
+      },
+      {
+        "name": "ActGoodsList",
+        "title": "物品列表"
+      },
+      {
+        "name": "ActGoodsTab",
+        "title": "物品标签页"
+      },
+      {
+        "name": "ActStoreItem",
+        "title": "商户列表项"
       }
     ]
   }

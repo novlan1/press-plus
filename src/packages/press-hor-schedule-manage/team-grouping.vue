@@ -18,6 +18,7 @@
         @cancelSearch="cancelSearch"
         @update:loading="updateLoading"
         @loadMoreInSearch="loadMoreInSearch"
+        @clickSearchTeamCard="clickSearchTeamCard"
       />
       <template v-else>
         <div :class="[getActClass('grouping')]">
@@ -57,6 +58,7 @@
               v-for="(item, index) in groupList"
               :key="index"
               :class="[getActClass('team-item')]"
+              @click.stop="clickTeamGroupCard(item, index)"
             >
               <div :class="[getActClass('item-top')]">
                 <div :class="[getActClass('team-name')]">
@@ -105,13 +107,13 @@
 
       <div :class="[getActClass('btn-group')]">
         <div
+          v-if="buttonText"
           :class="[getActClass('primary-btn', {
             'disabled-btn': disabledButton
           })]"
           @click.stop="confirmAdjustGroup"
         >
-          <!-- 添加disabled-btn置灰按钮 -->
-          确认分组
+          {{ buttonText }}
           <div
             class="num"
           >
@@ -159,6 +161,10 @@ export default {
     searchTeamMapInGroup: {
       type: Object,
       default: () => ({}),
+    },
+    buttonText: {
+      type: String,
+      default: '确认分组',
     },
   },
   emits: [
@@ -216,6 +222,7 @@ export default {
     },
     cancelSearch() {
       this.isSearch = false;
+      this.$emit('cancelSearch');
     },
     search(value) {
       this.$emit('search', value);
@@ -225,6 +232,12 @@ export default {
     },
     updateLoading(key, value) {
       this.$emit('update:loading', key, value);
+    },
+    clickTeamGroupCard(groupItem, groupIndex) {
+      this.$emit('clickTeamGroupCard', groupItem, groupIndex, this.groupList);
+    },
+    clickSearchTeamCard(team, index) {
+      this.$emit('clickSearchTeamCard', team, index);
     },
   },
 };

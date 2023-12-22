@@ -14,12 +14,15 @@
         class="press-brand__swiper"
         :autoplay="true"
         :circular="true"
+        :interval="brandInterval"
         display-multiple-items="4"
       >
         <swiper-item
           v-for="(item,index) in brandList"
           :key="index"
+          v-treport="item.reportData"
           class="press-brand__swiper-item"
+          @click="clickBrand(item, index)"
         >
           <div class="press-brand__item__box">
             <img
@@ -65,6 +68,10 @@ export default {
       type: Array,
       default: () => [],
       required: false,
+    },
+    brandInterval: {
+      type: Number,
+      default: 1000,
     },
   },
   emits: ['clickBrand'],

@@ -1,5 +1,8 @@
 <template>
-  <div :class="[getActClass('task-item')]">
+  <div
+    v-treport="taskItem.reportData"
+    :class="[getActClass('task-item')]"
+  >
     <div :class="[getActClass('task-name')]">
       {{ taskItem.name }}
     </div>

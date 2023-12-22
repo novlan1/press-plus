@@ -1,0 +1,69 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .08rem;
+  }
+
+  &.press__goods-tab {
+    flex: 1;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__tabs p {
+    position: relative;
+    width: 1.46rem;
+    height: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    color: #fff;
+    font-size: .2rem;
+    margin-right: .08rem;
+    border-radius: .04rem;
+    white-space: nowrap;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/hlddz/version3D/img/inner-tabs.png) no-repeat;
+    background-size: 100%;
+  }
+
+  .press__tabs p.current {
+    color: #465278;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/hlddz/version3D/img/inner-tabs-act.png) no-repeat;
+    background-size: 100%;
+  }
+
+  .press__content {
+    flex: 1;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__inner {
+    flex: 1;
+    overflow-y: scroll;
+  }
+
+  .press__invalid-link {
+    font-size: .24rem;
+    color: #3b437f;
+    text-align: center;
+    padding: .2rem 0;
+    flex-basis: .5rem;
+  }
+
+  .press__content--empty {
+    border-radius: .08rem;
+    background: rgba(0, 35, 150, .4);
+  }
+
+  .press__invalid-link-top {
+    display: none;
+  }
+
+  .press__empty-tip {
+    display: none;
+  }
+
+}

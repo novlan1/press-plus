@@ -164,29 +164,29 @@
       "collapsable": false,
       "children": [
         {
-          "title": "AuthLogin",
+          "title": "LoginAuth",
           "subTitle": "授权登录",
-          "path": "/components/press/press-auth-login.md"
+          "path": "/components/press/press-login-auth.md"
         },
         {
-          "title": "BindLogin",
+          "title": "LoginBind",
           "subTitle": "绑定登录",
-          "path": "/components/press/press-bind-login.md"
+          "path": "/components/press/press-login-bind.md"
         },
         {
-          "title": "MobileLogin",
+          "title": "LoginMobile",
           "subTitle": "移动端登录",
-          "path": "/components/press/press-mobile-login.md"
+          "path": "/components/press/press-login-mobile.md"
         },
         {
-          "title": "PCLogin",
+          "title": "LoginPC",
           "subTitle": "PC登录",
-          "path": "/components/press/press-p-c-login.md"
+          "path": "/components/press/press-login-p-c.md"
         },
         {
-          "title": "PCScanLogin",
+          "title": "LoginPCScan",
           "subTitle": "PC扫码登录",
-          "path": "/components/press/press-p-c-scan-login.md"
+          "path": "/components/press/press-login-p-c-scan.md"
         }
       ]
     },
@@ -194,11 +194,6 @@
       "title": "活动组件",
       "collapsable": false,
       "children": [
-        {
-          "title": "ActBenefitItem",
-          "subTitle": "福利列表项",
-          "path": "/components/press/press-act-benefit-item.md"
-        },
         {
           "title": "ActExplainDialog",
           "subTitle": "活动规则弹窗",
@@ -213,11 +208,6 @@
           "title": "ActQRCodeDialog",
           "subTitle": "二维码弹窗",
           "path": "/components/press/press-act-q-r-code-dialog.md"
-        },
-        {
-          "title": "ActStoreItem",
-          "subTitle": "商户列表项",
-          "path": "/components/press/press-act-store-item.md"
         },
         {
           "title": "ActTipDialog",
@@ -330,6 +320,37 @@
           "title": "ActGoodsDetailSelect",
           "subTitle": "物品自选",
           "path": "/components/press/press-act-goods-detail-select.md"
+        }
+      ]
+    },
+    {
+      "title": "物品列表",
+      "collapsable": false,
+      "children": [
+        {
+          "title": "ActBenefitItem",
+          "subTitle": "福利列表项",
+          "path": "/components/press/press-act-benefit-item.md"
+        },
+        {
+          "title": "ActGoodsItem",
+          "subTitle": "物品列表项",
+          "path": "/components/press/press-act-goods-item.md"
+        },
+        {
+          "title": "ActGoodsList",
+          "subTitle": "物品列表",
+          "path": "/components/press/press-act-goods-list.md"
+        },
+        {
+          "title": "ActGoodsTab",
+          "subTitle": "物品标签页",
+          "path": "/components/press/press-act-goods-tab.md"
+        },
+        {
+          "title": "ActStoreItem",
+          "subTitle": "商户列表项",
+          "path": "/components/press/press-act-store-item.md"
         }
       ]
     }

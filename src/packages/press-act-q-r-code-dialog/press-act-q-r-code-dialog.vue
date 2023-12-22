@@ -40,6 +40,12 @@
         <div :class="[getActClass('desc')]">
           {{ scanTitle }}
         </div>
+        <div
+          v-if="desText"
+          :class="[getActClass('subdesc')]"
+        >
+          {{ desText }}
+        </div>
         <div :class="[getActClass('button-wrap')]">
           <a
             :class="[getActClass('btn--qr','btn--medium-primary')]"
@@ -101,6 +107,10 @@ export default {
     scanTitle: {
       type: String,
       default: '截图保存使用微信-扫一扫',
+    },
+    desText: {
+      type: String,
+      default: '',
     },
     useTipClass: {
       type: Boolean,

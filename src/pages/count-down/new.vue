@@ -47,7 +47,7 @@ import PressField from 'press-ui/press-field/press-field.vue';
 import PressButton from 'press-ui/press-button/press-button.vue';
 import PressDatetimePickerPopup from 'press-ui/press-datetime-picker/press-datetime-picker-popup.vue';
 import { showFunctionalComponent } from 'src/packages/common/functional-component/index';
-import { timeStampFormat } from 'src/packages/common/format/time';
+import { timeStampFormat } from 't-comm/lib//time/time';
 import {
   addCountDown,
   getCountDownDetail,

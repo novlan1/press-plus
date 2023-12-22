@@ -90,6 +90,13 @@
                       {{ actInfo.giftBoxData.expireTime }}
                     </div>
                     <div
+                      v-if="propsData.brandacttitle"
+                      class="press__act-title"
+                    >
+                      {{ propsData.brandacttitle }}
+                      <div class="press__arrow-icon" />
+                    </div>
+                    <div
                       v-if="propsData.type == 'detail'"
                       :class="[getActClass('goods-task')]"
                     >
@@ -121,6 +128,13 @@
                     >
                       兑换有效期至{{ water.displayOverduetime }}
                     </div>
+                    <div
+                      v-if="propsData.brandacttitle"
+                      class="press__act-title"
+                    >
+                      {{ propsData.brandacttitle }}
+                      <div class="press__arrow-icon" />
+                    </div>
                   </div>
                 </div>
               </template>
@@ -135,6 +149,7 @@
               >
                 {{ propsData.btnText }}
               </div>
+              <div class="press__expire-time">{{ propsData.expireTime }}</div>
             </template>
             <!-- 多奖励平铺 -->
             <div
@@ -187,6 +202,13 @@
                         :class="[getActClass('goods-time')]"
                       >
                         兑换有效期至{{ waterItem.displayOverduetime }}
+                      </div>
+                      <div
+                        v-if="propsData.brandacttitle"
+                        class="press__act-title"
+                      >
+                        {{ propsData.brandacttitle }}
+                        <div class="press__arrow-icon" />
                       </div>
                     </div>
                     <div

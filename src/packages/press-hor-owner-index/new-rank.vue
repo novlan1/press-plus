@@ -13,7 +13,7 @@
       @change="changeRankTab"
     >
       <press-tab
-        v-for="(tabItem, index) in tabList"
+        v-for="(tabItem, index) in rankTabList"
         :key="index"
         :title="tabItem"
       >
@@ -262,6 +262,10 @@ export default {
       type: Number,
       default: 0,
     },
+    rankTabList: {
+      type: Array,
+      default: () => (['主理人榜', '我关注的', '好友关注的']),
+    },
   },
   emits: [
     'changeRankTab',
@@ -272,7 +276,6 @@ export default {
   ],
   data() {
     return {
-      tabList: ['主理人月榜', '我关注的', '好友关注的'],
     };
   },
   computed: {

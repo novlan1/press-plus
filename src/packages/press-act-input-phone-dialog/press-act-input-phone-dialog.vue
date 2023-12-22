@@ -16,13 +16,23 @@
       </p>
       <div :class="[getActClass('content')]">
         <div :class="[getActClass('box')]">
-          <input
-            :value="phone"
-            :class="[getActClass('phone-number')]"
-            type="string"
-            placeholder="请输入手机号码"
-            @input="changePhone"
-          >
+          <div :class="[getActClass('code-wrap')]">
+            <input
+              :value="phone"
+              :class="[getActClass('phone-number')]"
+              type="string"
+              placeholder="请输入手机号码"
+              :disabled="disablePhoneInput"
+              @input="changePhone"
+            >
+            <div
+              v-if="needModifyButton"
+              :class="[getActClass('code-btn')]"
+              @click.stop="onClickModifyButton"
+            >
+              修改
+            </div>
+          </div>
           <div
             v-if="needPhoneCheck"
             :class="[getActClass('code-wrap')]"
@@ -50,7 +60,7 @@
           {{ remark }}
         </p>
         <div
-          v-if="protocolName || userProtocolName"
+          v-if="protocolName || userProtocolName || userProtocolList.length"
           :class="[getActClass('treaty-wrap')]"
         >
           <PressActCheckbox
@@ -68,7 +78,7 @@
             >
               《{{ protocolName }}》
             </span>
-            {{ protocolName && userProtocolName ? '和' : '' }}
+            {{ protocolName && (userProtocolName || userProtocolList.length) ? '和' : '' }}
             <span
               v-if="userProtocolName"
               :class="[getActClass('treaty-desc')]"
@@ -76,25 +86,35 @@
             >
               《{{ userProtocolName }}》
             </span>
+            <span v-if="!userProtocolName && userProtocolList.length ">
+              <span
+                v-for="(protocol, index) in userProtocolList"
+                :key="index"
+                :class="[getActClass('treaty-desc')]"
+                @click="onClickUserProtocol(protocol)"
+              >
+                《{{ protocol.userProtocolTitle }}》
+              </span>
+            </span>
           </div>
         </div>
         <div :class="[getActClass('button-wrap')]">
           <a
             :class="[getActClass('btn--cancel','btn--medium-secondary')]"
             @click="closeDialog"
-          >取 消</a>
+          >{{ closeButtonText }}</a>
           <!-- 未勾选协议的按钮样式 tip-comp-button-disabled -->
           <a
 
             :class="[
               getActClass('btn--sure','btn--medium-primary', {
                 [getActClass('btn--disabled')]:
-                  (protocolName || userProtocolName) && !isAgreeProtocol,
+                  (protocolName || userProtocolName || userProtocolList.length) && !isAgreeProtocol,
               }),
 
             ]"
             @click="onClickButton"
-          >确认兑换</a>
+          >{{ buttonText }}</a>
         </div>
       </div>
     </div>
@@ -132,6 +152,12 @@ export default {
     needPhoneCheck: {
       type: Boolean,
       desc: '是否需要验证手机号合法性',
+      default: false,
+      required: false,
+    },
+    needModifyButton: {
+      type: Boolean,
+      desc: '是否需要显示修改按钮',
       default: false,
       required: false,
     },
@@ -174,6 +200,11 @@ export default {
       desc: '用户协议名称',
       default: null,
     },
+    userProtocolList: {
+      type: Array,
+      desc: '用户协议列表，用于多个用户协议时',
+      default: () => [],
+    },
     isAgreeProtocol: {
       type: Boolean,
       default: false,
@@ -188,6 +219,25 @@ export default {
       type: Boolean,
       default: false,
     },
+    closeButtonText: {
+      type: String,
+      default: '取 消',
+      required: false,
+      desc: '左侧按钮文案',
+    },
+    buttonText: {
+      type: String,
+      default: '确认兑换',
+      required: false,
+      desc: '右侧按钮文案',
+    },
+    disablePhoneInput: {
+      type: Boolean,
+      default: false,
+      required: false,
+      desc: '是否禁用手机号输入框',
+    },
+
   },
   methods: {
     closeDialog() {
@@ -200,13 +250,17 @@ export default {
     onClickProtocol() {
       this.$emit('clickProtocol');
     },
-    onClickUserProtocol() {
-      this.$emit('clickUserProtocol');
+    onClickUserProtocol(protocol = {}) {
+      this.$emit('clickUserProtocol', protocol);
     },
     onClickGetCode() {
       this.$emit('clickGetCodeButton');
     },
+    onClickModifyButton() {
+      this.$emit('clickModifyButton');
+    },
     changeIsAgreeProtocol(checked) {
+      this.$emit('changeIsAgreeProtocol', checked);
       this.$emit('update:isAgreeProtocol', checked);
     },
     changePhone(e) {

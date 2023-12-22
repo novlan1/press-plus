@@ -1,88 +1,123 @@
 <template>
   <div class="press-schedule gp-commonbg">
-    <RightBar
-      :tab-index="tabIndex"
-      :orig-bar-list="barList"
-      @changeTab="changeTab"
-      @close="close"
+    <TeamList
+      v-if="showTeamList"
+      :team-map="teamMapInOneGroup"
+      @clickClose="showTeamList = false"
     />
-    <!-- 确认资格 -->
-    <ConfirmMember
-      v-if="tabIndex == 0"
-      :team-map="teamMap"
-      :search-team-map="searchTeamMap"
-      :team-total="teamTotal"
-      :checked-team-total="checkedTeamTotal"
-      :is-search="isSearch"
-      :is-all-confirmed="isAllConfirmed"
-      :disabled-button="curGoingTab > tabIndex"
-      @search="onSearch"
-      @checkTeam="checkTeam"
-      @onClickSearch="onClickSearch"
-      @onCancelSearch="isSearch = false"
-      @toggleAllQualification="toggleAllQualification"
-      @doneConfirmSignUp="doneConfirmSignUp"
-      @loadMore="loadMore"
-      @update:loading="updateLoading"
-    />
-    <!-- 队伍分组 -->
-    <TeamGrouping
-      v-if="tabIndex == 1"
-      :num-per-group="numPerGroup"
-      :to-select-num-list="toSelectNumList"
-      :group-num="groupNum"
-      :group-list-map="groupListMap"
-      :disabled-button="curGoingTab > tabIndex"
-      :search-team-map-in-group="searchTeamMapInGroup"
-      @selectNumPerGroup="selectNumPerGroup"
-      @confirmAdjustGroup="confirmAdjustGroup"
-      @loadMore="loadMore"
-      @update:loading="updateLoading"
-      @search="searchTeamGroup"
-    />
-    <!-- 确认开赛 -->
-    <ConfirmStart
-      v-if="tabIndex == 2"
-      :round-total="roundTotal"
-      :group-map="groupMap"
-      :search-team-map-in-group="searchTeamMapInGroup"
-      :cur-start-round-id="curStartRoundId"
-      :search-team-list-in-group="searchTeamListInGroup"
-      :disabled-button="curGoingTab > tabIndex"
-      :round-list="roundList"
-      @changeStartRoundId="changeStartRoundId"
-      @startGame="startGame"
-      @startAllGame="startAllGame"
-      @search="searchTeamGroup"
-      @loadMore="loadMore"
-      @update:loading="updateLoading"
-    />
-    <!-- 公布成绩 -->
-    <ShowScore
-      v-if="tabIndex == 3"
-      :round-total="roundTotal"
-      :cur-score-round-id="curScoreRoundId"
-      :group-map="groupMap"
-      :team-score-map="teamScoreMap"
-      :disabled-button="publishedScore"
-      :search-team-map-in-group="searchTeamMapInGroup"
-      @selectGroupInScore="selectGroupInScore"
-      @publishScore="publishScore"
-      @changeScoreRoundId="changeScoreRoundId"
-      @search="searchTeamGroup"
-      @update:loading="updateLoading"
-      @loadMore="loadMore"
-    />
+
+    <template v-else>
+      <RightBar
+        :tab-index="tabIndex"
+        :orig-bar-list="barList"
+        @changeTab="changeTab"
+        @close="close"
+      />
+      <!-- 确认资格 -->
+      <ConfirmMember
+        v-show="tabIndex == 0"
+        :team-map="teamMap"
+        :search-team-map="searchTeamMap"
+        :team-total="teamTotal"
+        :checked-team-total="checkedTeamTotal"
+        :is-search="isSearch"
+        :is-all-confirmed="isAllConfirmed"
+        :disabled-button="disableCurrentButton"
+        :button-text="confirmMemberButtonText"
+        :cancel-button-text="confirmMemberCancelButtonText"
+        @search="onSearch"
+        @checkTeam="checkTeam"
+        @onClickSearch="onClickSearch"
+        @cancelSearch="cancelSearch"
+        @toggleAllQualification="toggleAllQualification"
+        @doneConfirmSignUp="doneConfirmSignUp"
+        @loadMore="loadMore"
+        @update:loading="updateLoading"
+      />
+      <!-- 队伍分组 -->
+      <TeamGrouping
+        v-show="tabIndex == 1"
+        :num-per-group="numPerGroup"
+        :to-select-num-list="toSelectNumList"
+        :group-num="groupNum"
+        :group-list-map="groupListMap"
+        :disabled-button="disableCurrentButton"
+        :search-team-map-in-group="searchTeamMapInGroup"
+        :button-text="teamGroupingButtonText"
+        @selectNumPerGroup="selectNumPerGroup"
+        @confirmAdjustGroup="confirmAdjustGroup"
+        @loadMore="loadMore"
+        @update:loading="updateLoading"
+        @search="searchTeamGroup"
+        @clickTeamGroupCard="clickTeamGroupCard"
+        @clickSearchTeamCard="clickSearchTeamCard"
+        @cancelSearch="cancelSearch"
+      />
+      <!-- 确认开赛 -->
+      <ConfirmStart
+        v-show="tabIndex == 2"
+        :round-total="roundTotal"
+        :group-map="groupMap"
+        :search-team-map-in-group="searchTeamMapInGroup"
+        :cur-start-round-id="curStartRoundId"
+        :disabled-button="disableCurrentButton"
+        :round-list="roundList"
+        :is-cur-round-all-started="isCurRoundAllStarted"
+        :button-text="confirmStartButtonText"
+        :only-show-disabled-button="confirmStartOnlyDisabledButton"
+        :show-confirm-start-o-b="showConfirmStartOB"
+        @changeStartRoundId="changeStartRoundId"
+        @startGame="startGame"
+        @startAllGame="startAllGame"
+        @search="searchTeamGroup"
+        @loadMore="loadMore"
+        @update:loading="updateLoading"
+        @clickTeamGroupCard="clickTeamGroupCard"
+        @clickSearchTeamCard="clickSearchTeamCard"
+        @cancelSearch="cancelSearch"
+        @clickConfirmStartOB="clickConfirmStartOB"
+      />
+      <!-- 公布成绩 -->
+      <ShowScore
+        v-show="tabIndex == 3"
+        :round-total="roundTotal"
+        :cur-score-round-id="curScoreRoundId"
+        :group-map="groupMap"
+        :team-score-map="teamScoreMap"
+        :disabled-button="publishedScore"
+        :search-team-map-in-group="searchTeamMapInGroup"
+        :button-text="publishScoreButtonText"
+        :show-publish-score-o-b="showPublishScoreOB"
+        @selectGroupInScore="selectGroupInScore"
+        @publishScore="publishScore"
+        @changeScoreRoundId="changeScoreRoundId"
+        @search="searchTeamGroup"
+        @update:loading="updateLoading"
+        @loadMore="loadMore"
+        @clickScoreDetail="clickScoreDetail"
+        @clickSearchTeamCard="clickSearchTeamCard"
+        @cancelSearch="cancelSearch"
+        @clickPublishScoreOB="clickPublishScoreOB"
+      />
+    </template>
   </div>
 </template>
 
 <script>
+import { NUMBER_CHI_MAP } from 't-comm/lib/base/number/number';
 import RightBar from './right-bar';
 import ConfirmStart from './confirm-start';
 import ConfirmMember from './confirm-member';
 import ShowScore from './publish-score';
 import TeamGrouping from './team-grouping';
+import TeamList from './team-list';
 
+const TAB_MAP = {
+  CONFIRM_MEMBER: 0,
+  TEAM_GROUPING: 1,
+  CONFIRM_START: 2,
+  PUBLISH_SCORE: 3,
+};
 
 export default {
   name: 'PressHorScheduleManage',
@@ -95,6 +130,7 @@ export default {
     ConfirmMember,
     ShowScore,
     TeamGrouping,
+    TeamList,
   },
   props: {
     tabIndex: {
@@ -169,15 +205,27 @@ export default {
       type: Object,
       default: () => ({}),
     },
-    searchTeamListInGroup: {
-      type: Array,
-      default: () => ([]),
-    },
     roundList: {
       type: Array,
       default: () => ([]),
     },
     publishedScore: {
+      type: Boolean,
+      default: false,
+    },
+    teamMapInOneGroup: {
+      type: Object,
+      default: () => ({}),
+    },
+    onlyShowDisabledButton: {
+      type: Array,
+      default: () => ([]),
+    },
+    showConfirmStartOB: {
+      type: Boolean,
+      default: false,
+    },
+    showPublishScoreOB: {
       type: Boolean,
       default: false,
     },
@@ -206,7 +254,81 @@ export default {
     return {
       barList: ['确认资格', '队伍分组', '确认开赛', '公布成绩'],
       isSearch: false,
+
+      showTeamList: false,
+      curTeamMap: {
+        list: [],
+        loading: false,
+        finished: true,
+        title: '',
+      },
     };
+  },
+  computed: {
+    roundMap() {
+      return this.roundList.reduce((acc, item) => {
+        acc[item.roundId] = item;
+        return acc;
+      }, {});
+    },
+    isCurRoundAllStarted() {
+      const { roundMap, curStartRoundId } = this;
+      return roundMap[curStartRoundId]?.started;
+    },
+    disableCurrentButton() {
+      const { curGoingTab, tabIndex } = this;
+      return curGoingTab > tabIndex;
+    },
+    confirmMemberButtonText() {
+      const { disableCurrentButton, onlyShowDisabledButton } = this;
+      if (onlyShowDisabledButton.indexOf(TAB_MAP.CONFIRM_MEMBER) > -1) {
+        return disableCurrentButton ? '已确认资格' : '';
+      }
+      return disableCurrentButton ? '已确认资格' : '确认资格';
+    },
+    confirmMemberCancelButtonText() {
+      const { isAllConfirmed, onlyShowDisabledButton } = this;
+      if (onlyShowDisabledButton.indexOf(TAB_MAP.CONFIRM_MEMBER) > -1) {
+        return '';
+      }
+      return isAllConfirmed ? '全部取消' : '全部确认';
+    },
+    teamGroupingButtonText() {
+      const { disableCurrentButton, onlyShowDisabledButton } = this;
+      if (onlyShowDisabledButton.indexOf(TAB_MAP.TEAM_GROUPING) > -1) {
+        return disableCurrentButton ? '已完成分组' : '';
+      }
+      return disableCurrentButton ? '已完成分组' : '确认分组';
+    },
+    confirmStartButtonText() {
+      const {
+        curStartRoundId,
+        isCurRoundAllStarted,
+        disableCurrentButton,
+        onlyShowDisabledButton,
+      } = this;
+      const number = NUMBER_CHI_MAP[curStartRoundId];
+      const canStart = `第${number}局全部开赛`;
+      const cannotStart = `第${number}局已全部开赛`;
+
+      if (onlyShowDisabledButton.indexOf(TAB_MAP.CONFIRM_START) > -1) {
+        return disableCurrentButton || isCurRoundAllStarted ? cannotStart : '';
+      }
+      return disableCurrentButton || isCurRoundAllStarted ? cannotStart : canStart;
+    },
+    publishScoreButtonText() {
+      const {
+        publishedScore,
+        onlyShowDisabledButton,
+      } = this;
+      if (onlyShowDisabledButton.indexOf(TAB_MAP.PUBLISH_SCORE) > -1) {
+        return publishedScore ? '已公布成绩' : '';
+      }
+      return publishedScore ? '已公布成绩' : '公布成绩';
+    },
+    confirmStartOnlyDisabledButton() {
+      return this.onlyShowDisabledButton.indexOf(2) > -1;
+    },
   },
   created() {
   },
@@ -268,6 +390,32 @@ export default {
     },
     updateLoading(key, value) {
       this.$emit('update:loading', key, value);
+    },
+    clickTeamGroupCard(groupItem, groupIndex, groupList) {
+      // const { teamList, groupSeq, teamLen } = groupItem;
+      // this.$set(this.curTeamMap, 'list', teamList);
+      // this.$set(this.curTeamMap, 'title', `第${groupSeq}组-${teamLen}支队伍`);
+
+      this.showTeamList = true;
+
+      this.$emit('clickTeamGroupCard', groupItem, groupIndex, groupList);
+    },
+    clickSearchTeamCard(team, index) {
+      this.showTeamList = true;
+      this.$emit('clickSearchTeamCard', team, index);
+    },
+    clickScoreDetail(scoreItem, scoreIndex) {
+      this.$emit('clickScoreDetail', scoreItem, scoreIndex);
+    },
+    cancelSearch() {
+      this.$emit('cancelSearch');
+      this.isSearch = false;
+    },
+    clickConfirmStartOB() {
+      this.$emit('clickConfirmStartOB');
+    },
+    clickPublishScoreOB(item, index) {
+      console.log('[clickPublishScoreOB]', item, index);
     },
   },
 };

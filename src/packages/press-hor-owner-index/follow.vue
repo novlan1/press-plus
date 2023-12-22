@@ -20,14 +20,19 @@
         >
           <div class="press-owner-rank__info">
             <img
-              :src="item.pic"
+              v-lazy="item.pic"
               class="press-owner-rank__info-img"
               size="22"
             >
             <div class="press-owner-rank__info-detail">
-              <p class="press-owner-rank__info-name">
-                {{ item.name }}
-              </p>
+              <div class="press-owner-rank__flex">
+                <p class="press-owner-rank__info-name">
+                  {{ item.name }}
+                </p>
+                <div class="press-owner-rank__info-lv">
+                  <p>Lv{{ item.lv }}</p>
+                </div>
+              </div>
               <div class="press-owner-rank__info-fans">
                 <span v-if="curRankTab === 1">粉丝：{{ item.fan }}</span>
 
@@ -38,7 +43,7 @@
                   <img
                     v-for="(fItem, fIdx) in friendList(item.friends)"
                     :key="fIdx"
-                    :src="fItem.pic"
+                    v-lazy="fItem.pic"
                   >
                   <span
                     v-if="curRankTab === 2 && item.followLength"
@@ -58,10 +63,6 @@
                 </span>
               </div>
             </div>
-
-            <div class="press-owner-rank__info-lv">
-              <p>Lv{{ item.lv }}</p>
-            </div>
           </div>
           <div class="press-match__status">
             <!-- <div
@@ -74,7 +75,8 @@
             <!-- class="press-match__button" -->
             <div
               :class="['press-owner-rank__focus',
-                       item.isFocused ? 'press-owner-rank__focus--focused':''
+                       item.isFocused ? 'press-owner-rank__focus--focused' : '',
+                       curRankTab === 1 ? 'press-owner-rank__focus--transparent-bckground' : '',
               ]"
               @click.stop="focus(item, index)"
             >

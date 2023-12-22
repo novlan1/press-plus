@@ -131,14 +131,15 @@ export default {
 
 ### Events
 
-| 事件名          | 说明         | 参数                                   |
-| --------------- | ------------ | -------------------------------------- |
-| back            | 点击返回     | -                                      |
-| clickRule       | 点击规则     | -                                      |
-| clickTaskAward  | 点击任务奖品 | `awardItem`, `awardIndex`, `taskItem`  |
-| clickTaskButton | 点击任务按钮 | `taskItem`                             |
-| clickMatchAward | 点击赛事奖品 | `awardItem`, `awardIndex`, `matchItem` |
-| clickMatch      | 点击赛事     | `matchItem`                            |
+| 事件名           | 说明         | 参数                                   |
+| ---------------- | ------------ | -------------------------------------- |
+| back             | 点击返回     | -                                      |
+| clickRule        | 点击规则     | -                                      |
+| clickTaskAward   | 点击任务奖品 | `awardItem`, `awardIndex`, `taskItem`  |
+| clickTaskButton  | 点击任务按钮 | `taskItem`                             |
+| clickMatchAward  | 点击赛事奖品 | `awardItem`, `awardIndex`, `matchItem` |
+| clickMatch       | 点击赛事     | `matchItem`                            |
+| clickMatchButton | 点击赛事按钮 | `matchItem`                            |
 
 
 ### Types
@@ -159,6 +160,8 @@ type ITaskList = Array<{
   buttonPlain?: boolean; // 是否按钮为普通文案
 
   buttonText?: string; // 按钮文案
+  
+  reportData?: Object; // 上报数据
 }>;
 
 // matchList
@@ -168,5 +171,11 @@ type IMatchList = Array<{
   name: string;
   
   awards: IAwards; // 奖励信息
+
+  reportData?: Object; // 上报数据
+
+  buttonText?: string; // 按钮文案
+  buttonPrimary?: boolean; // 是否按钮为金黄色
+  buttonSecondary?: boolean; // 是否按钮为蓝色
 }>;
 ```

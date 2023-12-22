@@ -1,17 +1,21 @@
 // import { filterSameRequest } from './filter-same-request';
 import { IChatSDK } from '../types';
-import { Scheduler } from '../../scheduler/scheduler';
+import { Scheduler } from 't-comm/lib/scheduler/scheduler';
 
 
-let scheduler;
+let scheduler: any;
 
 
 async function innerLogin({
   tim,
   userId,
   userSig,
+}: {
+  tim: any;
+  userId: string;
+  userSig: string;
 }) {
-  const resp = await tim.login({ userID: userId, userSig }).catch((e) => {
+  const resp = await tim.login({ userID: userId, userSig }).catch((e: Error) => {
     console.warn(e);
     return Promise.reject(e);
   });

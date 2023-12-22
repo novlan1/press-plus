@@ -21,11 +21,11 @@
     <PressAwardPopupHor
       v-if="isShowPopup && isHor"
       :award-list="awardList"
-      :hor-title="horTitle"
-      :hor-sub-title="horSubTitle"
-      :hor-confirm-text="horConfirmText"
-      :hor-cancel-text="horCancelText"
-      :hor-desc="horDesc"
+      :title="horTitle"
+      :sub-title="horSubTitle"
+      :confirm-text="horConfirmText"
+      :cancel-text="horCancelText"
+      :desc="horDesc"
       @close="dimissDialog"
       @exchange="onExchange"
     />

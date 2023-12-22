@@ -25,3 +25,8 @@ export default {
 
 
 <style lang="scss" src="src/utils/style/demo.scss"></style>
+<style lang="scss">
+.demo-wrap--gp-iconfont {
+  @import "src/utils/style/iconfont-gp.scss";
+}
+</style>

@@ -34,7 +34,8 @@
 import PressMessageDetail from 'src/packages/press-message-detail/press-message-detail.vue';
 import PressMessageBoardInput from 'src/packages/press-message-board/press-message-board-input.vue';
 import { genMockData, getLessList } from 'src/packages/press-message-detail/demo-helper/mock-data';
-import { setClipboardData } from 'src/utils/clipboard/clipboard';
+import { setClipboardData } from 'press-ui/common/clipboard/clipboard';
+
 
 const pressMessageDetailRef = 'pressMessageDetail';
 let ref;

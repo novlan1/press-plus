@@ -191,7 +191,7 @@
     height: .44rem;
     line-height: .22rem;
     margin-top: .08rem;
-    @include more-lines-ellipsis(.22rem, 2);
+    @include more-lines-ellipsis(.44rem, 2);
   }
 
   &__meta {

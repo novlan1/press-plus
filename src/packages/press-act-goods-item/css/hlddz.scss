@@ -1,0 +1,118 @@
+@import '../../common/style/act/button/_button-hlddz.scss';
+
+.tip-comp-goods-status--box {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  background: $color-white;
+}
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-item {
+    display: inline-block;
+    padding-left: .14rem;
+    padding-top: .14rem;
+    vertical-align: middle;
+    position: relative;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/hlddz/version3D/img/hlddz-suff-box.png) no-repeat;
+    background-size: 100%;
+    width: 5.68rem;
+    height: 1.38rem;
+    box-sizing: border-box;
+    margin-right: .16rem;
+    margin-bottom: .12rem;
+  }
+
+  &.press__goods-item img {
+    margin-right: .16rem;
+    border-radius: .08rem;
+    width: 1rem;
+    height: 1rem;
+    overflow: hidden;
+  }
+
+  .press__content {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .press__image {
+    position: relative;
+    margin-right: .15rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #fff;
+    text-align: center;
+  }
+
+  .press__meta {
+    flex: 1;
+  }
+
+  .press__name {
+    color: #465278;
+    font-size: .24rem;
+    width: 2.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .press__provider,
+  .press__description {
+    font-weight: normal;
+    letter-spacing: 0;
+    width: 2.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .press__description {
+    color: #9597b9;
+  }
+
+  .press__provider {
+    color: #f55e2f;
+    font-size: .32rem;
+    margin: 0;
+    line-height: .34rem;
+  }
+
+  .press__goods-button {
+    margin-right: .16rem;
+  }
+
+  &.press__goods-item .press__btn--small-primary {
+    width: 1.46rem;
+    height: .5rem;
+    line-height: .44rem;
+    font-size: .22rem;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/hlddz/version3D/img/btn-status-primary.png) no-repeat;
+    background-size: 100%;
+  }
+
+  &.press__goods-item .press__btn--small-disabled {
+    width: 1.44rem;
+    height: .5rem;
+    line-height: .44rem;
+    font-size: .22rem;
+    background: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/hlddz/version3D/img/btn-status-disabled.png) no-repeat;
+    background-size: 100%;
+  }
+
+  .press__tip {
+    height: .22rem;
+    line-height: .22rem;
+    font-size: .16rem;
+    background: #fc8217;
+    border-radius: .02rem;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    padding: 0 .06rem;
+    border-radius: .04rem;
+  }
+}

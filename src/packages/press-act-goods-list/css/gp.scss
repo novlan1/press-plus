@@ -1,0 +1,46 @@
+@import '../../common/style/act/layout/_layout-gp.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-list {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .press__box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .press__empty {
+    display: flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 2.6rem;
+  }
+
+  .press__empty .press__image {
+    width: 1.56rem;
+    height: 1.56rem;
+    content: url(https://image-1251917893.file.myqcloud.com/2020/a20200414privilege_peacegame/icon-empty1.png);
+  }
+
+  .press__empty p {
+    font-size: .18rem;
+    margin-top: .3rem;
+    color: rgba(0, 0, 0, .8);
+    text-align: center;
+    word-break: break-all;
+  }
+}

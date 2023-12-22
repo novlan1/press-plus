@@ -1,0 +1,43 @@
+@import '../../common/style/act/layout/_layout-pvp.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-list {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+  }
+
+  .press__box {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .press__empty {
+    height: 85%;
+    width: 100%;
+    flex: 1;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: .24rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .press__empty p {
+    display: inline;
+    color: #d8d8d8;
+  }
+
+  .press__empty .link {
+    display: inline;
+    color: #d8d8d8;
+  }
+
+  .press__empty .press__image {
+    width: 2.16rem;
+    margin-bottom: .15rem;
+    content: url(https://image-1251917893.file.myqcloud.com/tip-privilege-Merchant/pvp3.0/image/icon/icon-empty.png);
+  }
+}

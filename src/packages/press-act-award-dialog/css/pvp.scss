@@ -341,6 +341,10 @@
     color: #82a0cc;
   }
 
+  .press__act-title {
+    display: none;
+  }
+
   .press__goods-box .press__goods-task {
     font-size: .18rem;
     color: rgba(255, 181, 43, 1);
@@ -617,6 +621,10 @@
 
   .press__btn--normal-top {
     display: none !important;
+  }
+
+  .press__expire-time {
+    display: none;
   }
 
   /* 多奖励平铺 */

@@ -1,5 +1,5 @@
 /* eslint-disable no-nested-ternary */
-import { timeStampFormat } from '../../common/format/time';
+import { timeStampFormat } from 't-comm/lib//time/time';
 import {
   isSchEnd,
   isSchPlaying,
@@ -11,13 +11,13 @@ import { t } from '../../locale';
 import { PREVIEW_STATE_MAP, SPECIAL_TEAM_ID_MAP, SPECIAL_STATE_MAP } from '../config';
 
 
-function getScheGroupEndTime(scheGroup) {
+function getScheGroupEndTime(scheGroup: Record<string, any>) {
   const time = scheGroup?.nodeItem?.utime;
   if (!time) return '';
   return timeStampFormat(time, t('scheduleTree.endTimeFormat'));
 }
 
-function getTeamInfo(team, isPreview) {
+function getTeamInfo(team: Record<string, any>, isPreview: number) {
   const {
     specState,
     score,

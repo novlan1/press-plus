@@ -1,4 +1,4 @@
-import { getActClass as commonGetActClass } from '../common/utils/act-bem';
+import { getActClass as commonGetActClass } from 'press-ui/common/utils/act-bem';
 
 export const TIP_CLASS_MAP = {
   main: 'tip-comp-goods-detail--right-content',
@@ -15,6 +15,6 @@ export const TIP_CLASS_MAP = {
   'btn--maxlarge-secondary': 'tip-comp-btn-maxlarge-secondary',
 };
 
-export function getActClass(useTipClass, args) {
+export function getActClass(useTipClass: boolean, args: any) {
   return commonGetActClass(useTipClass, TIP_CLASS_MAP, args);
 }

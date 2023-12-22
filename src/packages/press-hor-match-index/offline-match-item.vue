@@ -14,7 +14,7 @@
     <div class="press-match__main">
       <div class="press-match__left">
         <div class="press-match__name">
-          <p 
+          <p
             class="press-match__name__desc"
             :class="{ 'press-match__name__width': !matchInfo.tag }"
           >

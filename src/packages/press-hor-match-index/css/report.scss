@@ -4,7 +4,7 @@
 
 .press-report {
   width: vw(292);
-  margin-left: vw(308);
+  margin-left: vw(302);
   margin-bottom: vw(1);
   display: flex;
   align-items: center;
@@ -12,6 +12,7 @@
   &__icon {
     width: vw(16);
     height: vw(16);
+    margin-right: vw(4);
     background: url(https://image-1251917893.file.myqcloud.com/Esports/hor/home/icon-trumpet.png) no-repeat;
     background-size: 100%;
   }
@@ -28,6 +29,7 @@
     line-height: vw(16);
     font-size: vw(10);
     color: rgba(130, 160, 204, 1);
+    width: vw(220);
   }
 
   &__name {

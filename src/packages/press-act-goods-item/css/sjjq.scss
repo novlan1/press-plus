@@ -1,0 +1,58 @@
+@import '../../common/style/act/button/_button-sjjq.scss';
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-item {
+    display: flex;
+    flex: 1;
+    padding: .24rem;
+    color: $color-blue-3;
+    background-image: url(https://image-1251917893.file.myqcloud.com/TIP_XCX/igame_plugins/sjjq/list-bg.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-bottom: .08rem;
+    margin-right: .1rem;
+  }
+
+  .press__content {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .press__image {
+    height: 1.12rem;
+    width: 1.12rem;
+    margin-right: .22rem;
+    pointer-events: none;
+  }
+
+  .press__name {
+    font-size: $font-s;
+    color: #244053;
+  }
+
+  .press__meta {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  .press__provider {
+    font-size: $font-xxs;
+    color: #874836;
+  }
+
+  .press__description {
+    font-size: $font-xxxs;
+    color: #4f6c79;
+  }
+
+  .press__goods-button {
+    font-size: $font-xxs;
+    width: 1.3rem;
+    text-align: center;
+  }
+}

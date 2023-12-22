@@ -1,0 +1,36 @@
+/**
+  title:列表外框
+  date:2023.11.16
+  author：v_lzlszhang(张良)
+*/
+
+.press-act:not(.press-act--hidden-tip) {
+  &.press__goods-list {
+    width: 100%;
+    height: auto;
+  }
+
+  .press__box {
+    margin-top: 1.1rem;
+  }
+
+  .press__empty p {
+    color: #999;
+    font-size: 0.24rem;
+    line-height: 0.34rem;
+    text-align: center;
+  }
+
+  .press__empty .press__image {
+    display: inline-block;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 3rem;
+    margin-bottom: 0.28rem;
+    width: 2.4rem;
+    height: 1.6rem;
+    background: url("https://image-1251917893.file.myqcloud.com/tip-project/liebian-tlbb/goods-page/list-empty-icon.png") no-repeat center left;
+    background-size: 100% auto;
+  }
+}

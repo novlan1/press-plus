@@ -3,13 +3,19 @@ const path = require('path');
 const { mkDirsSync } = require('t-comm');
 
 const componentConfig = require('../../config/component-config.json');
-const { getActPageDir, isActDetailComponent } = require('../utils/utils');
+const { getActPageDir, isActDetailComponent, isActComponent,  isActGoodsListComponent } = require('../utils/utils');
 const {
   hyphenate,
   getComponentPath,
   writeSrcIndexJs,
 } = require('./generate-entry');
 
+const ACT_TYPES = [
+  'act',
+  'exchange',
+  'goods',
+  'goods-list',
+];
 
 // const DEMO_PAGES_JSON_LAST_INDEX = 0;
 const PATH_MAP = {
@@ -111,19 +117,28 @@ function getPagesJsonPages(config, keys) {
 const getComponentNameFromPath = item => item.path.split('/')[0];
 
 function getActDetailPages(pages) {
-  return pages.filter(item => isActDetailComponent(getComponentNameFromPath(item)));
+  return pages.filter((item) => {
+    const name = getComponentNameFromPath(item);
+    return isActComponent(name) && isActDetailComponent(name);
+  });
 }
 
-function getNotActDetailPages(pages) {
-  return pages.filter(item => !isActDetailComponent(getComponentNameFromPath(item)));
+function getActGoodsListPages(pages) {
+  return pages.filter((item) => {
+    const name = getComponentNameFromPath(item);
+    return isActComponent(name) && isActGoodsListComponent(name);
+  });
 }
+
+function getGeneralActPages(pages) {
+  return pages.filter((item) => {
+    const name = getComponentNameFromPath(item);
+    return isActComponent(name) && !isActDetailComponent(name) && !isActGoodsListComponent(name);
+  });
+}
+
 
 function getPagesJsonConfig() {
-  const ACT_TYPES = [
-    'act',
-    'exchange',
-    'goods',
-  ];
   const keys = Object.keys(componentConfig);
   const pressSubPackages = getPagesJsonPages(componentConfig, keys.filter(item => !ACT_TYPES.includes(item)));
   const actSubPackages = getPagesJsonPages(componentConfig, ACT_TYPES);
@@ -135,11 +150,15 @@ function getPagesJsonConfig() {
     },
     {
       root: 'pages/act',
-      pages: getNotActDetailPages(actSubPackages),
+      pages: getGeneralActPages(actSubPackages),
     },
     {
       root: 'pages/act-detail',
       pages: getActDetailPages(actSubPackages),
+    },
+    {
+      root: 'pages/act-list',
+      pages: getActGoodsListPages(actSubPackages),
     },
   ];
   return pressPages;

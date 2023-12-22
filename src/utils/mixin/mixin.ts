@@ -1,4 +1,4 @@
-import { initGlobalMixin, initGlobalProps } from '../../packages/common/vue3/adapter';
+import { initGlobalMixin, initGlobalProps } from 'press-ui/common/vue3/adapter';
 import Toast from 'press-ui/press-toast/index';
 import {
   FUNCTIONAL_ID_MAP,

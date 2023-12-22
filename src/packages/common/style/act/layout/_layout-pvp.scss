@@ -3,19 +3,18 @@ html {
   background-size: cover;
 }
 
-/* #ifdef H5 */
-// 先注释，不能合并
+// /* #ifdef H5 */
 
-@font-face {
-  font-family: 'GAMEFONT';
-  src: url('https://image-1251917893.file.myqcloud.com/tipcomm/pvp_gamefont/UI3.0/GAMEFONT.eot') format('eot'),
-    url('https://image-1251917893.file.myqcloud.com/tipcomm/pvp_gamefont/UI3.0/GAMEFONT.TTF') format('TTF'),
-    url('https://image-1251917893.file.myqcloud.com/tipcomm/pvp_gamefont/UI3.0/GAMEFONT.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'GAMEFONT';
+//   src: url('https://image-1251917893.file.myqcloud.com/tipcomm/pvp_gamefont/UI3.0/GAMEFONT.eot') format('eot'),
+//     url('https://image-1251917893.file.myqcloud.com/tipcomm/pvp_gamefont/UI3.0/GAMEFONT.TTF') format('TTF'),
+//     url('https://image-1251917893.file.myqcloud.com/tipcomm/pvp_gamefont/UI3.0/GAMEFONT.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
-/* #endif */
+// /* #endif */
 
 //  整理样式[[
 $color-pop-cover: rgba(0, 0, 0, .6);

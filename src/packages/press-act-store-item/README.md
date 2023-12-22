@@ -1,5 +1,5 @@
 ---
-url : pages/act-detail/act-store-item/act-store-item
+url : pages/act-list/act-store-item/act-store-item
 ---
 
 ## ActStoreItem 商户列表项

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="demo-wrap"
+    class="demo-wrap demo-wrap--gray"
     :class="curGameClass"
   >
     <div class="component-wrap">
@@ -56,7 +56,7 @@ export default {
     ActDemo,
   },
   mixins: [
-    getActCustomStyleMixin('PressActStoreItem', STYLE_LIST, 'gp'),
+    getActCustomStyleMixin('PressActStoreItem', STYLE_LIST, 'pvp-vertical'),
   ],
   data() {
     return {

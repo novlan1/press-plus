@@ -1,5 +1,5 @@
 ---
-url : pages/act-detail/act-input-q-q/act-input-q-q
+url : pages/act-list/act-input-q-q/act-input-q-q
 ---
 
 ## ActInputQQ 输入QQ弹窗

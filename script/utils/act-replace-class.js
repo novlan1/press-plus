@@ -4,23 +4,28 @@ const { replaceAllPolyfill } = require('t-comm');
 replaceAllPolyfill();
 
 
-const ACT_CSS_PATH = 'src/packages/press-act-goods-detail-main/css';
-const ACT_VUE_PATH = 'src/packages/press-act-goods-detail-main/press-act-goods-detail-main.vue';
+const ACT_CSS_PATH = 'src/packages/press-act-q-r-code-dialog/css';
+const ACT_VUE_PATH = 'src/packages/press-act-q-r-code-dialog/press-act-q-r-code-dialog.vue';
 
 const PREFIX = 'press__';
 
 const TIP_CLASS_MAP = {
-  main: 'tip-comp-goods-detail--right-content',
-  info: 'tip-comp-goods-detail--com',
-  extra: 'tip-comp-goods-detail--extrainfo',
-  'button-wrap': 'tip-comp-goods-detail--button',
-  buttons: 'tip-comp-goods-detail--btn-cont',
+  cover: 'tip-comp-cover',
 
-  btn: 'tip-comp-goods-detail--btn',
-  'btn--long-primary': 'tip-comp-btn-long-primary',
-  'btn--maxlarge-primary': 'tip-comp-btn-maxlarge-primary',
-  'btn--large-primary': 'tip-comp-btn-large-primary',
-  'btn--large-secondary': 'tip-comp-btn-large-secondary',
+  dialog: 'tip-comp-dialog',
+  'dialog--qr': 'tip-comp-dialog--scan-code',
+
+  close: 'tip-comp-dialog--close',
+
+  title: 'tip-comp-dialog--title',
+  'title--qr': 'tip-comp-dialog--scan-code-title',
+
+  content: 'tip-comp-dialog--scan-code-content',
+  image: 'tip-comp-dialog--scan-code-img',
+  desc: 'tip-comp-dialog--scan-code-subhead',
+  'button-wrap': 'tip-comp-dialog--scan-code-btn',
+  'btn--qr': 'tip-comp-dialog--scan-code-sure',
+  'btn--medium-primary': 'tip-comp-btn-medium-primary',
 };
 
 

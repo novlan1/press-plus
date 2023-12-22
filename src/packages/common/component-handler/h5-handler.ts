@@ -1,6 +1,6 @@
 import { IS_SERVER } from '../utils/validator';
 import { parseOptions } from './component-handler';
-import { extendComponent } from '../vue3/adapter';
+import { extendComponent } from 'press-ui/common/vue3/adapter';
 
 
 function isInDocument(element: Node | null) {
@@ -167,7 +167,7 @@ export function getH5ComponentHandler({
   return Dialog;
 }
 
-export function initH5Instance(vueDialog, id, options = {}) {
+export function initH5Instance(vueDialog: any, id: string, options = {}) {
   const dialogId = id; // 'press-dialog';
   const oldDialog = document.getElementById(dialogId);
   if (oldDialog?.parentNode) {

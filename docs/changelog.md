@@ -103,6 +103,517 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### [1.3.52](https://github.com/novlan1/press-plus/compare/v1.3.51...v1.3.52) (2023-12-21)
+
+
+### Code Refactoring ♻️
+
+* **media:** remove useless files ([4a10fe8](https://github.com/novlan1/press-plus/commit/4a10fe89757b365d8fd9889aeb4cc6a18242d1e1))
+* **media:** remove useless files ([43352cd](https://github.com/novlan1/press-plus/commit/43352cd6bc043745c2f4db1eecbe8b0104239a71))
+* remove repeated files ([f35abef](https://github.com/novlan1/press-plus/commit/f35abef57cf28c7f1a07a86cfc7b9991cb0ff2ed))
+
+
+### Chore 🚀 
+
+* remove repeated files ([a319513](https://github.com/novlan1/press-plus/commit/a319513ce4ecc08eff6970ca7dff552fdd6d1779))
+* remove repeated files ([3eaf0b3](https://github.com/novlan1/press-plus/commit/3eaf0b38bb630271f1caa157495f6e4f3aa13f37))
+
+
+### Bug Fixes 🐞
+
+* 修复横版任务图片适配问题 ([3d12edf](https://github.com/novlan1/press-plus/commit/3d12edfce9503b9afed768e406e3e662610bf69d))
+
+### [1.3.51](https://github.com/novlan1/press-plus/compare/v1.3.50...v1.3.51) (2023-12-20)
+
+
+### Features 🎉
+
+* 爱消除'我的物品'样式 ([375c6e5](https://github.com/novlan1/press-plus/commit/375c6e5f12d9d9a713dbe36e85030dec29321c91))
+* 去掉多余扫码二维码弹窗样式 ([c72db3e](https://github.com/novlan1/press-plus/commit/c72db3e9c0cdfa7254f76d4fe889e45031366946))
+
+### [1.3.50](https://github.com/novlan1/press-plus/compare/v1.3.49...v1.3.50) (2023-12-19)
+
+
+### Bug Fixes 🐞
+
+* **hor-sche-manage:** add start status ([95f51b2](https://github.com/novlan1/press-plus/commit/95f51b23b30de460666d1a2cbb622af10f4bd835))
+
+### [1.3.49](https://github.com/novlan1/press-plus/compare/v1.3.48...v1.3.49) (2023-12-19)
+
+
+### Features 🎉
+
+* **hor-sche-manage:** add ob button ([e0d2818](https://github.com/novlan1/press-plus/commit/e0d2818cb6443c0614dc93e2974c5cbb2566b636))
+
+### [1.3.48](https://github.com/novlan1/press-plus/compare/v1.3.47...v1.3.48) (2023-12-19)
+
+
+### Bug Fixes 🐞
+
+* **hor-match-index:** add brand report ([7d7ac53](https://github.com/novlan1/press-plus/commit/7d7ac539b653ec76cc6e071bc972545a2c263dc0))
+
+### [1.3.47](https://github.com/novlan1/press-plus/compare/v1.3.46...v1.3.47) (2023-12-19)
+
+
+### Features 🎉
+
+* 白荆回廊扫码弹窗样式 ([ce45836](https://github.com/novlan1/press-plus/commit/ce45836f9e44fb382dca6900cf98c4c4cfb569d4))
+
+### [1.3.46](https://github.com/novlan1/press-plus/compare/v1.3.45...v1.3.46) (2023-12-18)
+
+
+### Bug Fixes 🐞
+
+* 主理人榜单样式调整 - zanezhong ([98891bb](https://github.com/novlan1/press-plus/commit/98891bb041ad59618481f5f5162c4455b5f96fcc))
+
+### [1.3.45](https://github.com/novlan1/press-plus/compare/v1.3.44...v1.3.45) (2023-12-18)
+
+
+### Bug Fixes 🐞
+
+* 物品详情页无法滚动问题 ([6082da7](https://github.com/novlan1/press-plus/commit/6082da7fbeafc65bbc724f32773b4c68e33091f4))
+
+### [1.3.44](https://github.com/novlan1/press-plus/compare/v1.3.43...v1.3.44) (2023-12-18)
+
+
+### Features 🎉
+
+* **publish-score.scss:** change font size table ([8c290bd](https://github.com/novlan1/press-plus/commit/8c290bd4f583b9a07f81d24e2b89f7aea9b6fe4d))
+
+
+### Bug Fixes 🐞
+
+* **owner-index:** update follow img ([1991758](https://github.com/novlan1/press-plus/commit/199175828d0a41e2fad4291edca6cb50afb4c7e5))
+
+### [1.3.43](https://github.com/novlan1/press-plus/compare/v1.3.42...v1.3.43) (2023-12-15)
+
+
+### Bug Fixes 🐞
+
+* 等级图标上移 - zanezhong ([8349bdf](https://github.com/novlan1/press-plus/commit/8349bdf7638415657be3fca2e67ff24df6a896ab))
+
+
+### Features 🎉
+
+* **hor-owner-index:** support join end title ([9ca3baf](https://github.com/novlan1/press-plus/commit/9ca3bafa3d04e33fd0a5a7ad7d50eb7f3f9528f3))
+* **schedule-manage.scss:** 修正 active 按钮状态 ([4a176ea](https://github.com/novlan1/press-plus/commit/4a176ea0f9326f3b3decf384fbc8f1fa6ca6384f))
+
+### [1.3.42](https://github.com/novlan1/press-plus/compare/v1.3.41...v1.3.42) (2023-12-15)
+
+
+### Bug Fixes 🐞
+
+* **press-hor-owner-index:** 优化换行 ([265da45](https://github.com/novlan1/press-plus/commit/265da45bf7a14ccbba758f4b8f2334cf5fce4094))
+
+### [1.3.41](https://github.com/novlan1/press-plus/compare/v1.3.40...v1.3.41) (2023-12-15)
+
+
+### Bug Fixes 🐞
+
+* 样式调整 - zanezhong ([19bf2a1](https://github.com/novlan1/press-plus/commit/19bf2a1201b386888f6280d518bb240ab05fde80))
+* 主理人赛事样式调整 - zanezhong ([7442927](https://github.com/novlan1/press-plus/commit/7442927a506839e8dea0b7f818fc387a38529e58))
+* fix styles list ([b10f639](https://github.com/novlan1/press-plus/commit/b10f63950c6e873b3f80ef331cd5be9c1cfd4992))
+* fix table number font ([8a05b5d](https://github.com/novlan1/press-plus/commit/8a05b5d9b6e97fcefc60a2b591491f6e518822a9))
+
+
+### Code Refactoring ♻️
+
+* lint css ([d6739fe](https://github.com/novlan1/press-plus/commit/d6739fec74eea016f2526a66e27c8ef0f84ba1ac))
+
+### [1.3.40](https://github.com/novlan1/press-plus/compare/v1.3.39...v1.3.40) (2023-12-15)
+
+
+### Features 🎉
+
+* **hor-sche-manage:** add click search team card ([18eaf0f](https://github.com/novlan1/press-plus/commit/18eaf0f7ec6a2366fb98bb15bbbfe0774296a403))
+* **hor-sche-manage:** emit cancel search ([57d0d29](https://github.com/novlan1/press-plus/commit/57d0d29b020728f68220aed1d8d4f5025249322c))
+
+
+### Code Refactoring ♻️
+
+* **hor-sche-manage:** use v-show in tab ([283e3ab](https://github.com/novlan1/press-plus/commit/283e3abdd853eb0ff43ec7b73f730e9f35393a67))
+
+### [1.3.39](https://github.com/novlan1/press-plus/compare/v1.3.38...v1.3.39) (2023-12-15)
+
+
+### Features 🎉
+
+* 增加赛事查看队伍页面样式 ([0bf1b05](https://github.com/novlan1/press-plus/commit/0bf1b05584b192dcb08e40c86e833485c1a06d9f))
+
+
+### Bug Fixes 🐞
+
+* 参加人数居中处理 - zanezhong ([2448f0e](https://github.com/novlan1/press-plus/commit/2448f0e6c80aff6e6e5b6141c02b32172d6ef8a5))
+* 参加人数居中处理 - zanezhong ([1fc0685](https://github.com/novlan1/press-plus/commit/1fc06855010ba991178d3b717a26e6fe82ef7061))
+* **hor-sche-manage:** 单轮次开赛禁用 ([6ab2aec](https://github.com/novlan1/press-plus/commit/6ab2aecaad59128b0b763eb80563656f877bec61))
+* xiugai - zanezhong ([8374370](https://github.com/novlan1/press-plus/commit/8374370aca1888d92cf75f314e9b52d6dc06b809))
+
+### [1.3.38](https://github.com/novlan1/press-plus/compare/v1.3.37...v1.3.38) (2023-12-14)
+
+
+### Code Refactoring ♻️
+
+* **hor-task:** 兼容无奖励 ([0fad356](https://github.com/novlan1/press-plus/commit/0fad356cfaec9d93621743f79e6daf737256d3cc))
+
+### [1.3.37](https://github.com/novlan1/press-plus/compare/v1.3.36...v1.3.37) (2023-12-14)
+
+
+### Styles 💄
+
+* **hor-owner-index:** update rank style ([f877d1b](https://github.com/novlan1/press-plus/commit/f877d1b2cf3ee9b1c68040384acd59881a07e262))
+
+### [1.3.36](https://github.com/novlan1/press-plus/compare/v1.3.35...v1.3.36) (2023-12-14)
+
+
+### Styles 💄
+
+* 恭喜获得弹窗 lolm 竖版样式补充调整 ([b19dfb0](https://github.com/novlan1/press-plus/commit/b19dfb00040efbb5e34bc71f325b0560976baad4))
+
+### [1.3.35](https://github.com/novlan1/press-plus/compare/v1.3.34...v1.3.35) (2023-12-14)
+
+
+### Documentation 📖
+
+* **hor-owner-index:** update docs ([433814c](https://github.com/novlan1/press-plus/commit/433814cc30c13495350fa44b20e70660e6416045))
+
+
+### Features 🎉
+
+* 恭喜获得弹窗 有效日期与商家信息 调整 ([9dd935d](https://github.com/novlan1/press-plus/commit/9dd935df1d1689615306215f4a9143d6e2a77b75))
+
+### [1.3.34](https://github.com/novlan1/press-plus/compare/v1.3.33...v1.3.34) (2023-12-14)
+
+
+### Bug Fixes 🐞
+
+* **hor-rule:** add title ([20aea21](https://github.com/novlan1/press-plus/commit/20aea21566f6ec260917aec1ae2b72cacf983eaf))
+
+### [1.3.33](https://github.com/novlan1/press-plus/compare/v1.3.32...v1.3.33) (2023-12-14)
+
+
+### Documentation 📖
+
+* **hor-sche-manage:** add placeholder icon ([7c4d4d8](https://github.com/novlan1/press-plus/commit/7c4d4d8fe40f4716b139f92f22d9b576dbb2793f))
+
+
+### Features 🎉
+
+* **hor-sche-manage:** add rank tab list ([5ac7422](https://github.com/novlan1/press-plus/commit/5ac74225e7af12fad47258ad25c6a4f156a75f84))
+
+### [1.3.32](https://github.com/novlan1/press-plus/compare/v1.3.31...v1.3.32) (2023-12-14)
+
+### [1.3.31](https://github.com/novlan1/press-plus/compare/v1.3.30...v1.3.31) (2023-12-14)
+
+
+### Features 🎉
+
+* **hor-match-index:** add report-interval brand-interval ([4f2e17d](https://github.com/novlan1/press-plus/commit/4f2e17d407abba82863673d5e1270003b3e4b2f6))
+
+### [1.3.30](https://github.com/novlan1/press-plus/compare/v1.3.29...v1.3.30) (2023-12-13)
+
+
+### Chore 🚀 
+
+* support act switch style in windows ([61b7c1e](https://github.com/novlan1/press-plus/commit/61b7c1e4add87b8cc5fd29ee9f4bdb22c4e7b666))
+
+
+### Documentation 📖
+
+* **hor-schedule-manage:** update docs ([705caa7](https://github.com/novlan1/press-plus/commit/705caa736d4f4693107e3cb72e3fd29d31f6ad64))
+* **hor-schedule-manage:** update docs ([b931dee](https://github.com/novlan1/press-plus/commit/b931dee8c76d5beff5edb6fd83902513259783d9))
+* update docs ([68d210d](https://github.com/novlan1/press-plus/commit/68d210dd3e4f43ef56a36ac9cb667d785bd7b11e))
+* update docs ([dbc2644](https://github.com/novlan1/press-plus/commit/dbc2644906d429f986091c305fe7d0321f481277))
+
+
+### Features 🎉
+
+* **hor-schedule-manage:** add only show disabled button ([eeaf3b3](https://github.com/novlan1/press-plus/commit/eeaf3b322aac660ae013c0974cbf6245ae407d49))
+* **hor-schedule-manage:** update team list style ([a038557](https://github.com/novlan1/press-plus/commit/a038557e328755a9378b8a92d24df6aa3fe69662))
+* **hor-task:** add match button ([91fefce](https://github.com/novlan1/press-plus/commit/91fefce19ea2b7dcdb1f96244bee6da9e7a57061))
+
+### [1.3.29](https://github.com/novlan1/press-plus/compare/v1.3.28...v1.3.29) (2023-12-12)
+
+
+### Documentation 📖
+
+* add sync docs ([bf2051d](https://github.com/novlan1/press-plus/commit/bf2051d649ae87b701a36b6b61955e680dc490cc))
+
+
+### Chore 🚀 
+
+* **act-input-phone:** lint and update docs ([02a4449](https://github.com/novlan1/press-plus/commit/02a44495cc4b6e3719f0d3cd68ad049b751e66f6))
+
+
+### Features 🎉
+
+* **press-act-input-phone-dialog:** 适配多协议 ([eaa504c](https://github.com/novlan1/press-plus/commit/eaa504c573ff353d37e394cd17aa97f9ef043961))
+
+### [1.3.28](https://github.com/novlan1/press-plus/compare/v1.3.27...v1.3.28) (2023-12-12)
+
+
+### Features 🎉
+
+* 支持禁用手机号验证弹窗的手机号输入框，用于确认已预留的手机号，防止修改 ([92940c3](https://github.com/novlan1/press-plus/commit/92940c321b233ce375656d5609e08aa45a806603))
+
+### [1.3.27](https://github.com/novlan1/press-plus/compare/v1.3.26...v1.3.27) (2023-12-12)
+
+
+### Documentation 📖
+
+* update act goods list docs ([b76e664](https://github.com/novlan1/press-plus/commit/b76e664959171bc1712546ee06b914bf0d45efae))
+
+
+### Features 🎉
+
+* 参数名更新 ([c97fb27](https://github.com/novlan1/press-plus/commit/c97fb273063cfcd188b4ac78b1c6b9705c432af4))
+* 手机号验证组件支持展示多个用户信息协议 ([b9d1229](https://github.com/novlan1/press-plus/commit/b9d12290d43286a6ab55c1d2bfebcc67130dd7ff))
+
+
+### Code Refactoring ♻️
+
+* 手机号验证弹窗组件变量名更新 ([6815c5d](https://github.com/novlan1/press-plus/commit/6815c5de03c207f9bdedec4f2832aec7f5996cc7))
+* 手机号验证弹窗组件优化，文档 ([af24bfc](https://github.com/novlan1/press-plus/commit/af24bfcce746c5d34b12a3e16e0901f1b166aeea))
+
+### [1.3.26](https://github.com/novlan1/press-plus/compare/v1.3.25...v1.3.26) (2023-12-11)
+
+
+### Styles 💄
+
+* **hor-owner-index:** update follow style ([f365aa0](https://github.com/novlan1/press-plus/commit/f365aa070ba384a0e59f3c89a5ef6848acef475a))
+
+### [1.3.25](https://github.com/novlan1/press-plus/compare/v1.3.24...v1.3.25) (2023-12-11)
+
+
+### Chore 🚀 
+
+* **npm:** fix npm build ([36716c8](https://github.com/novlan1/press-plus/commit/36716c87db8fd289e541d46ecf744b6fe75d4800))
+
+
+### Documentation 📖
+
+* **goods-list:** add goods list docs ([840f124](https://github.com/novlan1/press-plus/commit/840f1244d4f4eb3d33265b2feb69419d3ac50b97))
+* **goods-list:** update docs ([77e5bb8](https://github.com/novlan1/press-plus/commit/77e5bb8550b08568d8b2071b705063a4389a4e64))
+* update contributing ([768f7ad](https://github.com/novlan1/press-plus/commit/768f7ad9c8ad564827657b04a8442e1b24bfb07a))
+* update contributing ([125a52a](https://github.com/novlan1/press-plus/commit/125a52ac65524e958c08d8f6d61c62bb1aff7212))
+
+
+### Styles 💄
+
+* **prompt:** add x5m style ([cd11556](https://github.com/novlan1/press-plus/commit/cd115565034f377c45730d5b3df574bbb7b33569))
+
+
+### Features 🎉
+
+* 新增炫舞样式 ([8f8a707](https://github.com/novlan1/press-plus/commit/8f8a707e57adf6047415db0056a615bdc9f577f2))
+* **act-qr:** add cf style ([91b9da0](https://github.com/novlan1/press-plus/commit/91b9da06ee532490cedddc896b16418200db4812))
+
+### [1.3.24](https://github.com/novlan1/press-plus/compare/v1.3.23...v1.3.24) (2023-12-09)
+
+
+### Code Refactoring ♻️
+
+* **goods-list:** update css config ([481e3f7](https://github.com/novlan1/press-plus/commit/481e3f773199b54411db4c5cf00c3cf2410e9db6))
+
+### [1.3.23](https://github.com/novlan1/press-plus/compare/v1.3.22...v1.3.23) (2023-12-09)
+
+
+### Documentation 📖
+
+* update contributing ([f16d0fd](https://github.com/novlan1/press-plus/commit/f16d0fd2fec0ae5c51a15feba62048a21ac8a7b7))
+* update contributing ([cb7ad7c](https://github.com/novlan1/press-plus/commit/cb7ad7cca901f17de5b5ab3b1c45236b3cd15674))
+* update contributing ([e52491e](https://github.com/novlan1/press-plus/commit/e52491e5e89f3199845a0d8431ec0745c66e4292))
+* update contributing.md ([138e543](https://github.com/novlan1/press-plus/commit/138e5436b9f27596e7444b2373f2a3667f503f2a))
+* update docs ([d3b61a4](https://github.com/novlan1/press-plus/commit/d3b61a4f224b7d08626759b59c200f78aa7a060c))
+
+
+### Features 🎉
+
+* **goods-list:** add goods list ([3504ec3](https://github.com/novlan1/press-plus/commit/3504ec3b48bcd80a025fca85082d9d7129afdc05))
+
+
+### Code Refactoring ♻️
+
+* **goods-list:** update css ([c9f12dc](https://github.com/novlan1/press-plus/commit/c9f12dc8e3cbe4878bc3404a93d8bface34b0766))
+* **goods-list:** update css ([6f82175](https://github.com/novlan1/press-plus/commit/6f82175c01074d54a0435e1f68d3e00a2ba65b19))
+* **goods-list:** update name ([bb21a5a](https://github.com/novlan1/press-plus/commit/bb21a5a4e17eb4ab773ed9a252966f0629495420))
+* **goods-list:** use bem class ([970de08](https://github.com/novlan1/press-plus/commit/970de08b9df8616e53e69b94286bd29275c153b2))
+* update login component name ([768f456](https://github.com/novlan1/press-plus/commit/768f45619ed5f66e1426cc6de30a39a23aa8cc8b))
+
+### [1.3.22](https://github.com/novlan1/press-plus/compare/v1.3.21...v1.3.22) (2023-12-08)
+
+
+### Bug Fixes 🐞
+
+* **act:** remove font-face style, please use it in page ([9d7ba8c](https://github.com/novlan1/press-plus/commit/9d7ba8cbeacfa2c37c0fd2aa2c32c6355af957d5))
+
+### [1.3.21](https://github.com/novlan1/press-plus/compare/v1.3.20...v1.3.21) (2023-12-07)
+
+
+### Features 🎉
+
+* 增加填写手机号弹窗组件修改按钮点击事件 ([e766b43](https://github.com/novlan1/press-plus/commit/e766b4356ccbf0f500877ec89a3a0922f8d72e71))
+
+### [1.3.20](https://github.com/novlan1/press-plus/compare/v1.3.19...v1.3.20) (2023-12-07)
+
+
+### Features 🎉
+
+* 填写手机号弹窗组件暴露控制修改按钮显隐变量 ([044eb50](https://github.com/novlan1/press-plus/commit/044eb502ffbde2ef7892bcf371728006f1329e0f))
+* **hor-schedule-manage:** add load more ([a97baec](https://github.com/novlan1/press-plus/commit/a97baecc9337d237d9eed310662490a8be1f8e1a))
+
+### [1.3.19](https://github.com/novlan1/press-plus/compare/v1.3.18...v1.3.19) (2023-12-07)
+
+
+### Features 🎉
+
+* **hor-task:** add treport ([71ae4db](https://github.com/novlan1/press-plus/commit/71ae4dbf5764f9bbc79649a75d8042868ea1f8be))
+
+### [1.3.18](https://github.com/novlan1/press-plus/compare/v1.3.17...v1.3.18) (2023-12-07)
+
+
+### Styles 💄
+
+* 填写手机号弹窗新增修改按钮 ([3d2ae86](https://github.com/novlan1/press-plus/commit/3d2ae86e516cd7b98a88fef5ea2e30c7482c2b7a))
+* 填写手机号弹窗新增修改按钮, input 样式调整 ([aed58ef](https://github.com/novlan1/press-plus/commit/aed58efecafd3c120151d8eef9bb87c512e7b227))
+
+### [1.3.17](https://github.com/novlan1/press-plus/compare/v1.3.16...v1.3.17) (2023-12-07)
+
+
+### Features 🎉
+
+* 添加lolm相关 ([510bf50](https://github.com/novlan1/press-plus/commit/510bf5027cdeebca4be505d793309e05b5818254))
+* **hor-match-index:** add report string list ([9e083a7](https://github.com/novlan1/press-plus/commit/9e083a70466d1acd62f28773b4bda6b15771552c))
+
+
+### Code Refactoring ♻️
+
+* **hor-match-index:** update report item ([9e38b0a](https://github.com/novlan1/press-plus/commit/9e38b0a0fad2ab86d30d8c1c0af034ad9eab2414))
+
+### [1.3.16](https://github.com/novlan1/press-plus/compare/v1.3.15...v1.3.16) (2023-12-07)
+
+
+### Documentation 📖
+
+* update demo scss ([cc1ca47](https://github.com/novlan1/press-plus/commit/cc1ca473e04888a86125c378aa7dd0101906c907))
+
+
+### Chore 🚀 
+
+* update press-ui ([ca0abca](https://github.com/novlan1/press-plus/commit/ca0abcae4262e14d51e494b8ece497233f74529e))
+
+
+### Features 🎉
+
+* **press-act-input-phone-dialog:** 优化check样式 ([9647409](https://github.com/novlan1/press-plus/commit/9647409beae01d54b3a299bd9a5f3a8751d4b91a))
+* **press-act-input-phone-dialog:** 优化check样式 ([30a7fb6](https://github.com/novlan1/press-plus/commit/30a7fb67093563b4e1801f200252398ffd1ea94b))
+
+### [1.3.15](https://github.com/novlan1/press-plus/compare/v1.3.14...v1.3.15) (2023-12-07)
+
+
+### Styles 💄
+
+* 爱消除人生恭喜获得组件 ([b6a83a3](https://github.com/novlan1/press-plus/commit/b6a83a3326798806eeb182c8717cb1a0f797f392))
+
+
+### Features 🎉
+
+* **hor-schedule-manage:** emit cancelSearch ([230016e](https://github.com/novlan1/press-plus/commit/230016e3314856429404a37f180338c2f3e459ca))
+
+
+### Documentation 📖
+
+* update docs ([3388fde](https://github.com/novlan1/press-plus/commit/3388fded7170c68a1922f018a14c5fcb65086170))
+
+### [1.3.14](https://github.com/novlan1/press-plus/compare/v1.3.13...v1.3.14) (2023-12-06)
+
+
+### Features 🎉
+
+* **hor-schedule-manage:** emit clickScoreDetail ([26fe62f](https://github.com/novlan1/press-plus/commit/26fe62fd077bca92add1837de4ccb96573b05dd7))
+
+### [1.3.13](https://github.com/novlan1/press-plus/compare/v1.3.12...v1.3.13) (2023-12-06)
+
+
+### Documentation 📖
+
+* update docs ([a19ecfd](https://github.com/novlan1/press-plus/commit/a19ecfd2e8e3bc36181e1951cc7b229108400f5a))
+* update docs ([4955cee](https://github.com/novlan1/press-plus/commit/4955ceebf5ed23c50632dcfc1680b46292f82481))
+
+
+### Styles 💄
+
+* 提示弹窗补充红色和蓝色高亮色值 ([7f59268](https://github.com/novlan1/press-plus/commit/7f592686b62ea5036f67b53d86cf1ad274e5a526))
+* 填写手机号弹窗新增爱消除人生样式 ([16e22f6](https://github.com/novlan1/press-plus/commit/16e22f6a6ae41955ce8815e906e544b5059d5e43))
+
+
+### Code Refactoring ♻️
+
+* update uni-input ([0c847c6](https://github.com/novlan1/press-plus/commit/0c847c65fdb4220e9375dbaa3f81e2babcacfc89))
+
+### [1.3.12](https://github.com/novlan1/press-plus/compare/v1.3.11...v1.3.12) (2023-12-05)
+
+### [1.3.11](https://github.com/novlan1/press-plus/compare/v1.3.10...v1.3.11) (2023-12-04)
+
+
+### Features 🎉
+
+* **hor-sche-manage:** 增加展示内容 ([2634dea](https://github.com/novlan1/press-plus/commit/2634dea0a5ef8ece5cc6b391142acd2e3c6c7558))
+
+### [1.3.10](https://github.com/novlan1/press-plus/compare/v1.3.9...v1.3.10) (2023-12-04)
+
+
+### Documentation 📖
+
+* update docs ([7604a19](https://github.com/novlan1/press-plus/commit/7604a199dfdde2e56904fc28935d6c02d974a265))
+
+
+### Features 🎉
+
+* **hor-sche-manage:** 展示点击队伍 ([94ee8bb](https://github.com/novlan1/press-plus/commit/94ee8bbc7f3eff66a230f28a4dd64f679302e373))
+
 ### [1.3.9](https://github.com/novlan1/press-plus/compare/v1.3.8...v1.3.9) (2023-12-04)
 
 

@@ -36,6 +36,7 @@ docs/en/components/press/
 src/pages/press/
 src/pages/act/
 src/pages/act-detail/
+src/pages/act-list/
 
 # demo首页配置
 # src/pages/index/page-config.json

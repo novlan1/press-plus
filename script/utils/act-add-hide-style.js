@@ -1,8 +1,8 @@
 const { replaceAllPolyfill } = require('t-comm');
 const fs = require('fs');
-const ACT_PATH = './src/packages/press-act-goods-detail-main/css';
+const ACT_PATH = './src/packages/press-act-goods-tab/css';
 const TOP_CLASS_LIST = [
-  '.press__main',
+  '.press__goods-tab',
 ];
 
 replaceAllPolyfill();

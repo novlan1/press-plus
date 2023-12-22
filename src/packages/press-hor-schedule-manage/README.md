@@ -326,50 +326,56 @@ export default {
 ### Props
 
 
-| 参数                     | 说明                     | 类型      | 默认值  |
-| ------------------------ | ------------------------ | --------- | ------- |
-| tab-index                | 当前 `tab` 索引          | _number_  | `0`     |
-| cur-going-tab            | 正在进行中的 `tab` 索引  | _number_  | `0`     |
-| team-map                 | 队伍列表信息             | _object_  | -       |
-| search-team-map          | 搜索队伍信息             | _object_  | -       |
-| is-all-confirmed         | 是否已全部确认           | _boolean_ | `false` |
-| team-total               | 队伍总数                 | _number_  | `0`     |
-| checked-team-total       | 已确认到场的队伍数目     | _number_  | `0`     |
-| num-per-group            | 每组队伍数               | _number_  | `1`     |
-| to-select-num-list       | 可分配的每组队伍数目列表 | _array_   | `[1]`   |
-| group-num                | 分组总数                 | _number_  | `0`     |
-| group-list-map           | 全部分组信息             | _object_  | -       |
-| round-total              | 轮次数                   | _number_  | `1`     |
-| group-map                | 分组对象                 | _object_  | -       |
-| cur-start-round-id       | 确认开赛的当前轮次 Id    | _number_  | `1`     |
-| cur-score-round-id       | 公布成绩的当前轮次 Id    | _number_  | `1`     |
-| team-score-map           | 队伍比分对象             | _object_  | -       |
-| search-team-map-in-group | 分组中的搜索队伍信息     | _object_  | -       |
-| round-list               | 轮次列表                 | _array_   | -       |
-| published-score          | 是否已公布成绩           | _boolean_ | `false` |
-
+| 参数                      | 说明                                                         | 类型      | 默认值  |
+| ------------------------- | ------------------------------------------------------------ | --------- | ------- |
+| tab-index                 | 当前 `tab` 索引                                              | _number_  | `0`     |
+| cur-going-tab             | 正在进行中的 `tab` 索引                                      | _number_  | `0`     |
+| team-map                  | 队伍列表信息                                                 | _object_  | -       |
+| search-team-map           | 搜索队伍信息                                                 | _object_  | -       |
+| is-all-confirmed          | 是否已全部确认                                               | _boolean_ | `false` |
+| team-total                | 队伍总数                                                     | _number_  | `0`     |
+| checked-team-total        | 已确认到场的队伍数目                                         | _number_  | `0`     |
+| num-per-group             | 每组队伍数                                                   | _number_  | `1`     |
+| to-select-num-list        | 可分配的每组队伍数目列表                                     | _array_   | `[1]`   |
+| group-num                 | 分组总数                                                     | _number_  | `0`     |
+| group-list-map            | 全部分组信息                                                 | _object_  | -       |
+| round-total               | 轮次数                                                       | _number_  | `1`     |
+| group-map                 | 分组对象                                                     | _object_  | -       |
+| cur-start-round-id        | 确认开赛的当前轮次 Id                                        | _number_  | `1`     |
+| cur-score-round-id        | 公布成绩的当前轮次 Id                                        | _number_  | `1`     |
+| team-score-map            | 队伍比分对象                                                 | _object_  | -       |
+| search-team-map-in-group  | 分组中的搜索队伍信息                                         | _object_  | -       |
+| round-list                | 轮次列表                                                     | _array_   | -       |
+| published-score           | 是否已公布成绩                                               | _boolean_ | `false` |
+| only-show-disabled-button | 是否只显示禁用按钮状态，数组每一项代表 `TabIndex`，从 0 开始 | _array_   | -       |
+| show-confirm-start-o-b    | 是否显示确认开赛中的观战按钮                                 | _boolean_ | `false` |
+| show-publish-score-o-b    | 是否显示公布成绩中的观战按钮                                 | _boolean_ | `false` |
 
 ### Events
 
-| 事件名                 | 说明                     | 参数                |
-| ---------------------- | ------------------------ | ------------------- |
-| close                  | 关闭本页面               | -                   |
-| changeTab              | 切换 tab                 | `tabIndex`          |
-| toggleAllQualification | 全部确认或取消资格       | -                   |
-| doneConfirmSignUp      | 确认资格完毕，进入下一步 | -                   |
-| checkTeam              | 确认或取消单个队伍的资格 | `team`, `teamIndex` |
-| selectNumPerGroup      | 选择每组队伍数           | `num`               |
-| confirmAdjustGroup     | 确认调整分组             | -                   |
-| changeStartRoundId     | 确认开赛中的切换轮次 Id  | `roundId`           |
-| changeScoreRoundId     | 公布成绩中的切换轮次 Id  | `roundId`           |
-| startGame              | 单场开赛                 | `item`              |
-| startAllGame           | 整轮开赛                 | -                   |
-| publishScore           | 公布成绩                 | -                   |
-| clickSearch            | 确认资格中，点击搜索     | -                   |
-| search                 | 确认资格中，搜素队伍     | `value`             |
-| searchTeamGroup        | 确认开赛中，搜素队伍     | `value`             |
-| selectGroupInScore     | 公布成绩中，切换分组     | `groupSeq`          |
-| loadMore               | 加载更多                 | `key`, `value`      |
+| 事件名                 | 说明                     | 参数                                   |
+| ---------------------- | ------------------------ | -------------------------------------- |
+| close                  | 关闭本页面               | -                                      |
+| changeTab              | 切换 tab                 | `tabIndex`                             |
+| toggleAllQualification | 全部确认或取消资格       | -                                      |
+| doneConfirmSignUp      | 确认资格完毕，进入下一步 | -                                      |
+| checkTeam              | 确认或取消单个队伍的资格 | `team`, `teamIndex`                    |
+| selectNumPerGroup      | 选择每组队伍数           | `num`                                  |
+| confirmAdjustGroup     | 确认调整分组             | -                                      |
+| changeStartRoundId     | 确认开赛中的切换轮次 Id  | `roundId`                              |
+| changeScoreRoundId     | 公布成绩中的切换轮次 Id  | `roundId`                              |
+| startGame              | 单场开赛                 | `item`                                 |
+| startAllGame           | 整轮开赛                 | -                                      |
+| publishScore           | 公布成绩                 | -                                      |
+| clickSearch            | 确认资格中，点击搜索     | -                                      |
+| search                 | 确认资格中，搜素队伍     | `value`                                |
+| searchTeamGroup        | 确认开赛中，搜素队伍     | `value`                                |
+| selectGroupInScore     | 公布成绩中，切换分组     | `groupSeq`                             |
+| loadMore               | 加载更多                 | `key`, `value`                         |
+| clickTeamGroupCard     | 点击队伍分组卡片         | `groupItem`, `groupIndex`, `groupList` |
+| clickSearchTeamCard    | 点击搜索队伍分组卡片     | `teamItem`, `teamIndex`                |
+| clickConfirmStartOB    | 点击确认开赛中的观战按钮 | -                                      |
+| clickPublishScoreOB    | 点击公布成绩中的观战按钮 | `tableItem`, `tableIndex`              |
 
 
 ### teamMap
@@ -429,7 +435,11 @@ type IGroupInfo = {
   finished: boolean; // 是否已结束
   teamList: Array<{
     teamAvatar: string; // 队伍头像
-  }>;
+    showTeamAvatar?: boolean; // 是否显示队伍头像
+    teamDesc?: string; // 战队描述
+    teamNumDesc?: string; // 人数描述，比如 3/5
+    rankIcon?: string; // 段位信息
+  } & ITeamInfo>;
 }
 
 // groupListMap

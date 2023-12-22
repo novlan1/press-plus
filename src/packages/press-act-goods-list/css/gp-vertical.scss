@@ -1,0 +1,31 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__box {
+    padding: 0 .32rem;
+  }
+
+  .press__empty p {
+    color: #999;
+    font-size: .24rem;
+    line-height: .34rem;
+    text-align: center;
+  }
+
+  .press__empty .press__image {
+    display: inline-block;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 3rem;
+    margin-bottom: .28rem;
+    width: 1.72rem;
+    height: 1.74rem;
+
+    /* margin: 1.16rem 2.96rem 0.32rem; */
+    content: url(https://image-1251917893.file.myqcloud.com/2022/TIP-igame-H5/igame-gp/empty_box.png);
+  }
+
+  &.press__goods-list {
+    width: 100%;
+    height: auto;
+  }
+}

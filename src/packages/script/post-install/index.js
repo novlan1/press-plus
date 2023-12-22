@@ -89,7 +89,7 @@ function npmInstallTip({
 }
 
 npmInstallTip({
-  packageName: 'Press UI',
+  packageName: 'Press Plus',
   packageLink: 'https://github.com/novlan1/press-plus',
   packagePostfix: '组件库',
   packagePostfixEn: 'component library',

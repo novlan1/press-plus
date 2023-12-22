@@ -11,6 +11,8 @@
       :is-brand-swiper="isBrandSwiper"
       finished-style="font-size: 12px;"
       loading-size="16px"
+      :brand-interval="brandInterval"
+      :report-interval="reportInterval"
       @back="onBack"
       @clickSidebar="onClickSidebar"
       @loadMore="loadMore"
@@ -54,7 +56,7 @@ export default {
       BRAND_LIST,
       showFeedback: true,
       REPORT_LIST,
-      isBrandSwiper: false,
+      isBrandSwiper: true,
       sidebarList: [
         {
           label: '推荐',
@@ -105,6 +107,8 @@ export default {
           link: 'https://baidu.com',
         },
       ],
+      reportInterval: 1100,
+      brandInterval: 1100,
     };
   },
   methods: {

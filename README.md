@@ -6,14 +6,16 @@
 
 ---
 
+[查看文档](https://novlan1.github.io/press-plus/) | [查看示例](https://novlan1.github.io/press-plus-demo/)
 
 ### 1. 介绍
 
 `Press Plus` 是从 [Press UI](https://novlan1.github.io/press-ui/) 中剥离的业务组件部分，为什么要分离呢，有下面几点考虑。
 
-1. 基础组件库已十分稳定，业务组件库频繁改动，并且越来越多，存在影响基础组件的风险
-2. 持续维护包含大量组件，且高质量的组件库比较累，分离后，`Press UI` 继续追求 `100` 分，`Press Plus` 追求 `95` 分
-3. 从用户角度看，使用者如果只用基础组件，完全没必要下载业务组件，而且后续业务组件越来越多，包体积也会越来越大
+1. 基础组件是有限的，业务组件是无限的
+2. 基础组件已十分稳定，业务组件频繁改动，并且越来越多，存在影响基础组件的风险
+3. 持续维护包含大量组件，且高质量的组件库比较累，分离后，`Press UI` 继续追求 `100` 分，`Press Plus` 追求 `95` 分
+4. 从用户角度看，使用者如果只用基础组件，完全没必要下载业务组件，而且后续业务组件越来越多，包体积也会越来越大
 
 <img src="https://mike-1255355338.cos.ap-guangzhou.myqcloud.com/article/2023/10/own_mike_13f3281f0a188e0fbd.png" width="600">
 
@@ -40,8 +42,6 @@
 - 业务侧需尽快将业务组件的引入路径，改为 `Press Plus`
 - `Press UI` **在下个大版本前，都不会删除现有的业务组件**，确保业务侧升级 `Press UI` 时，无大量改动
 - 业务组件的更新，要在 `Press Plus` 中进行，`Press UI` 不再维护、新增业务组件
-
-`Press Plus` 文档地址[在这里](https://novlan1.github.io/press-plus/)。
 
 ### 2. 解决痛点
 
@@ -125,5 +125,5 @@ module.exports = {
 
 ### 5. 贡献指南
 
-请查看[这里](https://github.com/novlan1/press-plus/blob/release/CONTRIBUTING.md)。
+请查看[这里](./CONTRIBUTING.md)。
 

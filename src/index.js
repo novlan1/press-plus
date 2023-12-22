@@ -26,16 +26,14 @@ import HorRule from './packages/press-hor-rule/press-hor-rule.vue';
 import HorScheduleManage from './packages/press-hor-schedule-manage/press-hor-schedule-manage.vue';
 import HorSwiperLight from './packages/press-hor-swiper-light/press-hor-swiper-light.vue';
 import HorTask from './packages/press-hor-task/press-hor-task.vue';
-import AuthLogin from './packages/press-auth-login/press-auth-login.vue';
-import BindLogin from './packages/press-bind-login/press-bind-login.vue';
-import MobileLogin from './packages/press-mobile-login/press-mobile-login.vue';
-import PCLogin from './packages/press-p-c-login/press-p-c-login.vue';
-import PCScanLogin from './packages/press-p-c-scan-login/press-p-c-scan-login.vue';
-import ActBenefitItem from './packages/press-act-benefit-item/press-act-benefit-item.vue';
+import LoginAuth from './packages/press-login-auth/press-login-auth.vue';
+import LoginBind from './packages/press-login-bind/press-login-bind.vue';
+import LoginMobile from './packages/press-login-mobile/press-login-mobile.vue';
+import LoginPC from './packages/press-login-p-c/press-login-p-c.vue';
+import LoginPCScan from './packages/press-login-p-c-scan/press-login-p-c-scan.vue';
 import ActExplainDialog from './packages/press-act-explain-dialog/press-act-explain-dialog.vue';
 import ActLaunchDialog from './packages/press-act-launch-dialog/press-act-launch-dialog.vue';
 import ActQRCodeDialog from './packages/press-act-q-r-code-dialog/press-act-q-r-code-dialog.vue';
-import ActStoreItem from './packages/press-act-store-item/press-act-store-item.vue';
 import ActTipDialog from './packages/press-act-tip-dialog/press-act-tip-dialog.vue';
 import ActAwardDialog from './packages/press-act-award-dialog/press-act-award-dialog.vue';
 import ActBarcodeDialog from './packages/press-act-barcode-dialog/press-act-barcode-dialog.vue';
@@ -56,6 +54,11 @@ import ActGoodsDetailPrimaryButton from './packages/press-act-goods-detail-prima
 import ActGoodsDetailQRCode from './packages/press-act-goods-detail-q-r-code/press-act-goods-detail-q-r-code.vue';
 import ActGoodsDetailSecondaryButton from './packages/press-act-goods-detail-secondary-button/press-act-goods-detail-secondary-button.vue';
 import ActGoodsDetailSelect from './packages/press-act-goods-detail-select/press-act-goods-detail-select.vue';
+import ActBenefitItem from './packages/press-act-benefit-item/press-act-benefit-item.vue';
+import ActGoodsItem from './packages/press-act-goods-item/press-act-goods-item.vue';
+import ActGoodsList from './packages/press-act-goods-list/press-act-goods-list.vue';
+import ActGoodsTab from './packages/press-act-goods-tab/press-act-goods-tab.vue';
+import ActStoreItem from './packages/press-act-store-item/press-act-store-item.vue';
 
 const components = [
   Area,
@@ -85,16 +88,14 @@ const components = [
   HorScheduleManage,
   HorSwiperLight,
   HorTask,
-  AuthLogin,
-  BindLogin,
-  MobileLogin,
-  PCLogin,
-  PCScanLogin,
-  ActBenefitItem,
+  LoginAuth,
+  LoginBind,
+  LoginMobile,
+  LoginPC,
+  LoginPCScan,
   ActExplainDialog,
   ActLaunchDialog,
   ActQRCodeDialog,
-  ActStoreItem,
   ActTipDialog,
   ActAwardDialog,
   ActBarcodeDialog,
@@ -115,6 +116,11 @@ const components = [
   ActGoodsDetailQRCode,
   ActGoodsDetailSecondaryButton,
   ActGoodsDetailSelect,
+  ActBenefitItem,
+  ActGoodsItem,
+  ActGoodsList,
+  ActGoodsTab,
+  ActStoreItem,
 ];
 
 const install = function (Vue, opts = {}) {
@@ -134,61 +140,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  Area,
-  AreaIndexBar,
-  AwardPopup,
-  LivePlayer,
-  PopupCell,
-  Protocol,
-  QRCodePopup,
-  TeamSearch,
-  Turntable,
-  MessageBoard,
-  MessageDetail,
-  MessageList,
-  ScheduleCard,
-  ScheduleList,
-  ScheduleMatchMode,
-  ScheduleTab,
-  ScheduleTree,
-  HorAwardExplain,
-  HorDialog,
-  HorMatchHeader,
-  HorMatchIndex,
-  HorOwnerIndex,
-  HorOwnerTheme,
-  HorRule,
-  HorScheduleManage,
-  HorSwiperLight,
-  HorTask,
-  AuthLogin,
-  BindLogin,
-  MobileLogin,
-  PCLogin,
-  PCScanLogin,
-  ActBenefitItem,
-  ActExplainDialog,
-  ActLaunchDialog,
-  ActQRCodeDialog,
-  ActStoreItem,
-  ActTipDialog,
-  ActAwardDialog,
-  ActBarcodeDialog,
-  ActGetAwardDialog,
-  ActInputAddressDialog,
-  ActInputPhoneDialog,
-  ActInputQQ,
-  ActModifyPhoneDialog,
-  ActNotAchievedDialog,
-  ActPromptDialog,
-  ActSelectAward,
-  ActGoodsDetailBarcode,
-  ActGoodsDetailCode,
-  ActGoodsDetailDesc,
-  ActGoodsDetailMain,
-  ActGoodsDetailMeta,
-  ActGoodsDetailPrimaryButton,
-  ActGoodsDetailQRCode,
-  ActGoodsDetailSecondaryButton,
-  ActGoodsDetailSelect,
+  ...components,
 };

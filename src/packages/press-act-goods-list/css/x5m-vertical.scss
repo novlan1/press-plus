@@ -1,0 +1,21 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__box {
+    background: #fff;
+    padding: 0 .32rem;
+  }
+
+  .press__empty p {
+    color: #CFD6DE;
+    font-size: .24rem;
+    line-height: .34rem;
+    text-align: center;
+  }
+
+  .press__empty .press__image {
+    width: 2.08rem;
+    display: block;
+    margin: 1.76rem auto .32rem;
+    content: url(https://image-1251917893.file.myqcloud.com/2023/a20230712qqxwlottery/img-h5/img-empty.png);
+  }
+
+}

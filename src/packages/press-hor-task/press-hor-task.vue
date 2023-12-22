@@ -35,6 +35,7 @@
             :key="index"
             :match-item="item"
             @clickMatch="clickMatch"
+            @clickMatchButton="clickMatchButton"
             @clickMatchAward="clickMatchAward"
           />
         </div>
@@ -102,6 +103,9 @@ export default {
     },
     clickMatch(matchItem) {
       this.$emit('clickMatch', matchItem);
+    },
+    clickMatchButton(matchItem) {
+      this.$emit('clickMatchButton', matchItem);
     },
     clickMatchAward(awardItem, awardIndex, matchItem) {
       this.$emit('clickMatchAward', awardItem, awardIndex, matchItem);

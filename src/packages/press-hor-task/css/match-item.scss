@@ -70,3 +70,32 @@
     }
   }
 }
+
+.press__default-award {
+  width: 2.84rem;
+  height: .64rem;
+  margin-top: .12rem;
+}
+
+.press__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.28rem;
+  height: .48rem;
+  margin: .22rem auto 0;
+  font-family: 'GAMEFONT';
+  font-size: .26rem;
+  color: #fff;
+  padding-top: .04rem;
+
+  &--primary {
+    background: url(https://image-1251917893.file.myqcloud.com/Esports/hor/btn-confirm-bg-xs.png) no-repeat center;
+    background-size: contain;
+  }
+
+  &--secondary {
+    background: url(https://image-1251917893.file.myqcloud.com/Esports/hor/btn-secondary-bg-xs.png) no-repeat center;
+    background-size: contain;
+  }
+}

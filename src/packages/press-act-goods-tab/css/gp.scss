@@ -1,0 +1,35 @@
+.press-act:not(.press-act--hidden-tip) {
+  .press__tabs .red-dot::after {
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    content: '';
+    width: .12rem;
+    height: .12rem;
+    border-radius: 50%;
+    background: #f75b4d;
+  }
+
+  .press__tabs .red-dot {
+    position: relative;
+  }
+
+  .press__inner {
+    height: 100%;
+  }
+
+  .press__content {
+    margin-top: .1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .press__invalid-link-top {
+    display: none;
+  }
+
+  .press__empty-tip {
+    display: none;
+  }
+
+}
